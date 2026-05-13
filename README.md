@@ -1,6 +1,6 @@
 | Eigenaar | Ingevuld door |
 | --- | --- |
-| Kennis Centrum Architectuur | Robert Melskens |
+| Kennis Centrum Architectuur | Johan Boer, Robert Melskens |
 <hr/>
 
 ## ReSpec template instructies
