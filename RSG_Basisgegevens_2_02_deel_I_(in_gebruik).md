@@ -27,7 +27,7 @@ De invoering van een overheidsbreed stelsel van basisregistraties is één van d
 Dit objectenmodel voor de gemeentelijke basisgegevens presenteert de samenhang tussen basisregistraties op een logische wijze. Maar gemeenten hebben meer gegevens nodig voor hun werkprocessen dan nu in de landelijke basisregistraties beschikbaar zijn. Het binnengemeentelijk stelsel is dan ook ‘rijker’ dan het landelijke stelsel.
 Dit referentiemodel is onderdeel van de GEMmeentelijke Model Architectuur (GEMMA) van KING. De inhoud is in lijn met de Nederlandse OverheidsReferentieArchitectuur (NORA).
 
-![#Stelse van Gemeentelijke Basisgegevens op hoofdlijnen](media/RSGB_op_hoofdlijnen.png)
+![#Stelsel van Gemeentelijke Basisgegevens op hoofdlijnen](Images/RSGB_op_hoofdlijnen.png)
 
 ## Inhoud
 

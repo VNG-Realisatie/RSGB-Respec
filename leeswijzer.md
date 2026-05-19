@@ -1,0 +1,5 @@
+# Leeswijzer
+ 
+De rapportage richt zich op iedereen die zich beroepsmatig bezighoudt met (het structureren van) de gemeentelijke informatievoorziening, het inrichten en beheren van basisregistraties en/of het tot stand brengen en beheren van gegevensuitwisseling.
+De rapportage is opgebouwd overeenkomstig de gebruikelijke indeling van catalogi voor basisregistraties. Vanwege de omvang is zij in twee delen opgesplitst. Deel I beschrijft het RSGB op hoofdlijnen en licht het referentiemodel nader toe. In hoofdstuk 2 van deel I vindt u een overzicht van het objectenmodel en de daarmee samenhangende aspecten. In bijlage 1 lichten wij de wijzigingen toe ten opzichte van versie 1.1. In bijlage 2 geven we aan welke uit het GFO-BG afkomstige gegevens op welke wijze in het RSGB zijn opgenomen.
+In Deel II vindt u de specificaties van de componenten waaruit het RSGB is opgebouwd: objecttypen (hoofdstuk 1), attribuutsoorten en relatiesoorten (hoofdstuk 2). Dit deel is vooral als ‘naslagwerk’ bedoeld.
