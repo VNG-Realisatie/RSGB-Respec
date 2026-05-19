@@ -1,11 +1,11 @@
-# 1. Inleiding
+# Inleiding
 
-## 1.1 Aanleiding
+## Aanleiding
 De invoering van een stelsel van basisregistraties bij de gehele overheid is zonder twijfel een van de meest ingrijpende ontwikkelingen waar gemeenten mee te maken hebben. Onder het motto ‘De overheid vraagt niet naar de bekende weg’, is wettelijk vastgelegd dat burgers en bedrijven basisgegevens nog maar éénmaal aan de overheid hoeven te verstrekken. Alle overheidsorganisaties zijn verplicht deze gegevens te gebruiken.
 Voor gemeenten zijn de basisregistraties dáárom zo belangrijk, omdat zij niet alleen gebruiker ervan zijn, maar ook bronhouder van bijvoorbeeld de basisregistraties van Personen, Adressen en Gebouwen. De basisgegevens vormen nog maar het topje van de ijsberg van wat gemeenten aan gegevens nodig hebben om hun processen uit te voeren.
 Om grip te krijgen op de meervoudig gebruikte gegevens, heeft een aantal Voorhoedgemeenten onder leiding van EGEM medio 2007 versie 1.0 uitgebracht van het Referentiemodel Stelsel van Gemeentelijke Basisgegevens (RSGB). Dit model was de opvolger van het ‘oude’ GFO-Basisgegevens van de Vereniging Nederlandse Gemeenten (VNG). In het voorjaar van 2008 hebben we met versie 1.1. het toepassingsgebied van het RSGB vergroot met de Basisregistratie WOZ (Waardering Onroerende Zaken). Daarmee speelden wij in op de overheidsbrede invoering van het landelijk stelsel van basisregistraties. Voortschrijdend inzicht, de eerste ervaringen met het RSGB, ontwikkelingen in de (catalogi van de) landelijke basisregistraties en het ontwikkelen van de berichtenstandaard StUF-BG hebben ons aanleiding gegeven versie 2.0 van het RSGB uit te brengen.
 
-## 1.2 Opzet
+## Opzet
 KING presenteert met dit stelsel een standaard om het gebruik van basisgegevens binnen gemeenten en daarmee samenwerkende organisaties te bevorderen. We spreken binnen gemeenten over één samenhangend stelsel van basisgegevens en niet over een basisregistratie. Deze laatste term is gereserveerd voor de landelijke basisregistraties. Dit landelijke stelsel vormt echter wel het uitgangspunt voor het gemeentelijke model. Versie 2.0 van het RSGB is gebaseerd op de volgende, al dan niet definitieve, versies van de catalogi en vergelijkbare beschrijvingen van basisregistraties:
 - Catalogus BasisRegistratie Adressen (BRA versie 4.0; Vrom, 2-2006),
 - Catalogus Basis Gebouwen Registratie (BGR versie 4.0; Vrom, 2-2006),
@@ -20,7 +20,7 @@ De basisregistratie Topografie is niet in het referentiemodel opgenomen. We zijn
 Het model richt zich vooral op basisregistraties uit de eerste tranche van de inrichting van het stelsel. Pas wanneer er voldoende bekend is over een andere basisregistratie (tweede tranche en verder) wordt het model uitgebreid en aangepast.
 Het Referentiemodel Stelsel van Gemeentelijke Basisgegevens is onderdeel van de GEMmeentelijke Model Architectuur (GEMMA) van KING. De inhoud is in lijn met de Nederlandse OverheidsReferentieArchitectuur (NORA).
 
-## 1.3 Invoering
+## Invoering
 Toepassing van het referentiemodel heeft consequenties voor de gemeentelijke organisatie, haar processen, informatievoorziening, gegevenshuishouding en automatisering. Elke gemeente is autonoom in haar keuzes daarin en KING faciliteert de toepassing waar mogelijk. Het tempo van de invoering is vooral afhankelijk van het verwerken van het referentiemodel in de software die gemeenten gebruiken bij de uitvoering van hun taken.
 De software die gemeenten op dit moment gebruiken is vaak (mede) gebaseerd op het eerder genoemde GFO-Basisgegevens. In de jaren 2009 – 2010 passen leveranciers naar verwachting hun software aan op de in te voeren basisregistraties. Dit betekent (ook) een overgang van het GFO-BG naar dit referentiemodel. Om die te ondersteunen, brengt KING tegelijkertijd met het RSGB 2.0 een nieuwe versie van de berichtenstandaard StUF-BG uit. Tijdens deze periode – en mogelijkerwijs langer – bestaat er een StUF-BG-versie op basis van het GFO-Basisgegevens (2.04) en een versie op basis van dit referentiemodel (3.10), waardoor een geleidelijke overgang mogelijk is. KING adviseert gemeenten om bij verdere ontwikkeling van hun informatievoorziening te anticiperen op deze overgang. Ze kunnen dan maatregelen treffen om er voor te zorgen dat in de overgangsperiode hun informatievoorziening overweg kan met beide versies van StUF.
 
