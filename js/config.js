@@ -2,7 +2,7 @@ let respecConfig = {
 //  useLogo: true,
 //  useLabel: true,
 //  license: "eupl",
-  shortName: "RSGB-2_02,
+  shortName: "RSGB-2_02",
   pubDomain: "hl",
 
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane specificatie-types
@@ -19,7 +19,7 @@ let respecConfig = {
   //previousPublishVersion: "0.0.4",
   
   title: "Referentiemodel Stelsel van Gemeentelijke Basisgegevens",
-  subtitle: "onderdeel van de GEMeentelijke Model Architectuur (GEMMA) 
+  subtitle: "onderdeel van de GEMeentelijke Model Architectuur (GEMMA)",
   content: {"mermaid": "", "ch01": "informative", "ch02": ""},
 //  authors:
 //    [
@@ -35,15 +35,14 @@ let respecConfig = {
         name: "Robert Melskens",
         company: "VNG Realisatie",
         companyURL: "https://vng.nl/artikelen/vng-realisatie",
-      }
-    ],
-    [
+      },
       {
         name: "Johan Boer",
         company: "VNG Realisatie",
         companyURL: "https://vng.nl/artikelen/vng-realisatie",
       }
     ],
+
   github: "https://github.com/VNG-Realisatie/VNG-R-Respec-Template",
 
   //  maxTocLevel: 2,
