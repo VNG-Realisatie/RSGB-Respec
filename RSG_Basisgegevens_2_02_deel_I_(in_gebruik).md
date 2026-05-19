@@ -1,8 +1,8 @@
 # Referentiemodel Stelsel van Gemeentelijke Basisgegevens (RSGB)
+
 Versie 2.02 — Deel I: Beschrijving  
 Onderdeel van de GEMeentelijke Model Architectuur (GEMMA)
 
----
 
 # Voorwoord
 
@@ -12,7 +12,6 @@ De rapportage RSGB 2.0 is in mei 2009 vastgesteld door de StUF-regiegroep. Versi
 Het beheer van het RSGB is per 1 januari 2010 overgenomen door KING, het KwaliteitsInstituut Nederlandse Gemeenten. Voor vragen, suggesties of opmerkingen kunt u contact opnemen met ons.
 Commentaar op deze versie nemen we in de normale beheerprocedure van het RSGB mee. KING-specialisten beoordelen wijzigingsverzoeken en leggen ze ter advisering voor aan werkgroepen met een publiek-private samenstelling. Iedere belangstellende kan wijzigingsverzoeken indienen.
 
----
 
 # Leeswijzer
  

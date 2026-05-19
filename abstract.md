@@ -1,5 +1,8 @@
-Dit document bevat een uitleg van de toepassing van Respec documentatie binnen VNG Realisatie. 
-* In hoofdstuk 1 wordt de werking van het template uitgelegd. Hoe je het kunt gebruiken voor je eigen specificatie, wat er precies gebeurd als je er mee aan de gang gaat en waar je daarbij op moet letten.
+Dit document bevat de documentatie van het RSGB zoals dat voor versie 2.02 is opgesteld. Daarnaast wordt het gegevenswoordenboek weergegeven zoals dat is gegenereerd nadat versie 2.02 "ver-MIM-d" is. Er kunnen dus verschillen zijn tussen het gegevenswoordenboek en de documentatie als gevolg van het ver-MIM-men.  
+* In hoofdstuk 1 wordt de documentatie conform deel 1 van de RSGB 2.02 documentatie weergegeven. 
+
+
+
 * Hoofdstuk 2 beschrijft hoe je binnen Imvertor (indien toegepast) een deel van de content van je specificatie kan genereren. Dit hoofdstuk is optioneel aangezien je Respec document niet per definitie betrekking hoeft te hebben op een Informatiemodel.
 * Hoofdstuk 3 beschrijft waar je op moet letten als je het GitHub Respec template kopieert (zowel als admin als als gebruiker), hoe je de Respec documentatie, evt. naast de door Imvertor gegenereerde content, nog kan voorzien van andere content en hoe je door het aanpassen van configuration properties de stijl van het document kan veranderen daarbij rekening houdend met wat wij binnen VNG Realisatie met elkaar hebben afgesproken. In de flowchart van hoofdstuk 5 wordt dit hoofdstuk met de 'Generatie tak' geïllustreerd.
 * Hoe de gegenereerde Respec bestanden gepubliceerd kunnen worden wordt in Hoofdstuk 4 beschreven. In de flowchart van hoofdstuk 5 wordt dit hoofdstuk met de 'Publicatie tak' geïllustreerd.
