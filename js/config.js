@@ -43,7 +43,7 @@ let respecConfig = {
       }
     ],
 
-  github: "https://github.com/VNG-Realisatie/VNG-R-Respec-Template",
+  github: "https://github.com/VNG-Realisatie/Actualisering-RSGB",
 
   maxTocLevel: 2,
 
