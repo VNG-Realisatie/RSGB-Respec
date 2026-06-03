@@ -51,7 +51,7 @@ let respecConfig = {
       value: "Meld een probleem of lever code in de andere repo",
       href: "https://github.com/VNG-Realisatie/Actualisering-RSGB"
     }]
-  }]
+  }],
 
   maxTocLevel: 2,
 
