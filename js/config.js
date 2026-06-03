@@ -20,7 +20,7 @@ let respecConfig = {
   
   title: "Referentiemodel Stelsel van Gemeentelijke Basisgegevens",
   subtitle: "onderdeel van de GEMeentelijke Model Architectuur (GEMMA)",
-//  content: {"mermaid": "", "ch01": "informative", "ch02": ""},
+  content: {"mermaid": "", "ch01": "informative", "ch02": ""},
 //  authors:
 //    [
 //      {
