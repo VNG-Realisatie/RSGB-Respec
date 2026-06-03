@@ -43,7 +43,15 @@ let respecConfig = {
       }
     ],
 
-  github: "https://github.com/VNG-Realisatie/Actualisering-RSGB",
+  github: "https://github.com/VNG-Realisatie/RSGB-Respec",
+
+  otherLinks: [{
+    key: "Doe mee",
+    data: [{
+      value: "Meld een probleem of lever code in de andere repo",
+      href: "https://github.com/VNG-Realisatie/Actualisering-RSGB"
+    }]
+  }]
 
   maxTocLevel: 2,
 
