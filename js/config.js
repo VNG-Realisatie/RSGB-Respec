@@ -43,7 +43,9 @@ let respecConfig = {
       }
     ],
 
-  github: "https://github.com/VNG-Realisatie/RSGB-Respec",
+//  github: "https://github.com/VNG-Realisatie/RSGB-Respec",
+  edDraftURI: "https://vng-realisatie.github.io/RSGB-Respec/",
+  latestVersion: "https://vng-realisatie.github.io/RSGB-Respec/",
 
   issueBase: "https://github.com/VNG-Realisatie/Actualisering-RSGB",
 
