@@ -2,16 +2,16 @@ let respecConfig = {
 //  useLogo: true,
 //  useLabel: true,
 //  license: "eupl",
-  shortName: "RSGB-2_02",
-  pubDomain: "hl",
+  shortName: "RSGB",
+  pubDomain: "im",
 
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane specificatie-types
-  specType: "HL",
+  specType: "IM",
   
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane specificatie-statussen
   specStatus: "IO",
-  publishDate: "april 2018",
-  publishVersion: "2.02",
+  publishDate: "juni 2026",
+  publishVersion: "2.021",
 
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane maturities
   //previousMaturity: "IO",
