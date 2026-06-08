@@ -3,7 +3,7 @@ let respecConfig = {
 //  useLabel: true,
 //  license: "eupl",
   shortName: "RSGB",
-  pubDomain: "im",
+  pubDomain: "cim",
 
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane specificatie-types
   specType: "IM",
