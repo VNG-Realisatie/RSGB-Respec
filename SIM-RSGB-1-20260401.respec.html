@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <h2>Gegevensdefinitie</h2>
-<p><b>Deze tekst is normatief.</b><!--SIM-RSGB-2.03-1-20260401-20260901-131036 imvertor Nightly-build.0--></p>
+<p><b>Deze tekst is normatief.</b><!--SIM-RSGB-2.03-1-20260401-20260909-110039 imvertor Nightly-build.0--></p>
 <section>
     <h3>Objecttypen </h3>
     <section id="global_class_Model_ADRESSEERBAAROBJECTAANDUIDING">
@@ -165,9 +165,8 @@
                 </tr>
                 <tr>
                     <td>ADRESSEERBAAR OBJECT AANDUIDING [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_ADRESSEERBAAROBJECTAANDUIDING_woonplaats">ligt in:
-                            woonplaats</a> <a class="link" href="#global_class_Model_WOONPLAATS">WOONPLAATS</a> [ 0
-                        .. 1 ]</td>
+                            href="#detail_association_Model_ADRESSEERBAAROBJECTAANDUIDING_ligtin">ligt in</a> <a
+                            class="link" href="#global_class_Model_WOONPLAATS">WOONPLAATS</a> [ 0 .. 1 ]</td>
                     <td>
                         <p>De unieke aanduiding van de WOONPLAATS waarbinnen het object, waaraan de ADRESSEERBAAR
                             OBJECT AANDUIDING is toegekend, is gelegen.</p>
@@ -185,8 +184,8 @@
                 <tr>
                     <td><a class="link" href="#global_class_Model_ANDERNATUURLIJKPERSOON">ANDER NATUURLIJK
                             PERSOON</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_ANDERNATUURLIJKPERSOON_bezoekadres">heeft als
-                            bezoekadres: bezoekadres</a> ADRESSEERBAAR OBJECT AANDUIDING [ 0 .. 1 ]</td>
+                            href="#detail_association_Model_ANDERNATUURLIJKPERSOON_heeftalsbezoekadres">heeft als
+                            bezoekadres</a> ADRESSEERBAAR OBJECT AANDUIDING [ 0 .. 1 ]</td>
                     <td>
                         <p>Het binnenlands bezoekadres van de ANDER NATUURLIJK PERSOON</p>
                     </td>
@@ -194,17 +193,16 @@
                 <tr>
                     <td><a class="link" href="#global_class_Model_NIETNATUURLIJKPERSOON">NIET-NATUURLIJK
                             PERSOON</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_NIETNATUURLIJKPERSOON_bezoekadres">heeft als
-                            bezoekadres: bezoekadres</a> ADRESSEERBAAR OBJECT AANDUIDING [ 0 .. 1 ]</td>
+                            href="#detail_association_Model_NIETNATUURLIJKPERSOON_heeftalsbezoekadres">heeft als
+                            bezoekadres</a> ADRESSEERBAAR OBJECT AANDUIDING [ 0 .. 1 ]</td>
                     <td>
                         <p>Het binnenlands bezoekadres van de NIET-NATUURLIJK PERSOON</p>
                     </td>
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_SUBJECT">SUBJECT</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_SUBJECT_correspondentieadres">heeft als
-                            correspondentieadres: correspondentieadres</a> ADRESSEERBAAR OBJECT AANDUIDING [ 0 .. 1
-                        ]</td>
+                            href="#detail_association_Model_SUBJECT_heeftalscorrespondentieadres">heeft als
+                            correspondentieadres</a> ADRESSEERBAAR OBJECT AANDUIDING [ 0 .. 1 ]</td>
                     <td>
                         <p>Het adres waarop het SUBJECT in de regel schriftelijk bereikbaar is en dat gevormd wordt
                             door de combinatie van de ADRESSEERBAAR OBJECT AANDUIDING met de bijbehorende
@@ -340,8 +338,8 @@
                 </tr>
                 <tr>
                     <td>ANDER NATUURLIJK PERSOON [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_ANDERNATUURLIJKPERSOON_bezoekadres">heeft als
-                            bezoekadres: bezoekadres</a> <a class="link"
+                            href="#detail_association_Model_ANDERNATUURLIJKPERSOON_heeftalsbezoekadres">heeft als
+                            bezoekadres</a> <a class="link"
                             href="#global_class_Model_ADRESSEERBAAROBJECTAANDUIDING">ADRESSEERBAAR OBJECT
                             AANDUIDING</a> [ 0 .. 1 ]</td>
                     <td>
@@ -598,8 +596,8 @@
                 </tr>
                 <tr>
                     <td>APPARTEMENTSRECHT [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_APPARTEMENTSRECHT_beheerder">maakt deel uit van
-                            appartementencomplex met als vereniging van eigenaars: beheerder</a> <a class="link"
+                            href="#detail_association_Model_APPARTEMENTSRECHT_maaktdeeluitvanappartementencomplexmetalsverenigingvaneigenaars">maakt
+                            deel uit van appartementencomplex met als vereniging van eigenaars</a> <a class="link"
                             href="#global_class_Model_NIETNATUURLIJKPERSOON">NIET-NATUURLIJK PERSOON</a> [ 1 ]</td>
                     <td>
                         <p>Een rechtspersoon (NIET-NATUURLIJK PERSOON) die het beheer voert over de statuten van de
@@ -610,8 +608,8 @@
                 </tr>
                 <tr>
                     <td>APPARTEMENTSRECHT [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_APPARTEMENTSRECHT_perceel">maakt deel uit van
-                            appartementencomplex dat staat op: perceel</a> <a class="link"
+                            href="#detail_association_Model_APPARTEMENTSRECHT_maaktdeeluitvanappartementencomplexdatstaatop">maakt
+                            deel uit van appartementencomplex dat staat op</a> <a class="link"
                             href="#global_class_Model_KADASTRAALPERCEEL">KADASTRAAL PERCEEL</a> [ 1 .. * ]</td>
                     <td>
                         <p>Een appartementencomplex bevindt zich op een of meer percelen.</p>
@@ -756,7 +754,7 @@
                 </tr>
                 <tr>
                     <td>BENOEMD OBJECT [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_BENOEMDOBJECT_buurt">ligt in: buurt</a> <a class="link"
+                            href="#detail_association_Model_BENOEMDOBJECT_ligtin">ligt in</a> <a class="link"
                             href="#global_class_Model_BUURT">BUURT</a> [ 0 .. 1 ]</td>
                     <td>
                         <p>De BUURT waarin een BENOEMD OBJECT is gelegen.</p>
@@ -764,14 +762,14 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_VESTIGING">VESTIGING</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_VESTIGING_benoemdobject">heeft nevenlocatie
-                            in of op: benoemd object</a> BENOEMD OBJECT [ 0 .. * ]</td>
+                            href="#detail_association_Model_VESTIGING_heeftnevenlocatieinofop">heeft
+                            nevenlocatie in of op</a> BENOEMD OBJECT [ 0 .. * ]</td>
                     <td>KING</td>
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_VESTIGING">VESTIGING</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_VESTIGING_benoemdobject">heeft hoofdlocatie
-                            in of op: benoemd object</a> BENOEMD OBJECT [ 0 .. 1 ]</td>
+                            href="#detail_association_Model_VESTIGING_heefthoofdlocatieinofop">heeft
+                            hoofdlocatie in of op</a> BENOEMD OBJECT [ 0 .. 1 ]</td>
                     <td>
                         <p>Het BENOEMD OBJECT waarin of waarop zich (het gedeelte van) de VESTIGING bevindt dat
                             beschouwd wordt als hoofdlocatie voor de uitvoering van de activiteiten van deze
@@ -780,8 +778,8 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_WOZDEELOBJECT">WOZ-DEELOBJECT</a> [ 1 .. * ] <a
-                            class="link" href="#detail_association_Model_WOZDEELOBJECT_benoemdobject">is gedeelte
-                            van: benoemd object</a> BENOEMD OBJECT [ 0 .. 1 ]</td>
+                            class="link" href="#detail_association_Model_WOZDEELOBJECT_isgedeeltevan">is gedeelte
+                            van</a> BENOEMD OBJECT [ 0 .. 1 ]</td>
                     <td>
                         <p>De unieke aanduiding van het BENOEMD OBJECT dat geheel of gedeeltelijk deel uitmaakt van
                             het WOZ-DEELOBJECT.</p>
@@ -1044,24 +1042,24 @@
                     <th scope="col">Definitie</th>
                 </tr>
                 <tr>
-                    <td>BUURT [ 1 .. * ] <a class="link" href="#detail_association_Model_BUURT_wijk">ligt in:
-                            wijk</a> <a class="link" href="#global_class_Model_WIJK">WIJK</a> [ 1 ]</td>
+                    <td>BUURT [ 1 .. * ] <a class="link" href="#detail_association_Model_BUURT_ligtin">ligt
+                            in</a> <a class="link" href="#global_class_Model_WIJK">WIJK</a> [ 1 ]</td>
                     <td>
                         <p>De wijk waarin de buurt is gelegen.</p>
                     </td>
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_BENOEMDOBJECT">BENOEMD OBJECT</a> [ 0 .. * ] <a
-                            class="link" href="#detail_association_Model_BENOEMDOBJECT_buurt">ligt in:
-                            buurt</a> BUURT [ 0 .. 1 ]</td>
+                            class="link" href="#detail_association_Model_BENOEMDOBJECT_ligtin">ligt in</a> BUURT [ 0
+                        .. 1 ]</td>
                     <td>
                         <p>De BUURT waarin een BENOEMD OBJECT is gelegen.</p>
                     </td>
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_PAND">PAND</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_PAND_buurt">zonder verblijfsobject ligt in:
-                            buurt</a> BUURT [ 0 .. 1 ]</td>
+                            href="#detail_association_Model_PAND_zonderverblijfsobjectligtin">zonder verblijfsobject
+                            ligt in</a> BUURT [ 0 .. 1 ]</td>
                     <td>
                         <p>De BUURT waarin het PAND gelegen is waarbinnen zich geen verblijfsobjecten bevinden.</p>
                     </td>
@@ -1417,9 +1415,9 @@
                     <th scope="col">Definitie</th>
                 </tr>
                 <tr>
-                    <td>GEMEENTE [ 1 ] <a class="link" href="#detail_association_Model_GEMEENTE_nieuwegemeente">is
-                            overgegaan in: nieuwe gemeente</a> <a class="link"
-                            href="#global_class_Model_GEMEENTE">GEMEENTE</a> [ 0 .. * ]</td>
+                    <td>GEMEENTE [ 1 ] <a class="link" href="#detail_association_Model_GEMEENTE_isovergegaanin">is
+                            overgegaan in</a> <a class="link" href="#global_class_Model_GEMEENTE">GEMEENTE</a> [ 0
+                        .. * ]</td>
                     <td>
                         <p>De nieuwe GEMEENTE waarin de GEMEENTE bij zijn opheffing cq. na herindeling is
                             overgegaan.</p>
@@ -1428,15 +1426,15 @@
                 <tr>
                     <td><a class="link" href="#global_class_Model_GEMEENTELIJKEOPENBARERUIMTE">GEMEENTELIJKE
                             OPENBARE RUIMTE</a> [ 1 .. * ] <a class="link"
-                            href="#detail_association_Model_GEMEENTELIJKEOPENBARERUIMTE_gemeente">ligt in:
-                            gemeente</a> GEMEENTE [ 1 ]</td>
+                            href="#detail_association_Model_GEMEENTELIJKEOPENBARERUIMTE_ligtin">ligt
+                            in</a> GEMEENTE [ 1 ]</td>
                     <td>
                         <p>De GEMEENTE waarin de GEMEENTELIJKE OPENBARE RUIMTE is gelegen.</p>
                     </td>
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_WIJK">WIJK</a> [ 1 .. * ] <a class="link"
-                            href="#detail_association_Model_WIJK_gemeente">ligt in: gemeente</a> GEMEENTE [ 1 ]</td>
+                            href="#detail_association_Model_WIJK_ligtin">ligt in</a> GEMEENTE [ 1 ]</td>
                     <td>
                         <p>De gemeente waarin de wijk is gelegen.</p>
                     </td>
@@ -1632,17 +1630,16 @@
                 </tr>
                 <tr>
                     <td>GEMEENTELIJKE OPENBARE RUIMTE [ 1 .. * ] <a class="link"
-                            href="#detail_association_Model_GEMEENTELIJKEOPENBARERUIMTE_gemeente">ligt in:
-                            gemeente</a> <a class="link" href="#global_class_Model_GEMEENTE">GEMEENTE</a> [ 1 ]</td>
+                            href="#detail_association_Model_GEMEENTELIJKEOPENBARERUIMTE_ligtin">ligt in</a> <a
+                            class="link" href="#global_class_Model_GEMEENTE">GEMEENTE</a> [ 1 ]</td>
                     <td>
                         <p>De GEMEENTE waarin de GEMEENTELIJKE OPENBARE RUIMTE is gelegen.</p>
                     </td>
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_OPENBARERUIMTE">OPENBARE RUIMTE</a> [ 1 .. * ] <a
-                            class="link"
-                            href="#detail_association_Model_OPENBARERUIMTE_gemeentelijkeopenbareruimte">maakt deel
-                            uit van: gemeentelijke openbare ruimte</a> GEMEENTELIJKE OPENBARE RUIMTE [ 1 ]</td>
+                            class="link" href="#detail_association_Model_OPENBARERUIMTE_maaktdeeluitvan">maakt deel
+                            uit van</a> GEMEENTELIJKE OPENBARE RUIMTE [ 1 ]</td>
                     <td>
                         <p>De GEMEENTELIJKE OPENBARE RUIMTE waarvan de OPENBARE RUIMTE deel uit maakt.</p>
                     </td>
@@ -1786,32 +1783,31 @@
                 </tr>
                 <tr>
                     <td>HUISHOUDEN [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_HUISHOUDEN_verblijfsobject">is gehuisvest in:
-                            verblijfsobject</a> <a class="link"
-                            href="#global_class_Model_VERBLIJFSOBJECT">VERBLIJFSOBJECT</a> [ 0 .. 1 ]</td>
+                            href="#detail_association_Model_HUISHOUDEN_isgehuisvestin">is gehuisvest in</a> <a
+                            class="link" href="#global_class_Model_VERBLIJFSOBJECT">VERBLIJFSOBJECT</a> [ 0 .. 1 ]
+                    </td>
                     <td>
                         <p>Het VERBLIJFSOBJECT waarin het HUISHOUDEN woont.</p>
                     </td>
                 </tr>
                 <tr>
-                    <td>HUISHOUDEN [ 0 .. * ] <a class="link" href="#detail_association_Model_HUISHOUDEN_ligplaats">is
-                            gehuisvest op: ligplaats</a> <a class="link"
-                            href="#global_class_Model_LIGPLAATS">LIGPLAATS</a> [ 0 .. 1 ]</td>
+                    <td>HUISHOUDEN [ 0 .. * ] <a class="link"
+                            href="#detail_association_Model_HUISHOUDEN_isgehuisvestop">is gehuisvest op</a> <a
+                            class="link" href="#global_class_Model_LIGPLAATS">LIGPLAATS</a> [ 0 .. 1 ]</td>
                     <td>
                         <p>De LIGPLAATS waarop het HUISHOUDEN woont.</p>
                     </td>
                 </tr>
                 <tr>
-                    <td>HUISHOUDEN [ 0 .. 1 ] <a class="link" href="#detail_association_Model_HUISHOUDEN_relatie">heeft:
-                            relatie</a> <a class="link" href="#global_class_Model_INGESCHREVENPERSOON">INGESCHREVEN
-                            PERSOON</a> [ 1 .. * ]</td>
+                    <td>HUISHOUDEN [ 0 .. 1 ] <a class="link"
+                            href="#detail_association_Model_HUISHOUDEN_heeft">heeft</a> <a class="link"
+                            href="#global_class_Model_INGESCHREVENPERSOON">INGESCHREVEN PERSOON</a> [ 1 .. * ]</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td>HUISHOUDEN [ 0 .. * ] <a class="link" href="#detail_association_Model_HUISHOUDEN_standplaats">is
-                            gehuisvest op:
-                            standplaats</a> <a class="link" href="#global_class_Model_STANDPLAATS">STANDPLAATS</a> [
-                        0 .. 1 ]</td>
+                    <td>HUISHOUDEN [ 0 .. * ] <a class="link"
+                            href="#detail_association_Model_HUISHOUDEN_isgehuisvestop">is gehuisvest op</a> <a
+                            class="link" href="#global_class_Model_STANDPLAATS">STANDPLAATS</a> [ 0 .. 1 ]</td>
                     <td>
                         <p>De STANDPLAATS waarop het HUISHOUDEN woont.</p>
                     </td>
@@ -1963,9 +1959,8 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_RECHTSPERSOON">RECHTSPERSOON</a> [ 0 .. * ] <a
-                            class="link" href="#detail_association_Model_RECHTSPERSOON_vertegenwoordiger">is
-                            functionaris van: vertegenwoordiger</a> INGESCHREVEN NIET-NATUURLIJK PERSOON [ 0 .. * ]
-                    </td>
+                            class="link" href="#detail_association_Model_RECHTSPERSOON_isfunctionarisvan">is
+                            functionaris van</a> INGESCHREVEN NIET-NATUURLIJK PERSOON [ 0 .. * ]</td>
                     <td>
                         <p>nog niet in NHR uitgewerkt</p>
                     </td>
@@ -2112,11 +2107,15 @@
                             href="#detail_attribute_Model_INGESCHREVENPERSOON_Datuminschrijvingingemeente">Datum
                             inschrijving in gemeente</a></td>
                     <td>
-                        <p>Bij inschrijving op grond van een aangifte door de burger van zijn vestiging in een
-                            (volgende) gemeente is dit de aangiftedatum. Bij inschrijving op grond van een
-                            geboorte-akte is dit de geboortedatum. Bij ambtshalve inschrijving is dit de datum
-                            waarop de betrokkene schriftelijk van het voornemen van ambtshalve opneming mededeling
-                            is gedaan.</p>
+                        <p>Bij een tijdige aangifte (tussen vier weken voor en vijf dagen na de
+                            verhuizing) van vestiging in de gemeente is dit de in de aangifte
+                            vermelde datum van adreswijziging. Bij een niet tijdige aangifte is dit
+                            de aangiftedatum. Bij inschrijving op grond van een geboorteakte is dit
+                            de geboortedatum. Bij ambtshalve inschrijving is dit de datum waarop
+                            de betrokkene schriftelijk van het voornemen van ambtshalve
+                            opneming mededeling is gedaan. In categorie 16 betreft het de datum
+                            waarop betrokkene voor het eerst op een tijdelijk verblijfsadres in de
+                            gemeente is gaan wonen.</p>
                     </td>
                     <td>Datum­Onvolledig</td>
                     <td>1</td>
@@ -2231,8 +2230,8 @@
                 </tr>
                 <tr>
                     <td><a class="link"
-                            href="#detail_attribute_Model_INGESCHREVENPERSOON_Signaleringreisdocument">Signalering
-                            reisdocument</a></td>
+                            href="#detail_attribute_Model_INGESCHREVENPERSOON_SignaleringmetbetrekkingtotverstrekkenNederlandsreisdocument">Signalering
+                            met betrekking tot verstrekken Nederlands reisdocument</a></td>
                     <td>
                         <p>Een aanduiding dat aan de ingeschrevene geen reisdocument mag worden verstrekt.</p>
                     </td>
@@ -2417,7 +2416,7 @@
                 </tr>
                 <tr>
                     <td>- <a class="link"
-                            href="#detail_association_Model_VerblijfadresINGESCHREVENPERSOON_verblijfsobject">verblijft
+                            href="#detail_association_Model_VerblijfadresINGESCHREVENPERSOON_verblijftin">verblijft
                             in</a></td>
                     <td>
                         <p>Het VERBLIJFSOBJECT behorende bij het woonadres van de persoon</p>
@@ -2427,7 +2426,7 @@
                 </tr>
                 <tr>
                     <td>- <a class="link"
-                            href="#detail_association_Model_VerblijfadresINGESCHREVENPERSOON_standplaats">verblijft
+                            href="#detail_association_Model_VerblijfadresINGESCHREVENPERSOON_verblijftop">verblijft
                             op</a></td>
                     <td>
                         <p>De STANDPLAATS behorende bij het woonadres van de persoon</p>
@@ -2437,7 +2436,7 @@
                 </tr>
                 <tr>
                     <td>- <a class="link"
-                            href="#detail_association_Model_VerblijfadresINGESCHREVENPERSOON_nummeraanduiding">is
+                            href="#detail_association_Model_VerblijfadresINGESCHREVENPERSOON_isingeschrevenop">is
                             ingeschreven op</a></td>
                     <td>
                         <p>De NUMMERAANDUIDING bij het ADRESSEERBAAR OBJECT waarin de INGESCHREVEN PERSOON verblijft
@@ -2448,7 +2447,7 @@
                 </tr>
                 <tr>
                     <td>- <a class="link"
-                            href="#detail_association_Model_VerblijfadresINGESCHREVENPERSOON_ligplaats">verblijft
+                            href="#detail_association_Model_VerblijfadresINGESCHREVENPERSOON_verblijftop">verblijft
                             op</a></td>
                     <td>
                         <p>De LIGPLAATS behorende bij het woonadres van de persoon</p>
@@ -2469,8 +2468,8 @@
                 </tr>
                 <tr>
                     <td>INGESCHREVEN PERSOON [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_INGESCHREVENPERSOON_ouder">heeft als ouders:
-                            ouder</a> <a class="link" href="#global_class_Model_INGESCHREVENPERSOON">INGESCHREVEN
+                            href="#detail_association_Model_INGESCHREVENPERSOON_heeftalsouders">heeft als
+                            ouders</a> <a class="link" href="#global_class_Model_INGESCHREVENPERSOON">INGESCHREVEN
                             PERSOON</a> [ 0 .. 2 ]</td>
                     <td>
                         <p>De INGESCHREVEN-PERSOON, zijnde de ouder, waarnaar de KIND-OUDER-RELATIE verwijst</p>
@@ -2478,9 +2477,9 @@
                 </tr>
                 <tr>
                     <td>INGESCHREVEN PERSOON [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_INGESCHREVENPERSOON_partner">heeft: partner</a> <a
-                            class="link" href="#global_class_Model_INGESCHREVENPERSOON">INGESCHREVEN PERSOON</a> [ 2
-                        ]</td>
+                            href="#detail_association_Model_INGESCHREVENPERSOON_heeftalspartner">heeft als
+                            partner</a> <a class="link" href="#global_class_Model_INGESCHREVENPERSOON">INGESCHREVEN
+                            PERSOON</a> [ 2 ]</td>
                     <td>
                         <p>De INGESCHREVEN PERSOON bij wie de PARTNER-RELATIE is geregistreerd.</p>
                     </td>
@@ -2520,21 +2519,21 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_HUISHOUDEN">HUISHOUDEN</a> [ 0 .. 1 ] <a class="link"
-                            href="#detail_association_Model_HUISHOUDEN_relatie">heeft:
-                            relatie</a> INGESCHREVEN PERSOON [ 1 .. * ]</td>
+                            href="#detail_association_Model_HUISHOUDEN_heeft">heeft</a> INGESCHREVEN
+                        PERSOON [ 1 .. * ]</td>
                     <td></td>
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_REISDOCUMENT">REISDOCUMENT</a> [ 0 .. 1 ] <a
-                            class="link" href="#detail_association_Model_REISDOCUMENT_bijgeschrevene">kent als
-                            bijgeschrevene: bijgeschrevene</a> INGESCHREVEN PERSOON [ 0 .. * ]</td>
+                            class="link" href="#detail_association_Model_REISDOCUMENT_kentalsbijgeschrevene">kent
+                            als bijgeschrevene</a> INGESCHREVEN PERSOON [ 0 .. * ]</td>
                     <td>
                         <p>De INGESCHREVEN PERSOON(en) die zijn bijgeschreven in het REISDOCUMENT.</p>
                     </td>
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_REISDOCUMENT">REISDOCUMENT</a> [ 0 .. * ] <a
-                            class="link" href="#detail_association_Model_REISDOCUMENT_houder">heeft als houder:
+                            class="link" href="#detail_association_Model_REISDOCUMENT_heeftalshouder">heeft als
                             houder</a> INGESCHREVEN PERSOON [ 1 .. * ]</td>
                     <td>
                         <p>De INGESCHREVEN PERSOON waaraan het REISDOCUMENT is verstrekt.</p>
@@ -2702,9 +2701,9 @@
                 </tr>
                 <tr>
                     <td>INGEZETENE [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_INGEZETENE_verblijfstitel">beschikt over:
-                            verblijfstitel</a> <a class="link"
-                            href="#global_class_Model_VERBLIJFSTITEL">VERBLIJFSTITEL</a> [ 0 .. 1 ]</td>
+                            href="#detail_association_Model_INGEZETENE_beschiktover">beschikt over</a> <a class="link"
+                            href="#global_class_Model_VERBLIJFSTITEL">VERBLIJFSTITEL</a> [ 0 .. 1 ]
+                    </td>
                     <td>
                         <p>De verwijzing naar de VERBLIJFSTITEL die aangeeft over welke verblijfsrechtelijke status
                             de ingezetene beschikt.</p>
@@ -2842,7 +2841,9 @@
                     <td>
                         <p>Benaming van het inrichtingselement</p>
                     </td>
-                    <td><a class="link" href="#global_class_Model_ScopedName">Scoped­Name</a></td>
+                    <td><a class="external-link"
+                            href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                    </td>
                     <td>1</td>
                 </tr>
                 <tr>
@@ -3079,8 +3080,9 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_APPARTEMENTSRECHT">APPARTEMENTSRECHT</a> [ 0 .. *
-                        ] <a class="link" href="#detail_association_Model_APPARTEMENTSRECHT_perceel">maakt deel uit
-                            van appartementencomplex dat staat op: perceel</a> KADASTRAAL PERCEEL [ 1 .. * ]</td>
+                        ] <a class="link"
+                            href="#detail_association_Model_APPARTEMENTSRECHT_maaktdeeluitvanappartementencomplexdatstaatop">maakt
+                            deel uit van appartementencomplex dat staat op</a> KADASTRAAL PERCEEL [ 1 .. * ]</td>
                     <td>
                         <p>Een appartementencomplex bevindt zich op een of meer percelen.</p>
                     </td>
@@ -3210,8 +3212,8 @@
                 <tr>
                     <td><a class="link" href="#global_class_Model_KADASTRALEONROERENDEZAAK">KADASTRALE ONROERENDE
                             ZAAK</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_KADASTRALEONROERENDEZAAK_gemeente">ligt in:
-                            gemeente</a> KADASTRALE GEMEENTE ( ) [ 1 ]</td>
+                            href="#detail_association_Model_KADASTRALEONROERENDEZAAK_ligtin">ligt in</a> KADASTRALE
+                        GEMEENTE ( ) [ 1 ]</td>
                     <td>
                         <p>De KADASTRALE GEMEENTE waarin de KADASTRALE ONROERENDE ZAAK gelegen is.</p>
                     </td>
@@ -3568,9 +3570,9 @@
                 </tr>
                 <tr>
                     <td>KADASTRALE ONROERENDE ZAAK [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_KADASTRALEONROERENDEZAAK_gemeente">ligt in:
-                            gemeente</a> <a class="link" href="#global_class_Model_KADASTRALEGEMEENTE">KADASTRALE
-                            GEMEENTE ( )</a> [ 1 ]</td>
+                            href="#detail_association_Model_KADASTRALEONROERENDEZAAK_ligtin">ligt in</a> <a class="link"
+                            href="#global_class_Model_KADASTRALEGEMEENTE">KADASTRALE GEMEENTE ( )</a> [
+                        1 ]</td>
                     <td>
                         <p>De KADASTRALE GEMEENTE waarin de KADASTRALE ONROERENDE ZAAK gelegen is.</p>
                     </td>
@@ -3590,8 +3592,8 @@
                 </tr>
                 <tr>
                     <td>KADASTRALE ONROERENDE ZAAK [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_KADASTRALEONROERENDEZAAK_oorsprong">is ontstaan uit
-                            andere kadastrale onroerende zaak bij: oorsprong</a> <a class="link"
+                            href="#detail_association_Model_KADASTRALEONROERENDEZAAK_isontstaanuitanderekadastraleonroerendezaakbij">is
+                            ontstaan uit andere kadastrale onroerende zaak bij</a> <a class="link"
                             href="#global_class_Model_KADASTRALEONROERENDEZAAK">KADASTRALE ONROERENDE ZAAK</a> [ 0
                         .. * ]</td>
                     <td>
@@ -3601,8 +3603,8 @@
                 </tr>
                 <tr>
                     <td>KADASTRALE ONROERENDE ZAAK [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_KADASTRALEONROERENDEZAAK_voornaamstezakelijkgerechtigde">heeft
-                            als voornaamste zakelijk gerechtigde: voornaamste zakelijk gerechtigde</a> <a class="link"
+                            href="#detail_association_Model_KADASTRALEONROERENDEZAAK_heeftalsvoornaamstezakelijkgerechtigde">heeft
+                            als voornaamste zakelijk gerechtigde</a> <a class="link"
                             href="#global_class_Model_RECHTSPERSOON">RECHTSPERSOON</a> [ 1 ]</td>
                     <td>
                         <p>De rechtspersoon dat de voornaamste zakelijk gerechtigde bij een kadastraal object is.
@@ -3623,16 +3625,16 @@
                 <tr>
                     <td><a class="link" href="#global_class_Model_KADASTRALEONROERENDEZAAKAANTEKENING">KADASTRALE
                             ONROERENDE ZAAK AANTEKENING</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_KADASTRALEONROERENDEZAAKAANTEKENING_onroerendezaak">behoort
-                            bij: onroerende zaak</a> KADASTRALE ONROERENDE ZAAK [ 1 ]</td>
+                            href="#detail_association_Model_KADASTRALEONROERENDEZAAKAANTEKENING_behoortbij">behoort
+                            bij</a> KADASTRALE ONROERENDE ZAAK [ 1 ]</td>
                     <td>
                         <p>De KADASTRALE ONROERENDE ZAAK waarbij de AANTEKENING geplaatst is.</p>
                     </td>
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_WOZOBJECT">WOZ-OBJECT</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_WOZOBJECT_onroerendezaak">bevat: onroerende
-                            zaak</a> KADASTRALE ONROERENDE ZAAK [ 1 .. * ]</td>
+                            href="#detail_association_Model_WOZOBJECT_bevat">bevat</a> KADASTRALE
+                        ONROERENDE ZAAK [ 1 .. * ]</td>
                     <td>
                         <p>De unieke aanduidingen van de KADASTRALE ONROERENDE ZAAKen opgenomen in de Basis
                             Registratie Kadaster die geheel of gedeeltelijk deel uitmaken van het WOZ-OBJECT.</p>
@@ -3640,8 +3642,9 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_ZAKELIJKRECHT">ZAKELIJK RECHT</a> [ 1 .. * ] <a
-                            class="link" href="#detail_association_Model_ZAKELIJKRECHT_onroerendezaak">betreft:
-                            onroerende zaak</a> KADASTRALE ONROERENDE ZAAK [ 1 ]</td>
+                            class="link" href="#detail_association_Model_ZAKELIJKRECHT_betreft">betreft</a> KADASTRALE
+                        ONROERENDE
+                        ZAAK [ 1 ]</td>
                     <td>
                         <p>Een verwijzing naar de KADASTRALE ONROERENDE ZAAK waarop het ZAKELIJK RECHT betrekking
                             heeft.</p>
@@ -3755,7 +3758,9 @@
                     <td>
                         <p>Benaming van het kunstwerkdeel</p>
                     </td>
-                    <td><a class="link" href="#global_class_Model_ScopedName">Scoped­Name</a></td>
+                    <td><a class="external-link"
+                            href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                    </td>
                     <td>0 .. 1</td>
                 </tr>
                 <tr>
@@ -3940,19 +3945,18 @@
                 </tr>
                 <tr>
                     <td>KADASTRALE ONROERENDE ZAAK AANTEKENING [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_KADASTRALEONROERENDEZAAKAANTEKENING_onroerendezaak">behoort
-                            bij: onroerende zaak</a> <a class="link"
-                            href="#global_class_Model_KADASTRALEONROERENDEZAAK">KADASTRALE ONROERENDE ZAAK</a> [ 1 ]
-                    </td>
+                            href="#detail_association_Model_KADASTRALEONROERENDEZAAKAANTEKENING_behoortbij">behoort
+                            bij</a> <a class="link" href="#global_class_Model_KADASTRALEONROERENDEZAAK">KADASTRALE
+                            ONROERENDE ZAAK</a> [ 1 ]</td>
                     <td>
                         <p>De KADASTRALE ONROERENDE ZAAK waarbij de AANTEKENING geplaatst is.</p>
                     </td>
                 </tr>
                 <tr>
                     <td>KADASTRALE ONROERENDE ZAAK AANTEKENING [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_KADASTRALEONROERENDEZAAKAANTEKENING_rechtspersoon">heeft
-                            betrokken: rechtspersoon</a> <a class="link"
-                            href="#global_class_Model_RECHTSPERSOON">RECHTSPERSOON</a> [ 0 .. 1 ]</td>
+                            href="#detail_association_Model_KADASTRALEONROERENDEZAAKAANTEKENING_heeftbetrokken">heeft
+                            betrokken</a> <a class="link" href="#global_class_Model_RECHTSPERSOON">RECHTSPERSOON</a> [ 0
+                        .. 1 ]</td>
                     <td>
                         <p>Een uniek nummer van de eventueel betrokken RECHTSPERSOON bij deze aantekening.</p>
                     </td>
@@ -4074,9 +4078,9 @@
                     <th scope="col">Definitie</th>
                 </tr>
                 <tr>
-                    <td>LIGPLAATS [ 0 .. 1 ] <a class="link" href="#detail_association_Model_LIGPLAATS_nevenadres">heeft
-                            als nevenadressen:
-                            nevenadres</a> <a class="link"
+                    <td>LIGPLAATS [ 0 .. 1 ] <a class="link"
+                            href="#detail_association_Model_LIGPLAATS_heeftalsnevenadressen">heeft als
+                            nevenadressen</a> <a class="link"
                             href="#global_class_Model_NUMMERAANDUIDING">NUMMERAANDUIDING</a> [ 0 .. * ]</td>
                     <td>
                         <p>De identificatiecodes nummeraanduiding waaronder nevenadressen van een LIGPLAATS, die in
@@ -4085,8 +4089,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>LIGPLAATS [ 0 .. 1 ] <a class="link" href="#detail_association_Model_LIGPLAATS_hoofdadres">heeft
-                            als hoofdadres:
+                    <td>LIGPLAATS [ 0 .. 1 ] <a class="link"
+                            href="#detail_association_Model_LIGPLAATS_heeftalshoofdadres">heeft als
                             hoofdadres</a> <a class="link"
                             href="#global_class_Model_NUMMERAANDUIDING">NUMMERAANDUIDING</a> [ 1 ]</td>
                     <td>
@@ -4097,8 +4101,8 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_HUISHOUDEN">HUISHOUDEN</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_HUISHOUDEN_ligplaats">is gehuisvest op:
-                            ligplaats</a> LIGPLAATS [ 0 .. 1 ]</td>
+                            href="#detail_association_Model_HUISHOUDEN_isgehuisvestop">is gehuisvest
+                            op</a> LIGPLAATS [ 0 .. 1 ]</td>
                     <td>
                         <p>De LIGPLAATS waarop het HUISHOUDEN woont.</p>
                     </td>
@@ -4113,8 +4117,8 @@
                 <tr>
                     <td><a class="link" href="#global_class_Model_VerblijfadresINGESCHREVENPERSOON">Verblijfadres
                             INGESCHREVEN PERSOON</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_VerblijfadresINGESCHREVENPERSOON_ligplaats">verblijft
-                            op: ligplaats</a> LIGPLAATS [ 0 .. 1 ]</td>
+                            href="#detail_association_Model_VerblijfadresINGESCHREVENPERSOON_verblijftop">verblijft
+                            op</a> LIGPLAATS [ 0 .. 1 ]</td>
                     <td>
                         <p>De LIGPLAATS behorende bij het woonadres van de persoon</p>
                     </td>
@@ -4351,7 +4355,7 @@
                 </tr>
                 <tr>
                     <td>MAATSCHAPPELIJKE ACTIVITEIT [ 0 .. 1 ] <a class="link"
-                            href="#detail_association_Model_MAATSCHAPPELIJKEACTIVITEIT_eigenaar">heeft als eigenaar:
+                            href="#detail_association_Model_MAATSCHAPPELIJKEACTIVITEIT_heeftalseigenaar">heeft als
                             eigenaar</a> <a class="link" href="#global_class_Model_RECHTSPERSOON">RECHTSPERSOON</a> [ 1
                         ]</td>
                     <td>
@@ -4360,8 +4364,8 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_VESTIGING">VESTIGING</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_VESTIGING_activiteit">betreft uitoefening
-                            van activiteiten door: activiteit</a> MAATSCHAPPELIJKE ACTIVITEIT [ 1 ]</td>
+                            href="#detail_association_Model_VESTIGING_betreftuitoefeningvanactiviteitendoor">betreft
+                            uitoefening van activiteiten door</a> MAATSCHAPPELIJKE ACTIVITEIT [ 1 ]</td>
                     <td>
                         <p>{nog niet in NHR uitgewerkt</p>
                     </td>
@@ -4767,8 +4771,8 @@
                 </tr>
                 <tr>
                     <td>NIET-NATUURLIJK PERSOON [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_NIETNATUURLIJKPERSOON_bezoekadres">heeft als
-                            bezoekadres: bezoekadres</a> <a class="link"
+                            href="#detail_association_Model_NIETNATUURLIJKPERSOON_heeftalsbezoekadres">heeft als
+                            bezoekadres</a> <a class="link"
                             href="#global_class_Model_ADRESSEERBAAROBJECTAANDUIDING">ADRESSEERBAAR OBJECT
                             AANDUIDING</a> [ 0 .. 1 ]</td>
                     <td>
@@ -4777,9 +4781,10 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_APPARTEMENTSRECHT">APPARTEMENTSRECHT</a> [ 0 .. *
-                        ] <a class="link" href="#detail_association_Model_APPARTEMENTSRECHT_beheerder">maakt deel
-                            uit van appartementencomplex met als vereniging van eigenaars:
-                            beheerder</a> NIET-NATUURLIJK PERSOON [ 1 ]</td>
+                        ] <a class="link"
+                            href="#detail_association_Model_APPARTEMENTSRECHT_maaktdeeluitvanappartementencomplexmetalsverenigingvaneigenaars">maakt
+                            deel uit van appartementencomplex met als vereniging van eigenaars</a> NIET-NATUURLIJK
+                        PERSOON [ 1 ]</td>
                     <td>
                         <p>Een rechtspersoon (NIET-NATUURLIJK PERSOON) die het beheer voert over de statuten van de
                             vereniging en over de gemeenschap, met uitzondering van de gedeelten die bestemd zijn
@@ -4930,8 +4935,8 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_LIGPLAATS">LIGPLAATS</a> [ 0 .. 1 ] <a class="link"
-                            href="#detail_association_Model_LIGPLAATS_nevenadres">heeft als
-                            nevenadressen: nevenadres</a> NUMMERAANDUIDING [ 0 .. * ]</td>
+                            href="#detail_association_Model_LIGPLAATS_heeftalsnevenadressen">heeft als
+                            nevenadressen</a> NUMMERAANDUIDING [ 0 .. * ]</td>
                     <td>
                         <p>De identificatiecodes nummeraanduiding waaronder nevenadressen van een LIGPLAATS, die in
                             het kader van de basisregistratie gebouwen als zodanig zijn aangemerkt, zijn opgenomen
@@ -4940,7 +4945,7 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_LIGPLAATS">LIGPLAATS</a> [ 0 .. 1 ] <a class="link"
-                            href="#detail_association_Model_LIGPLAATS_hoofdadres">heeft als hoofdadres:
+                            href="#detail_association_Model_LIGPLAATS_heeftalshoofdadres">heeft als
                             hoofdadres</a> NUMMERAANDUIDING [ 1 ]</td>
                     <td>
                         <p>De identificatiecode nummeraanduiding waaronder het hoofdadres van een LIGPLAATS, dat in
@@ -4950,17 +4955,17 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_OVERIGGEBOUWDOBJECT">OVERIG GEBOUWD OBJECT</a> [ 0
-                        .. * ] <a class="link" href="#detail_association_Model_OVERIGGEBOUWDOBJECT_locatieadres">heeft
-                            locatie-adres
-                            i.c.m.: locatieadres</a> NUMMERAANDUIDING [ 0 .. 1 ]</td>
+                        .. * ] <a class="link"
+                            href="#detail_association_Model_OVERIGGEBOUWDOBJECT_heeftlocatieadresicm">heeft
+                            locatie-adres i.c.m.</a> NUMMERAANDUIDING [ 0 .. 1 ]</td>
                     <td>
                         <p>De NUMMERAANDUIDING waaronder het locatie-adres is opgenomen.</p>
                     </td>
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_STANDPLAATS">STANDPLAATS</a> [ 0 .. 1 ] <a
-                            class="link" href="#detail_association_Model_STANDPLAATS_nevenadres">heeft als
-                            nevenadressen: nevenadres</a> NUMMERAANDUIDING [ 0 .. * ]</td>
+                            class="link" href="#detail_association_Model_STANDPLAATS_heeftalsnevenadressen">heeft
+                            als nevenadressen</a> NUMMERAANDUIDING [ 0 .. * ]</td>
                     <td>
                         <p>De identificatiecodes nummeraanduiding waaronder nevenadressen van een STANDPLAATS, die
                             in het kader van de basisregistratie gebouwen als zodanig zijn aangemerkt, zijn
@@ -4969,8 +4974,8 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_STANDPLAATS">STANDPLAATS</a> [ 0 .. 1 ] <a
-                            class="link" href="#detail_association_Model_STANDPLAATS_hoofdadres">heeft als
-                            hoofdadres: hoofdadres</a> NUMMERAANDUIDING [ 1 ]</td>
+                            class="link" href="#detail_association_Model_STANDPLAATS_heeftalshoofdadres">heeft als
+                            hoofdadres</a> NUMMERAANDUIDING [ 1 ]</td>
                     <td>
                         <p>De identificatiecode nummeraanduiding waaronder het hoofdadres van een STANDPLAATS, dat
                             in het kader van de basisregistratie gebouwen als zodanig is aangemerkt, is opgenomen in
@@ -4979,8 +4984,9 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_VERBLIJFSOBJECT">VERBLIJFSOBJECT</a> [ 0 .. 1 ] <a
-                            class="link" href="#detail_association_Model_VERBLIJFSOBJECT_nevenadres">heeft als
-                            nevenadres(sen): nevenadres</a> NUMMERAANDUIDING [ 0 .. * ]</td>
+                            class="link" href="#detail_association_Model_VERBLIJFSOBJECT_heeftalsnevenadressen">heeft
+                            als
+                            nevenadres(sen)</a> NUMMERAANDUIDING [ 0 .. * ]</td>
                     <td>
                         <p>De identificatiecodes nummeraanduiding waaronder nevenadressen van een VERBLIJFSOBJECT,
                             die in het kader van de basisregistratie gebouwen als zodanig zijn aangemerkt, zijn
@@ -4989,8 +4995,8 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_VERBLIJFSOBJECT">VERBLIJFSOBJECT</a> [ 0 .. 1 ] <a
-                            class="link" href="#detail_association_Model_VERBLIJFSOBJECT_hoofdadres">heeft als
-                            hoofdadres: hoofdadres</a> NUMMERAANDUIDING [ 1 ]</td>
+                            class="link" href="#detail_association_Model_VERBLIJFSOBJECT_heeftalshoofdadres">heeft
+                            als hoofdadres</a> NUMMERAANDUIDING [ 1 ]</td>
                     <td>
                         <p>De identificatiecode nummeraanduiding waaronder het hoofdadres van een VERBLIJFSOBJECT,
                             dat in het kader van de basisregistratie gebouwen als zodanig is aangemerkt, is
@@ -5000,8 +5006,8 @@
                 <tr>
                     <td><a class="link" href="#global_class_Model_VerblijfadresINGESCHREVENPERSOON">Verblijfadres
                             INGESCHREVEN PERSOON</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_VerblijfadresINGESCHREVENPERSOON_nummeraanduiding">is
-                            ingeschreven op: nummeraanduiding</a> NUMMERAANDUIDING [ 0 .. 1 ]</td>
+                            href="#detail_association_Model_VerblijfadresINGESCHREVENPERSOON_isingeschrevenop">is
+                            ingeschreven op</a> NUMMERAANDUIDING [ 0 .. 1 ]</td>
                     <td>
                         <p>De NUMMERAANDUIDING bij het ADRESSEERBAAR OBJECT waarin de INGESCHREVEN PERSOON verblijft
                             en die hij/zij gekozen heeft als inschrijvingsadres.</p>
@@ -5153,9 +5159,9 @@
                 </tr>
                 <tr>
                     <td>OPENBARE RUIMTE [ 1 .. * ] <a class="link"
-                            href="#detail_association_Model_OPENBARERUIMTE_gemeentelijkeopenbareruimte">maakt deel
-                            uit van: gemeentelijke openbare ruimte</a> <a class="link"
-                            href="#global_class_Model_GEMEENTELIJKEOPENBARERUIMTE">GEMEENTELIJKE OPENBARE
+                            href="#detail_association_Model_OPENBARERUIMTE_maaktdeeluitvan">maakt deel uit
+                            van</a> <a class="link" href="#global_class_Model_GEMEENTELIJKEOPENBARERUIMTE">GEMEENTELIJKE
+                            OPENBARE
                             RUIMTE</a> [ 1 ]</td>
                     <td>
                         <p>De GEMEENTELIJKE OPENBARE RUIMTE waarvan de OPENBARE RUIMTE deel uit maakt.</p>
@@ -5163,8 +5169,8 @@
                 </tr>
                 <tr>
                     <td>OPENBARE RUIMTE [ 1 .. * ] <a class="link"
-                            href="#detail_association_Model_OPENBARERUIMTE_woonplaats">ligt in: woonplaats</a> <a
-                            class="link" href="#global_class_Model_WOONPLAATS">WOONPLAATS</a> [ 1 ]</td>
+                            href="#detail_association_Model_OPENBARERUIMTE_ligtin">ligt in</a> <a class="link"
+                            href="#global_class_Model_WOONPLAATS">WOONPLAATS</a> [ 1 ]</td>
                     <td>
                         <p>Unieke aanduiding van de woonplaats waarbinnen een OPENBARE RUIMTE is gelegen.</p>
                     </td>
@@ -5181,17 +5187,17 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_OVERIGGEBOUWDOBJECT">OVERIG GEBOUWD OBJECT</a> [ 0
-                        .. * ] <a class="link" href="#detail_association_Model_OVERIGGEBOUWDOBJECT_openbareruimte">heeft
-                            straatadres
-                            i.c.m.: openbare ruimte</a> OPENBARE RUIMTE [ 0 .. 1 ]</td>
+                        .. * ] <a class="link"
+                            href="#detail_association_Model_OVERIGGEBOUWDOBJECT_heeftstraatadresicm">heeft
+                            straatadres i.c.m.</a> OPENBARE RUIMTE [ 0 .. 1 ]</td>
                     <td>
                         <p>De OPENBARE RUIMTE waaraan of waar nabij het OVERIG GEBOUWD OBJECT is gelegen.</p>
                     </td>
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_WOZOBJECT">WOZ-OBJECT</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_WOZOBJECT_openbareruimte">ligt aan:
-                            openbare ruimte</a> OPENBARE RUIMTE [ 0 .. 1 ]</td>
+                            href="#detail_association_Model_WOZOBJECT_ligtaan">ligt aan</a> OPENBARE
+                        RUIMTE [ 0 .. 1 ]</td>
                     <td>
                         <p>De unieke aanduiding van de OPENBARE RUIMTE waarvan de aanduiding van het WOZ-object
                             wordt afgeleid met behulp van de locatieomschrijving.</p>
@@ -5326,8 +5332,8 @@
                 </tr>
                 <tr>
                     <td>OVERIG GEBOUWD OBJECT [ 0 .. 1 ] <a class="link"
-                            href="#detail_association_Model_OVERIGGEBOUWDOBJECT_adres">heeft als officieel adres:
-                            adres</a> <a class="link"
+                            href="#detail_association_Model_OVERIGGEBOUWDOBJECT_heeftalsofficieeladres">heeft als
+                            officieel adres</a> <a class="link"
                             href="#global_class_Model_OVERIGEADRESSEERBAAROBJECTAANDUIDING">OVERIGE ADRESSEERBAAR
                             OBJECT AANDUIDING</a> [ 0 .. 1 ]</td>
                     <td>
@@ -5337,8 +5343,8 @@
                 </tr>
                 <tr>
                     <td>OVERIG GEBOUWD OBJECT [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_OVERIGGEBOUWDOBJECT_locatieadres">heeft locatie-adres
-                            i.c.m.: locatieadres</a> <a class="link"
+                            href="#detail_association_Model_OVERIGGEBOUWDOBJECT_heeftlocatieadresicm">heeft
+                            locatie-adres i.c.m.</a> <a class="link"
                             href="#global_class_Model_NUMMERAANDUIDING">NUMMERAANDUIDING</a> [ 0 .. 1 ]</td>
                     <td>
                         <p>De NUMMERAANDUIDING waaronder het locatie-adres is opgenomen.</p>
@@ -5346,9 +5352,9 @@
                 </tr>
                 <tr>
                     <td>OVERIG GEBOUWD OBJECT [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_OVERIGGEBOUWDOBJECT_openbareruimte">heeft straatadres
-                            i.c.m.: openbare ruimte</a> <a class="link"
-                            href="#global_class_Model_OPENBARERUIMTE">OPENBARE RUIMTE</a> [ 0 .. 1 ]</td>
+                            href="#detail_association_Model_OVERIGGEBOUWDOBJECT_heeftstraatadresicm">heeft
+                            straatadres i.c.m.</a> <a class="link" href="#global_class_Model_OPENBARERUIMTE">OPENBARE
+                            RUIMTE</a> [ 0 .. 1 ]</td>
                     <td>
                         <p>De OPENBARE RUIMTE waaraan of waar nabij het OVERIG GEBOUWD OBJECT is gelegen.</p>
                     </td>
@@ -5482,8 +5488,8 @@
                 </tr>
                 <tr>
                     <td>OVERIG TERREIN [ 0 .. 1 ] <a class="link"
-                            href="#detail_association_Model_OVERIGTERREIN_adres">heeft als officieel adres:
-                            adres</a> <a class="link"
+                            href="#detail_association_Model_OVERIGTERREIN_heeftalsofficieeladres">heeft als
+                            officieel adres</a> <a class="link"
                             href="#global_class_Model_OVERIGEADRESSEERBAAROBJECTAANDUIDING">OVERIGE ADRESSEERBAAR
                             OBJECT AANDUIDING</a> [ 1 ]</td>
                     <td>
@@ -5593,8 +5599,9 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_OVERIGGEBOUWDOBJECT">OVERIG GEBOUWD OBJECT</a> [ 0
-                        .. 1 ] <a class="link" href="#detail_association_Model_OVERIGGEBOUWDOBJECT_adres">heeft als
-                            officieel adres: adres</a> OVERIGE ADRESSEERBAAR OBJECT AANDUIDING [ 0 .. 1 ]</td>
+                        .. 1 ] <a class="link"
+                            href="#detail_association_Model_OVERIGGEBOUWDOBJECT_heeftalsofficieeladres">heeft als
+                            officieel adres</a> OVERIGE ADRESSEERBAAR OBJECT AANDUIDING [ 0 .. 1 ]</td>
                     <td>
                         <p>De OVERIGE ADRESSEERBAAR OBJECT AANDUIDING waaronder het officiële adres is opgenomen.
                         </p>
@@ -5602,8 +5609,8 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_OVERIGTERREIN">OVERIG TERREIN</a> [ 0 .. 1 ] <a
-                            class="link" href="#detail_association_Model_OVERIGTERREIN_adres">heeft als officieel
-                            adres: adres</a> OVERIGE ADRESSEERBAAR OBJECT AANDUIDING [ 1 ]</td>
+                            class="link" href="#detail_association_Model_OVERIGTERREIN_heeftalsofficieeladres">heeft
+                            als officieel adres</a> OVERIGE ADRESSEERBAAR OBJECT AANDUIDING [ 1 ]</td>
                     <td>
                         <p>De OVERIGE ADRESSEERBAAR OBJECT AANDUIDING waaronder het officiële adres is opgenomen.
                         </p>
@@ -5878,25 +5885,25 @@
                     <th scope="col">Definitie</th>
                 </tr>
                 <tr>
-                    <td>PAND [ 0 .. * ] <a class="link" href="#detail_association_Model_PAND_buurt">zonder
-                            verblijfsobject ligt in: buurt</a> <a class="link"
-                            href="#global_class_Model_BUURT">BUURT</a> [ 0 .. 1 ]</td>
+                    <td>PAND [ 0 .. * ] <a class="link"
+                            href="#detail_association_Model_PAND_zonderverblijfsobjectligtin">zonder verblijfsobject
+                            ligt in</a> <a class="link" href="#global_class_Model_BUURT">BUURT</a> [ 0 .. 1 ]</td>
                     <td>
                         <p>De BUURT waarin het PAND gelegen is waarbinnen zich geen verblijfsobjecten bevinden.</p>
                     </td>
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_VERBLIJFSOBJECT">VERBLIJFSOBJECT</a> [ 0 .. * ] <a
-                            class="link" href="#detail_association_Model_VERBLIJFSOBJECT_pand">maakt deel uit van:
-                            pand</a> PAND [ 1 .. * ]</td>
+                            class="link" href="#detail_association_Model_VERBLIJFSOBJECT_maaktdeeluitvan">maakt deel
+                            uit van</a> PAND [ 1 .. * ]</td>
                     <td>
                         <p>De unieke aanduidingen van de PANDEN waarvan het VERBLIJFSOBJECT onderdeel uitmaakt.</p>
                     </td>
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_WOZDEELOBJECT">WOZ-DEELOBJECT</a> [ 0 .. * ] <a
-                            class="link" href="#detail_association_Model_WOZDEELOBJECT_pand">bestaat uit:
-                            pand</a> PAND [ 0 .. 1 ]</td>
+                            class="link" href="#detail_association_Model_WOZDEELOBJECT_bestaatuit">bestaat
+                            uit</a> PAND [ 0 .. 1 ]</td>
                     <td>
                         <p>De unieke aanduiding van het PAND dat geheel of gedeeltelijk deel uitmaakt van het
                             WOZ-DEELOBJECT.</p>
@@ -5970,8 +5977,8 @@
                 </tr>
                 <tr>
                     <td>RECHTSPERSOON [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_RECHTSPERSOON_vertegenwoordiger">is functionaris van:
-                            vertegenwoordiger</a> <a class="link"
+                            href="#detail_association_Model_RECHTSPERSOON_isfunctionarisvan">is functionaris
+                            van</a> <a class="link"
                             href="#global_class_Model_INGESCHREVENNIETNATUURLIJKPERSOON">INGESCHREVEN
                             NIET-NATUURLIJK PERSOON</a> [ 0 .. * ]</td>
                     <td>
@@ -5981,9 +5988,8 @@
                 <tr>
                     <td><a class="link" href="#global_class_Model_KADASTRALEONROERENDEZAAK">KADASTRALE ONROERENDE
                             ZAAK</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_KADASTRALEONROERENDEZAAK_voornaamstezakelijkgerechtigde">heeft
-                            als voornaamste zakelijk gerechtigde: voornaamste zakelijk
-                            gerechtigde</a> RECHTSPERSOON [ 1 ]</td>
+                            href="#detail_association_Model_KADASTRALEONROERENDEZAAK_heeftalsvoornaamstezakelijkgerechtigde">heeft
+                            als voornaamste zakelijk gerechtigde</a> RECHTSPERSOON [ 1 ]</td>
                     <td>
                         <p>De rechtspersoon dat de voornaamste zakelijk gerechtigde bij een kadastraal object is.
                         </p>
@@ -5992,8 +5998,8 @@
                 <tr>
                     <td><a class="link" href="#global_class_Model_KADASTRALEONROERENDEZAAKAANTEKENING">KADASTRALE
                             ONROERENDE ZAAK AANTEKENING</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_KADASTRALEONROERENDEZAAKAANTEKENING_rechtspersoon">heeft
-                            betrokken: rechtspersoon</a> RECHTSPERSOON [ 0 .. 1 ]</td>
+                            href="#detail_association_Model_KADASTRALEONROERENDEZAAKAANTEKENING_heeftbetrokken">heeft
+                            betrokken</a> RECHTSPERSOON [ 0 .. 1 ]</td>
                     <td>
                         <p>Een uniek nummer van de eventueel betrokken RECHTSPERSOON bij deze aantekening.</p>
                     </td>
@@ -6001,7 +6007,7 @@
                 <tr>
                     <td><a class="link" href="#global_class_Model_MAATSCHAPPELIJKEACTIVITEIT">MAATSCHAPPELIJKE
                             ACTIVITEIT</a> [ 0 .. 1 ] <a class="link"
-                            href="#detail_association_Model_MAATSCHAPPELIJKEACTIVITEIT_eigenaar">heeft als eigenaar:
+                            href="#detail_association_Model_MAATSCHAPPELIJKEACTIVITEIT_heeftalseigenaar">heeft als
                             eigenaar</a> RECHTSPERSOON [ 1 ]</td>
                     <td>
                         <p>{nog niet in NHR uitgewerkt</p>
@@ -6009,8 +6015,8 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_ZAKELIJKRECHT">ZAKELIJK RECHT</a> [ 0 .. * ] <a
-                            class="link" href="#detail_association_Model_ZAKELIJKRECHT_gerechtigde">heeft als
-                            gerechtigde: gerechtigde</a> RECHTSPERSOON [ 1 ]</td>
+                            class="link" href="#detail_association_Model_ZAKELIJKRECHT_heeftalsgerechtigde">heeft
+                            als gerechtigde</a> RECHTSPERSOON [ 1 ]</td>
                     <td>
                         <p>Een verwijzing naar een RECHTSPERSOON, ten name waarvan het ZAKELIJK RECHT is gesteld.
                         </p>
@@ -6019,8 +6025,8 @@
                 <tr>
                     <td><a class="link" href="#global_class_Model_ZAKELIJKRECHTAANTEKENING">ZAKELIJK RECHT
                             AANTEKENING</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_ZAKELIJKRECHTAANTEKENING_rechtspersoon">heeft betrokken:
-                            rechtspersoon</a> RECHTSPERSOON [ 0 .. 1 ]</td>
+                            href="#detail_association_Model_ZAKELIJKRECHTAANTEKENING_heeftbetrokken">heeft
+                            betrokken</a> RECHTSPERSOON [ 0 .. 1 ]</td>
                     <td>
                         <p>Een uniek nummer van de eventueel betrokken RECHTSPERSOON bij deze aantekening.</p>
                     </td>
@@ -6209,7 +6215,7 @@
                 </tr>
                 <tr>
                     <td>REISDOCUMENT [ 0 .. 1 ] <a class="link"
-                            href="#detail_association_Model_REISDOCUMENT_bijgeschrevene">kent als bijgeschrevene:
+                            href="#detail_association_Model_REISDOCUMENT_kentalsbijgeschrevene">kent als
                             bijgeschrevene</a> <a class="link"
                             href="#global_class_Model_INGESCHREVENPERSOON">INGESCHREVEN PERSOON</a> [ 0 .. * ]</td>
                     <td>
@@ -6218,7 +6224,7 @@
                 </tr>
                 <tr>
                     <td>REISDOCUMENT [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_REISDOCUMENT_houder">heeft als houder: houder</a> <a
+                            href="#detail_association_Model_REISDOCUMENT_heeftalshouder">heeft als houder</a> <a
                             class="link" href="#global_class_Model_INGESCHREVENPERSOON">INGESCHREVEN PERSOON</a> [ 1
                         .. * ]</td>
                     <td>
@@ -6344,7 +6350,9 @@
                     <td>
                         <p>Benaming van het spoorbaandeel</p>
                     </td>
-                    <td><a class="link" href="#global_class_Model_ScopedName">Scoped­Name</a></td>
+                    <td><a class="external-link"
+                            href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                    </td>
                     <td>0 .. 1</td>
                 </tr>
                 <tr>
@@ -6505,8 +6513,8 @@
                 </tr>
                 <tr>
                     <td>STANDPLAATS [ 0 .. 1 ] <a class="link"
-                            href="#detail_association_Model_STANDPLAATS_nevenadres">heeft als nevenadressen:
-                            nevenadres</a> <a class="link"
+                            href="#detail_association_Model_STANDPLAATS_heeftalsnevenadressen">heeft als
+                            nevenadressen</a> <a class="link"
                             href="#global_class_Model_NUMMERAANDUIDING">NUMMERAANDUIDING</a> [ 0 .. * ]</td>
                     <td>
                         <p>De identificatiecodes nummeraanduiding waaronder nevenadressen van een STANDPLAATS, die
@@ -6516,7 +6524,7 @@
                 </tr>
                 <tr>
                     <td>STANDPLAATS [ 0 .. 1 ] <a class="link"
-                            href="#detail_association_Model_STANDPLAATS_hoofdadres">heeft als hoofdadres:
+                            href="#detail_association_Model_STANDPLAATS_heeftalshoofdadres">heeft als
                             hoofdadres</a> <a class="link"
                             href="#global_class_Model_NUMMERAANDUIDING">NUMMERAANDUIDING</a> [ 1 ]</td>
                     <td>
@@ -6527,8 +6535,8 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_HUISHOUDEN">HUISHOUDEN</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_HUISHOUDEN_standplaats">is gehuisvest op:
-                            standplaats</a> STANDPLAATS [ 0 .. 1 ]</td>
+                            href="#detail_association_Model_HUISHOUDEN_isgehuisvestop">is gehuisvest
+                            op</a> STANDPLAATS [ 0 .. 1 ]</td>
                     <td>
                         <p>De STANDPLAATS waarop het HUISHOUDEN woont.</p>
                     </td>
@@ -6543,8 +6551,8 @@
                 <tr>
                     <td><a class="link" href="#global_class_Model_VerblijfadresINGESCHREVENPERSOON">Verblijfadres
                             INGESCHREVEN PERSOON</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_VerblijfadresINGESCHREVENPERSOON_standplaats">verblijft
-                            op: standplaats</a> STANDPLAATS [ 0 .. 1 ]</td>
+                            href="#detail_association_Model_VerblijfadresINGESCHREVENPERSOON_verblijftop">verblijft
+                            op</a> STANDPLAATS [ 0 .. 1 ]</td>
                     <td>
                         <p>De STANDPLAATS behorende bij het woonadres van de persoon</p>
                     </td>
@@ -6863,8 +6871,8 @@
                 </tr>
                 <tr>
                     <td>SUBJECT [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_SUBJECT_correspondentieadres">heeft als
-                            correspondentieadres: correspondentieadres</a> <a class="link"
+                            href="#detail_association_Model_SUBJECT_heeftalscorrespondentieadres">heeft als
+                            correspondentieadres</a> <a class="link"
                             href="#global_class_Model_ADRESSEERBAAROBJECTAANDUIDING">ADRESSEERBAAR OBJECT
                             AANDUIDING</a> [ 0 .. 1 ]</td>
                     <td>
@@ -6875,8 +6883,8 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_WOZOBJECT">WOZ-OBJECT</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_WOZOBJECT_belanghebbende">heeft als
-                            aangewezen belanghebbende: belanghebbende</a> SUBJECT [ 0 .. * ]</td>
+                            href="#detail_association_Model_WOZOBJECT_heeftalsaangewezenbelanghebbende">heeft als
+                            aangewezen belanghebbende</a> SUBJECT [ 0 .. * ]</td>
                     <td>
                         <p>De unieke aanduiding van de natuurlijk of niet-natuurlijk persoon of vestiging die als
                             belanghebbende is aangewezen.</p>
@@ -7003,7 +7011,9 @@
                     <td>
                         <p>Benaming van het terreindeel</p>
                     </td>
-                    <td><a class="link" href="#global_class_Model_ScopedName">Scoped­Name</a></td>
+                    <td><a class="external-link"
+                            href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                    </td>
                     <td>0 .. 1</td>
                 </tr>
                 <tr>
@@ -7238,16 +7248,16 @@
                 </tr>
                 <tr>
                     <td>VERBLIJFSOBJECT [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_VERBLIJFSOBJECT_pand">maakt deel uit van: pand</a> <a
-                            class="link" href="#global_class_Model_PAND">PAND</a> [ 1 .. * ]</td>
+                            href="#detail_association_Model_VERBLIJFSOBJECT_maaktdeeluitvan">maakt deel uit
+                            van</a> <a class="link" href="#global_class_Model_PAND">PAND</a> [ 1 .. * ]</td>
                     <td>
                         <p>De unieke aanduidingen van de PANDEN waarvan het VERBLIJFSOBJECT onderdeel uitmaakt.</p>
                     </td>
                 </tr>
                 <tr>
                     <td>VERBLIJFSOBJECT [ 0 .. 1 ] <a class="link"
-                            href="#detail_association_Model_VERBLIJFSOBJECT_nevenadres">heeft als nevenadres(sen):
-                            nevenadres</a> <a class="link"
+                            href="#detail_association_Model_VERBLIJFSOBJECT_heeftalsnevenadressen">heeft als
+                            nevenadres(sen)</a> <a class="link"
                             href="#global_class_Model_NUMMERAANDUIDING">NUMMERAANDUIDING</a> [ 0 .. * ]</td>
                     <td>
                         <p>De identificatiecodes nummeraanduiding waaronder nevenadressen van een VERBLIJFSOBJECT,
@@ -7257,7 +7267,7 @@
                 </tr>
                 <tr>
                     <td>VERBLIJFSOBJECT [ 0 .. 1 ] <a class="link"
-                            href="#detail_association_Model_VERBLIJFSOBJECT_hoofdadres">heeft als hoofdadres:
+                            href="#detail_association_Model_VERBLIJFSOBJECT_heeftalshoofdadres">heeft als
                             hoofdadres</a> <a class="link"
                             href="#global_class_Model_NUMMERAANDUIDING">NUMMERAANDUIDING</a> [ 1 ]</td>
                     <td>
@@ -7268,8 +7278,8 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_HUISHOUDEN">HUISHOUDEN</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_HUISHOUDEN_verblijfsobject">is gehuisvest
-                            in: verblijfsobject</a> VERBLIJFSOBJECT [ 0 .. 1 ]</td>
+                            href="#detail_association_Model_HUISHOUDEN_isgehuisvestin">is gehuisvest
+                            in</a> VERBLIJFSOBJECT [ 0 .. 1 ]</td>
                     <td>
                         <p>Het VERBLIJFSOBJECT waarin het HUISHOUDEN woont.</p>
                     </td>
@@ -7284,8 +7294,8 @@
                 <tr>
                     <td><a class="link" href="#global_class_Model_VerblijfadresINGESCHREVENPERSOON">Verblijfadres
                             INGESCHREVEN PERSOON</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_VerblijfadresINGESCHREVENPERSOON_verblijfsobject">verblijft
-                            in: verblijfsobject</a> VERBLIJFSOBJECT [ 0 .. 1 ]</td>
+                            href="#detail_association_Model_VerblijfadresINGESCHREVENPERSOON_verblijftin">verblijft
+                            in</a> VERBLIJFSOBJECT [ 0 .. 1 ]</td>
                     <td>
                         <p>Het VERBLIJFSOBJECT behorende bij het woonadres van de persoon</p>
                     </td>
@@ -7421,8 +7431,8 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_INGEZETENE">INGEZETENE</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_INGEZETENE_verblijfstitel">beschikt over:
-                            verblijfstitel</a> VERBLIJFSTITEL [ 0 .. 1 ]</td>
+                            href="#detail_association_Model_INGEZETENE_beschiktover">beschikt
+                            over</a> VERBLIJFSTITEL [ 0 .. 1 ]</td>
                     <td>
                         <p>De verwijzing naar de VERBLIJFSTITEL die aangeeft over welke verblijfsrechtelijke status
                             de ingezetene beschikt.</p>
@@ -7631,16 +7641,16 @@
                 </tr>
                 <tr>
                     <td>VESTIGING [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_VESTIGING_benoemdobject">heeft nevenlocatie in of op:
-                            benoemd object</a> <a class="link" href="#global_class_Model_BENOEMDOBJECT">BENOEMD
-                            OBJECT</a> [ 0 .. * ]</td>
+                            href="#detail_association_Model_VESTIGING_heeftnevenlocatieinofop">heeft nevenlocatie in
+                            of op</a> <a class="link" href="#global_class_Model_BENOEMDOBJECT">BENOEMD OBJECT</a> [
+                        0 .. * ]</td>
                     <td>KING</td>
                 </tr>
                 <tr>
                     <td>VESTIGING [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_VESTIGING_benoemdobject">heeft hoofdlocatie in of op:
-                            benoemd object</a> <a class="link" href="#global_class_Model_BENOEMDOBJECT">BENOEMD
-                            OBJECT</a> [ 0 .. 1 ]</td>
+                            href="#detail_association_Model_VESTIGING_heefthoofdlocatieinofop">heeft hoofdlocatie in
+                            of op</a> <a class="link" href="#global_class_Model_BENOEMDOBJECT">BENOEMD OBJECT</a> [
+                        0 .. 1 ]</td>
                     <td>
                         <p>Het BENOEMD OBJECT waarin of waarop zich (het gedeelte van) de VESTIGING bevindt dat
                             beschouwd wordt als hoofdlocatie voor de uitvoering van de activiteiten van deze
@@ -7649,8 +7659,8 @@
                 </tr>
                 <tr>
                     <td>VESTIGING [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_VESTIGING_activiteit">betreft uitoefening van
-                            activiteiten door: activiteit</a> <a class="link"
+                            href="#detail_association_Model_VESTIGING_betreftuitoefeningvanactiviteitendoor">betreft
+                            uitoefening van activiteiten door</a> <a class="link"
                             href="#global_class_Model_MAATSCHAPPELIJKEACTIVITEIT">MAATSCHAPPELIJKE ACTIVITEIT</a> [
                         1 ]</td>
                     <td>
@@ -7810,7 +7820,9 @@
                     <td>
                         <p>Benaming van het waterdeel</p>
                     </td>
-                    <td><a class="link" href="#global_class_Model_ScopedName">Scoped­Name</a></td>
+                    <td><a class="external-link"
+                            href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                    </td>
                     <td>0 .. 1</td>
                 </tr>
                 <tr>
@@ -7967,7 +7979,9 @@
                     <td>
                         <p>Benaming van het wegdeel</p>
                     </td>
-                    <td><a class="link" href="#global_class_Model_ScopedName">Scoped­Name</a></td>
+                    <td><a class="external-link"
+                            href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                    </td>
                     <td>0 .. 1</td>
                 </tr>
                 <tr>
@@ -8140,15 +8154,15 @@
                     <th scope="col">Definitie</th>
                 </tr>
                 <tr>
-                    <td>WIJK [ 1 .. * ] <a class="link" href="#detail_association_Model_WIJK_gemeente">ligt in:
-                            gemeente</a> <a class="link" href="#global_class_Model_GEMEENTE">GEMEENTE</a> [ 1 ]</td>
+                    <td>WIJK [ 1 .. * ] <a class="link" href="#detail_association_Model_WIJK_ligtin">ligt in</a> <a
+                            class="link" href="#global_class_Model_GEMEENTE">GEMEENTE</a> [ 1 ]</td>
                     <td>
                         <p>De gemeente waarin de wijk is gelegen.</p>
                     </td>
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_BUURT">BUURT</a> [ 1 .. * ] <a class="link"
-                            href="#detail_association_Model_BUURT_wijk">ligt in: wijk</a> WIJK [ 1 ]</td>
+                            href="#detail_association_Model_BUURT_ligtin">ligt in</a> WIJK [ 1 ]</td>
                     <td>
                         <p>De wijk waarin de buurt is gelegen.</p>
                     </td>
@@ -8328,8 +8342,8 @@
                 <tr>
                     <td><a class="link" href="#global_class_Model_ADRESSEERBAAROBJECTAANDUIDING">ADRESSEERBAAR
                             OBJECT AANDUIDING</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_ADRESSEERBAAROBJECTAANDUIDING_woonplaats">ligt in:
-                            woonplaats</a> WOONPLAATS [ 0 .. 1 ]</td>
+                            href="#detail_association_Model_ADRESSEERBAAROBJECTAANDUIDING_ligtin">ligt
+                            in</a> WOONPLAATS [ 0 .. 1 ]</td>
                     <td>
                         <p>De unieke aanduiding van de WOONPLAATS waarbinnen het object, waaraan de ADRESSEERBAAR
                             OBJECT AANDUIDING is toegekend, is gelegen.</p>
@@ -8344,8 +8358,8 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_OPENBARERUIMTE">OPENBARE RUIMTE</a> [ 1 .. * ] <a
-                            class="link" href="#detail_association_Model_OPENBARERUIMTE_woonplaats">ligt in:
-                            woonplaats</a> WOONPLAATS [ 1 ]</td>
+                            class="link" href="#detail_association_Model_OPENBARERUIMTE_ligtin">ligt
+                            in</a> WOONPLAATS [ 1 ]</td>
                     <td>
                         <p>Unieke aanduiding van de woonplaats waarbinnen een OPENBARE RUIMTE is gelegen.</p>
                     </td>
@@ -8491,7 +8505,7 @@
                 </tr>
                 <tr>
                     <td>WOZ-DEELOBJECT [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_WOZDEELOBJECT_pand">bestaat uit: pand</a> <a class="link"
+                            href="#detail_association_Model_WOZDEELOBJECT_bestaatuit">bestaat uit</a> <a class="link"
                             href="#global_class_Model_PAND">PAND</a> [ 0 .. 1 ]</td>
                     <td>
                         <p>De unieke aanduiding van het PAND dat geheel of gedeeltelijk deel uitmaakt van het
@@ -8500,9 +8514,8 @@
                 </tr>
                 <tr>
                     <td>WOZ-DEELOBJECT [ 1 .. * ] <a class="link"
-                            href="#detail_association_Model_WOZDEELOBJECT_benoemdobject">is gedeelte van: benoemd
-                            object</a> <a class="link" href="#global_class_Model_BENOEMDOBJECT">BENOEMD OBJECT</a> [
-                        0 .. 1 ]</td>
+                            href="#detail_association_Model_WOZDEELOBJECT_isgedeeltevan">is gedeelte van</a> <a
+                            class="link" href="#global_class_Model_BENOEMDOBJECT">BENOEMD OBJECT</a> [ 0 .. 1 ]</td>
                     <td>
                         <p>De unieke aanduiding van het BENOEMD OBJECT dat geheel of gedeeltelijk deel uitmaakt van
                             het WOZ-DEELOBJECT.</p>
@@ -8510,8 +8523,8 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_WOZOBJECT">WOZ-OBJECT</a> [ 1 ] <a class="link"
-                            href="#detail_association_Model_WOZOBJECT_deelobject">heeft:
-                            deelobject</a> WOZ-DEELOBJECT [ 1 .. * ]</td>
+                            href="#detail_association_Model_WOZOBJECT_heeft">heeft</a> WOZ-DEELOBJECT [ 1 .. * ]
+                    </td>
                     <td>
                         <p>De unieke aanduidingen van de WOZ-DEELOBJECTen waaruit het WOZ-OBJECT bestaat.</p>
                     </td>
@@ -8716,8 +8729,8 @@
                 </tr>
                 <tr>
                     <td>WOZ-OBJECT [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_WOZOBJECT_belanghebbende">heeft als aangewezen
-                            belanghebbende: belanghebbende</a> <a class="link"
+                            href="#detail_association_Model_WOZOBJECT_heeftalsaangewezenbelanghebbende">heeft als
+                            aangewezen belanghebbende</a> <a class="link"
                             href="#global_class_Model_SUBJECT">SUBJECT</a> [ 0 .. * ]</td>
                     <td>
                         <p>De unieke aanduiding van de natuurlijk of niet-natuurlijk persoon of vestiging die als
@@ -8725,36 +8738,33 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>WOZ-OBJECT [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_WOZOBJECT_openbareruimte">ligt aan: openbare
-                            ruimte</a> <a class="link" href="#global_class_Model_OPENBARERUIMTE">OPENBARE
-                            RUIMTE</a> [ 0 .. 1 ]</td>
+                    <td>WOZ-OBJECT [ 0 .. * ] <a class="link" href="#detail_association_Model_WOZOBJECT_ligtaan">ligt
+                            aan</a> <a class="link" href="#global_class_Model_OPENBARERUIMTE">OPENBARE RUIMTE</a> [ 0 ..
+                        1 ]</td>
                     <td>
                         <p>De unieke aanduiding van de OPENBARE RUIMTE waarvan de aanduiding van het WOZ-object
                             wordt afgeleid met behulp van de locatieomschrijving.</p>
                     </td>
                 </tr>
                 <tr>
-                    <td>WOZ-OBJECT [ 1 ] <a class="link" href="#detail_association_Model_WOZOBJECT_deelobject">heeft:
-                            deelobject</a> <a class="link" href="#global_class_Model_WOZDEELOBJECT">WOZ-DEELOBJECT</a> [
-                        1 .. * ]</td>
+                    <td>WOZ-OBJECT [ 1 ] <a class="link" href="#detail_association_Model_WOZOBJECT_heeft">heeft</a> <a
+                            class="link" href="#global_class_Model_WOZDEELOBJECT">WOZ-DEELOBJECT</a> [ 1 .. * ]</td>
                     <td>
                         <p>De unieke aanduidingen van de WOZ-DEELOBJECTen waaruit het WOZ-OBJECT bestaat.</p>
                     </td>
                 </tr>
                 <tr>
-                    <td>WOZ-OBJECT [ 1 ] <a class="link" href="#detail_association_Model_WOZOBJECT_waarde">heeft:
-                            waarde</a> <a class="link" href="#global_class_Model_WOZWAARDE">WOZ-WAARDE</a> [ 0 .. *
-                        ]</td>
+                    <td>WOZ-OBJECT [ 1 ] <a class="link" href="#detail_association_Model_WOZOBJECT_heeft">heeft</a> <a
+                            class="link" href="#global_class_Model_WOZWAARDE">WOZ-WAARDE</a> [ 0 .. * ]</td>
                     <td>
                         <p>De aan het WOZ-OBJECT gerelateerde WOZ-WAARDEn</p>
                     </td>
                 </tr>
                 <tr>
                     <td>WOZ-OBJECT [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_WOZOBJECT_onroerendezaak">bevat: onroerende zaak</a> <a
-                            class="link" href="#global_class_Model_KADASTRALEONROERENDEZAAK">KADASTRALE ONROERENDE
-                            ZAAK</a> [ 1 .. * ]</td>
+                            href="#detail_association_Model_WOZOBJECT_bevat">bevat</a> <a class="link"
+                            href="#global_class_Model_KADASTRALEONROERENDEZAAK">KADASTRALE ONROERENDE ZAAK</a> [ 1
+                        .. * ]</td>
                     <td>
                         <p>De unieke aanduidingen van de KADASTRALE ONROERENDE ZAAKen opgenomen in de Basis
                             Registratie Kadaster die geheel of gedeeltelijk deel uitmaken van het WOZ-OBJECT.</p>
@@ -8901,8 +8911,7 @@
                 </tr>
                 <tr>
                     <td><a class="link" href="#global_class_Model_WOZOBJECT">WOZ-OBJECT</a> [ 1 ] <a class="link"
-                            href="#detail_association_Model_WOZOBJECT_waarde">heeft: waarde</a> WOZ-WAARDE [ 0 .. *
-                        ]</td>
+                            href="#detail_association_Model_WOZOBJECT_heeft">heeft</a> WOZ-WAARDE [ 0 .. * ]</td>
                     <td>
                         <p>De aan het WOZ-OBJECT gerelateerde WOZ-WAARDEn</p>
                     </td>
@@ -9083,9 +9092,9 @@
                 </tr>
                 <tr>
                     <td>ZAKELIJK RECHT [ 1 .. * ] <a class="link"
-                            href="#detail_association_Model_ZAKELIJKRECHT_onroerendezaak">betreft: onroerende
-                            zaak</a> <a class="link" href="#global_class_Model_KADASTRALEONROERENDEZAAK">KADASTRALE
-                            ONROERENDE ZAAK</a> [ 1 ]</td>
+                            href="#detail_association_Model_ZAKELIJKRECHT_betreft">betreft</a> <a class="link"
+                            href="#global_class_Model_KADASTRALEONROERENDEZAAK">KADASTRALE ONROERENDE ZAAK</a> [ 1 ]
+                    </td>
                     <td>
                         <p>Een verwijzing naar de KADASTRALE ONROERENDE ZAAK waarop het ZAKELIJK RECHT betrekking
                             heeft.</p>
@@ -9093,7 +9102,7 @@
                 </tr>
                 <tr>
                     <td>ZAKELIJK RECHT [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_ZAKELIJKRECHT_gerechtigde">heeft als gerechtigde:
+                            href="#detail_association_Model_ZAKELIJKRECHT_heeftalsgerechtigde">heeft als
                             gerechtigde</a> <a class="link" href="#global_class_Model_RECHTSPERSOON">RECHTSPERSOON</a> [
                         1 ]</td>
                     <td>
@@ -9104,8 +9113,8 @@
                 <tr>
                     <td><a class="link" href="#global_class_Model_ZAKELIJKRECHTAANTEKENING">ZAKELIJK RECHT
                             AANTEKENING</a> [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_ZAKELIJKRECHTAANTEKENING_zakelijkrecht">behoort bij:
-                            zakelijk recht</a> ZAKELIJK RECHT [ 1 ]</td>
+                            href="#detail_association_Model_ZAKELIJKRECHTAANTEKENING_behoortbij">behoort
+                            bij</a> ZAKELIJK RECHT [ 1 ]</td>
                     <td>
                         <p>Het ZAKELIJK RECHT waarbij de AANTEKENING geplaatst is.</p>
                     </td>
@@ -9257,18 +9266,17 @@
                 </tr>
                 <tr>
                     <td>ZAKELIJK RECHT AANTEKENING [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_ZAKELIJKRECHTAANTEKENING_zakelijkrecht">behoort bij:
-                            zakelijk recht</a> <a class="link" href="#global_class_Model_ZAKELIJKRECHT">ZAKELIJK
-                            RECHT</a> [ 1 ]</td>
+                            href="#detail_association_Model_ZAKELIJKRECHTAANTEKENING_behoortbij">behoort bij</a> <a
+                            class="link" href="#global_class_Model_ZAKELIJKRECHT">ZAKELIJK RECHT</a> [ 1 ]</td>
                     <td>
                         <p>Het ZAKELIJK RECHT waarbij de AANTEKENING geplaatst is.</p>
                     </td>
                 </tr>
                 <tr>
                     <td>ZAKELIJK RECHT AANTEKENING [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_ZAKELIJKRECHTAANTEKENING_rechtspersoon">heeft betrokken:
-                            rechtspersoon</a> <a class="link"
-                            href="#global_class_Model_RECHTSPERSOON">RECHTSPERSOON</a> [ 0 .. 1 ]</td>
+                            href="#detail_association_Model_ZAKELIJKRECHTAANTEKENING_heeftbetrokken">heeft
+                            betrokken</a> <a class="link" href="#global_class_Model_RECHTSPERSOON">RECHTSPERSOON</a> [ 0
+                        .. 1 ]</td>
                     <td>
                         <p>Een uniek nummer van de eventueel betrokken RECHTSPERSOON bij deze aantekening.</p>
                     </td>
@@ -9735,7 +9743,7 @@
                 </tr>
                 <tr>
                     <th scope="row">Relatiesoort</th>
-                    <td>INGESCHREVEN PERSOON heeft INGESCHREVEN PERSOON</td>
+                    <td>INGESCHREVEN PERSOON heeft als partner INGESCHREVEN PERSOON</td>
                 </tr>
             </tbody>
         </table>
@@ -10977,12 +10985,13 @@
                 </tr>
                 <tr>
                     <th scope="row">Herkomst</th>
-                    <td> </td>
+                    <td>GFO BG</td>
                 </tr>
                 <tr>
                     <th scope="row">Definitie</th>
                     <td>
-                        <p>De hoedanigheid van tot een bepaalde natie te behoren.</p>
+                        <p>De lijst van toegestane waarden die gebruikt mogen worden om van een persoon aan te geven
+                            tot welke natie die behoort.</p>
                     </td>
                 </tr>
                 <tr>
@@ -10991,11 +11000,11 @@
                 </tr>
                 <tr>
                     <th scope="row">Datum opname</th>
-                    <td> </td>
+                    <td>1 maart 2009</td>
                 </tr>
                 <tr>
                     <th scope="row">Data locatie</th>
-                    <td> </td>
+                    <td><span class="url">https://publicaties.rvig.nl/landelijke-tabellen-32-tm-61</span></td>
                 </tr>
                 <tr>
                     <th scope="row">Unieke aanduiding</th>
@@ -11022,31 +11031,9 @@
                         <th scope="col">Card</th>
                     </tr>
                     <tr>
-                        <td><a class="link"
-                                href="#detail_attribute_Model_NATIONALITEIT_Begindatumgeldigheidnationaliteit">Begindatum
-                                geldigheid nationaliteit</a></td>
+                        <td><a class="link" href="#detail_attribute_Model_NATIONALITEIT_Code">Code</a></td>
                         <td>
-                            <p>De datum waarop de nationaliteit is ontstaan.</p>
-                        </td>
-                        <td>Datum­Onvolledig</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td><a class="link"
-                                href="#detail_attribute_Model_NATIONALITEIT_Einddatumgeldigheidnationaliteit">Einddatum
-                                geldigheid nationaliteit</a></td>
-                        <td>
-                            <p>De datum waarop de nationaliteit is opgeheven.</p>
-                        </td>
-                        <td>Datum­Onvolledig</td>
-                        <td>0 .. 1</td>
-                    </tr>
-                    <tr>
-                        <td><a class="link"
-                                href="#detail_attribute_Model_NATIONALITEIT_Nationaliteitcode">Nationaliteitcode</a>
-                        </td>
-                        <td>
-                            <p>Een code die aangeeft welke nationaliteit de ingeschrevene bezit.</p>
+                            <p>Een code die aangeeft welke nationaliteit de ingeschrevene heeft.</p>
                         </td>
                         <td><a class="external-link"
                                 href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
@@ -11054,8 +11041,27 @@
                         <td>1</td>
                     </tr>
                     <tr>
-                        <td><a class="link"
-                                href="#detail_attribute_Model_NATIONALITEIT_Nationaliteitomschrijving">Nationaliteitomschrijving</a>
+                        <td><a class="link" href="#detail_attribute_Model_NATIONALITEIT_Datumeinde">Datum einde</a>
+                        </td>
+                        <td>
+                            <p>De datum tot wanneer nationaliteit als referentiewaarde mocht worden gebruikt.</p>
+                        </td>
+                        <td>Datum­Onvolledig</td>
+                        <td>0 .. 1</td>
+                    </tr>
+                    <tr>
+                        <td><a class="link" href="#detail_attribute_Model_NATIONALITEIT_Datumingang">Datum
+                                ingang</a></td>
+                        <td>
+                            <p>De datum vanaf wanneer nationaliteit als referentiewaarde mocht worden gebruikt.</p>
+                        </td>
+                        <td><a class="external-link"
+                                href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                        </td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><a class="link" href="#detail_attribute_Model_NATIONALITEIT_Omschrijving">Omschrijving</a>
                         </td>
                         <td>
                             <p>De omschrijving van de nationaliteit.</p>
@@ -11067,6 +11073,11 @@
                     </tr>
                 </tbody>
             </table>
+        </section>
+        <section class="notoc">
+            <h5>Toelichting </h5>
+            <p>Het betreft een waardenlijst, afgeleid van de nationaliteitentabel (Tabel 32) in de GBA.</p>
+            <p></p>
         </section>
     </section>
     <section id="global_class_Model_REDENOPNEMENBEEINDIGENNATIONALITEIT">
@@ -13480,26 +13491,26 @@
                 </tr>
                 <tr>
                     <td>Verblijfadres INGESCHREVEN PERSOON [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_VerblijfadresINGESCHREVENPERSOON_verblijfsobject">verblijft
-                            in: verblijfsobject</a> <a class="link"
-                            href="#global_class_Model_VERBLIJFSOBJECT">VERBLIJFSOBJECT</a> [ 0 .. 1 ]</td>
+                            href="#detail_association_Model_VerblijfadresINGESCHREVENPERSOON_verblijftin">verblijft
+                            in</a> <a class="link" href="#global_class_Model_VERBLIJFSOBJECT">VERBLIJFSOBJECT</a> [
+                        0 .. 1 ]</td>
                     <td>
                         <p>Het VERBLIJFSOBJECT behorende bij het woonadres van de persoon</p>
                     </td>
                 </tr>
                 <tr>
                     <td>Verblijfadres INGESCHREVEN PERSOON [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_VerblijfadresINGESCHREVENPERSOON_standplaats">verblijft
-                            op: standplaats</a> <a class="link" href="#global_class_Model_STANDPLAATS">STANDPLAATS</a> [
-                        0 .. 1 ]</td>
+                            href="#detail_association_Model_VerblijfadresINGESCHREVENPERSOON_verblijftop">verblijft
+                            op</a> <a class="link" href="#global_class_Model_STANDPLAATS">STANDPLAATS</a> [ 0 .. 1 ]
+                    </td>
                     <td>
                         <p>De STANDPLAATS behorende bij het woonadres van de persoon</p>
                     </td>
                 </tr>
                 <tr>
                     <td>Verblijfadres INGESCHREVEN PERSOON [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_VerblijfadresINGESCHREVENPERSOON_nummeraanduiding">is
-                            ingeschreven op: nummeraanduiding</a> <a class="link"
+                            href="#detail_association_Model_VerblijfadresINGESCHREVENPERSOON_isingeschrevenop">is
+                            ingeschreven op</a> <a class="link"
                             href="#global_class_Model_NUMMERAANDUIDING">NUMMERAANDUIDING</a> [ 0 .. 1 ]</td>
                     <td>
                         <p>De NUMMERAANDUIDING bij het ADRESSEERBAAR OBJECT waarin de INGESCHREVEN PERSOON verblijft
@@ -13508,9 +13519,9 @@
                 </tr>
                 <tr>
                     <td>Verblijfadres INGESCHREVEN PERSOON [ 0 .. * ] <a class="link"
-                            href="#detail_association_Model_VerblijfadresINGESCHREVENPERSOON_ligplaats">verblijft
-                            op: ligplaats</a> <a class="link" href="#global_class_Model_LIGPLAATS">LIGPLAATS</a> [ 0
-                        .. 1 ]</td>
+                            href="#detail_association_Model_VerblijfadresINGESCHREVENPERSOON_verblijftop">verblijft
+                            op</a> <a class="link" href="#global_class_Model_LIGPLAATS">LIGPLAATS</a> [ 0 .. 1 ]
+                    </td>
                     <td>
                         <p>De LIGPLAATS behorende bij het woonadres van de persoon</p>
                     </td>
@@ -14918,7 +14929,7 @@
                     <p>Aanduiding documnetidentificatie: Documentidentificatie, Documentdatum</p>
                 </div>
             </section>
-            <section id="detail_association_Model_ADRESSEERBAAROBJECTAANDUIDING_woonplaats">
+            <section id="detail_association_Model_ADRESSEERBAAROBJECTAANDUIDING_ligtin">
                 <h6>Relatiesoort details <a href="#global_class_Model_ADRESSEERBAAROBJECTAANDUIDING">ADRESSEERBAAR
                         OBJECT AANDUIDING</a> ligt in</h6>
                 <table style="width: 100%;">
@@ -15374,7 +15385,7 @@
                         Akte­Gemeente, Documentgemeente</p>
                 </div>
             </section>
-            <section id="detail_association_Model_ANDERNATUURLIJKPERSOON_bezoekadres">
+            <section id="detail_association_Model_ANDERNATUURLIJKPERSOON_heeftalsbezoekadres">
                 <h6>Relatiesoort details <a href="#global_class_Model_ANDERNATUURLIJKPERSOON">ANDER NATUURLIJK
                         PERSOON</a> heeft als bezoekadres</h6>
                 <table style="width: 100%;">
@@ -15555,7 +15566,8 @@
         </section>
         <section id="detail_class_Model_APPARTEMENTSRECHT">
             <h5> APPARTEMENTSRECHT</h5>
-            <section id="detail_association_Model_APPARTEMENTSRECHT_beheerder">
+            <section
+                id="detail_association_Model_APPARTEMENTSRECHT_maaktdeeluitvanappartementencomplexmetalsverenigingvaneigenaars">
                 <h6>Relatiesoort details <a href="#global_class_Model_APPARTEMENTSRECHT">APPARTEMENTSRECHT</a> maakt
                     deel uit van appartementencomplex met als vereniging van eigenaars</h6>
                 <table style="width: 100%;">
@@ -15631,7 +15643,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_APPARTEMENTSRECHT_perceel">
+            <section id="detail_association_Model_APPARTEMENTSRECHT_maaktdeeluitvanappartementencomplexdatstaatop">
                 <h6>Relatiesoort details <a href="#global_class_Model_APPARTEMENTSRECHT">APPARTEMENTSRECHT</a> maakt
                     deel uit van appartementencomplex dat staat op</h6>
                 <table style="width: 100%;">
@@ -15969,7 +15981,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_BENOEMDOBJECT_buurt">
+            <section id="detail_association_Model_BENOEMDOBJECT_ligtin">
                 <h6>Relatiesoort details <a href="#global_class_Model_BENOEMDOBJECT">BENOEMD OBJECT</a> ligt in</h6>
                 <table style="width: 100%;">
                     <colgroup style="width: 30%;"></colgroup>
@@ -16965,7 +16977,7 @@
                     <p></p>
                 </div>
             </section>
-            <section id="detail_association_Model_BUURT_wijk">
+            <section id="detail_association_Model_BUURT_ligtin">
                 <h6>Relatiesoort details <a href="#global_class_Model_BUURT">BUURT</a> ligt in</h6>
                 <table style="width: 100%;">
                     <colgroup style="width: 30%;"></colgroup>
@@ -18827,7 +18839,7 @@
                 </table>
                 <div class="notoc"><strong>Toelichting </strong>Het betreft de verkorte naam van de gemeente.</div>
             </section>
-            <section id="detail_association_Model_GEMEENTE_nieuwegemeente">
+            <section id="detail_association_Model_GEMEENTE_isovergegaanin">
                 <h6>Relatiesoort details <a href="#global_class_Model_GEMEENTE">GEMEENTE</a> is overgegaan in</h6>
                 <table style="width: 100%;">
                     <colgroup style="width: 30%;"></colgroup>
@@ -19842,7 +19854,7 @@
                     <p>Aanduiding documentidentificatie: Documentidentificatie, Documentdatum</p>
                 </div>
             </section>
-            <section id="detail_association_Model_GEMEENTELIJKEOPENBARERUIMTE_gemeente">
+            <section id="detail_association_Model_GEMEENTELIJKEOPENBARERUIMTE_ligtin">
                 <h6>Relatiesoort details <a href="#global_class_Model_GEMEENTELIJKEOPENBARERUIMTE">GEMEENTELIJKE
                         OPENBARE RUIMTE</a> ligt in</h6>
                 <table style="width: 100%;">
@@ -20422,7 +20434,7 @@
                     <p></p>
                 </div>
             </section>
-            <section id="detail_association_Model_HUISHOUDEN_verblijfsobject">
+            <section id="detail_association_Model_HUISHOUDEN_isgehuisvestin">
                 <h6>Relatiesoort details <a href="#global_class_Model_HUISHOUDEN">HUISHOUDEN</a> is gehuisvest in
                 </h6>
                 <table style="width: 100%;">
@@ -20494,7 +20506,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_HUISHOUDEN_ligplaats">
+            <section id="detail_association_Model_HUISHOUDEN_isgehuisvestop">
                 <h6>Relatiesoort details <a href="#global_class_Model_HUISHOUDEN">HUISHOUDEN</a> is gehuisvest op
                 </h6>
                 <table style="width: 100%;">
@@ -20566,7 +20578,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_HUISHOUDEN_relatie">
+            <section id="detail_association_Model_HUISHOUDEN_heeft">
                 <h6>Relatiesoort details <a href="#global_class_Model_HUISHOUDEN">HUISHOUDEN</a> heeft</h6>
                 <table style="width: 100%;">
                     <colgroup style="width: 30%;"></colgroup>
@@ -20636,7 +20648,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_HUISHOUDEN_standplaats">
+            <section id="detail_association_Model_HUISHOUDEN_isgehuisvestop">
                 <h6>Relatiesoort details <a href="#global_class_Model_HUISHOUDEN">HUISHOUDEN</a> is gehuisvest op
                 </h6>
                 <table style="width: 100%;">
@@ -21473,59 +21485,72 @@
                         <tr>
                             <th scope="row">Regels</th>
                             <td>
-                                <p>0 - onbekend :</p>
+                                <p>De burgerlijke staat is geen apart opgeslagen gegeven in de BRP, maar wordt
+                                    afgeleid uit categorie 05 (Huwelijk/geregistreerd partnerschap) op de
+                                    persoonslijst. De combinatie van twee elementen bepaalt de uitkomst:</p>
                                 <p></p>
-                                <p>Indien onvoldoende of ontbrekende BRP-gegevens aanwezig zijn om de burgerlijke
-                                    staat te bepalen.</p>
+                                <p>Element 05.15.10 – Soort verbintenis</p>
+                                <p></p>
+                                <p>H = huwelijk</p>
+                                <p>P = geregistreerd partnerschap</p>
+                                <p>. = onbekend (standaardwaarde)</p>
+                                <p></p>
+                                <p>Element 05.07.40 – Reden ontbinding (tabel 41)</p>
+                                <p></p>
+                                <p>A = vermissing gevolgd door ander huwelijk/partnerschap</p>
+                                <p>N = nietigverklaring</p>
+                                <p>O = overlijden echtgenoot/geregistreerde partner</p>
+                                <p>R = rechtsvermoeden van overlijden</p>
+                                <p>S = echtscheiding / ontbinding door overeenkomst</p>
+                                <p>V = beëindigd volgens vreemd recht (bv. verstoting)</p>
+                                <p>. = onbekend</p>
+                                <p></p>
+                                <p>Noot: De waarde A komt alleen in categorie 55 voor en heeft dus geen rol bij het
+                                    bepalen van de burgerlijke staat.</p>
+                                <p></p>
+                                <p>0 - onbekend :</p>
+                                <p>Indien Soort verbintenis en/of Reden ontbinding de waarde "." hebben.</p>
                                 <p></p>
                                 <p>1 - Ongehuwd en nooit gehuwd geweest</p>
-                                <p></p>
-                                <p>Indien er bij de persoon nooit een huwelijk/geregistreerd partnerschap
+                                <p>Indien er bij de persoon nooit een huwelijk/een geregistreerd partnerschap
                                     geregistreerd is geweest.</p>
+                                <p>Dus als categorie 05 niet voorkomt.</p>
                                 <p></p>
                                 <p>2 — Gehuwd</p>
-                                <p></p>
-                                <p>Indien er bij de persoon een 'actueel' huwelijk/geregistreerd partnerschap is
-                                    geregistreerd en de Soort verbintenis daarvan heeft de waarde H - huwelijk.</p>
+                                <p>Indien er bij de persoon een actueel huwelijk/geregistreerd partnerschap is
+                                    geregistreerd (categorie 05.06 komt voor en 05.07 komt niet voor) en de Soort
+                                    verbintenis (05.15.10) heeft de waarde H - huwelijk.</p>
                                 <p></p>
                                 <p>3 — Gescheiden</p>
-                                <p></p>
-                                <p>Indien er bij de persoon geen 'actueel' huwelijk/geregistreerd partnerschap is
-                                    geregistreerd maar wel een 'niet actueel' huwelijk/geregistreerd partnerschap is
-                                    geregistreerd waarvan bij de meest recente de Soort verbintenis de waarde H -
-                                    huwelijk heeft en de reden ontbinding huwelijk /partnerschap de waarde S of V
-                                    heeft. (Zie landelijke tabel 41 RVIG)</p>
+                                <p>Indien er bij de persoon een ontbonden huwelijk/geregistreerd partnerschap is
+                                    geregistreerd (categorie 05.06 komt niet voor en categorie 05.07 komt wel voor)
+                                    en de Soort verbintenis (05.15.10) de waarde H heeft en de reden ontbinding
+                                    huwelijk/partnerschap (05.07.40) de waarde S, V of N heeft.</p>
                                 <p></p>
                                 <p>4 — Weduwe / weduwnaar</p>
-                                <p></p>
-                                <p>Indien er bij de persoon geen 'actueel' huwelijk/geregistreerd partnerschap is
-                                    geregistreerd maar wel een 'niet actueel' huwelijk/geregistreerd partnerschap is
-                                    geregistreerd waarvan bij de meest recente de Soort verbintenis de waarde H -
-                                    huwelijk heeft en de reden ontbinding huwelijk /partnerschap de waarde O of R
-                                    heeft. (Zie landelijke tabel 41 RVIG)</p>
+                                <p>Indien er bij de persoon een ontbonden huwelijk/geregistreerd partnerschap is
+                                    geregistreerd (categorie 05.06 komt niet voor en categorie 05.07 komt wel voor)
+                                    waarbij de Soort verbintenis (05.15.10) de waarde H - huwelijk heeft en de reden
+                                    ontbinding huwelijk /partnerschap (05.07.40) de waarde O of R heeft.</p>
                                 <p></p>
                                 <p>5 — Partnerschap</p>
-                                <p></p>
-                                <p>Indien er bij de persoon een 'actueel' huwelijk/geregistreerd partnerschap is
-                                    geregistreerd en de Soort verbintenis daarvan heeft de waarde P - geregistreerd
-                                    partnerschap.</p>
+                                <p>Indien er bij de persoon een actueel huwelijk/geregistreerd partnerschap is
+                                    geregistreerd (categorie 05.06 komt voor en 05.07 komt niet voor) en de Soort
+                                    verbintenis daarvan heeft de waarde P</p>
                                 <p></p>
                                 <p>6 — Partnerschap beëindigd</p>
-                                <p></p>
-                                <p>Indien er bij de persoon geen 'actueel' huwelijk/geregistreerd partnerschap is
-                                    geregistreerd maar wel een 'niet actueel' huwelijk/geregistreerd partnerschap is
-                                    geregistreerd waarvan bij de meest recente de Soort verbintenis de waarde P -
-                                    geregistreerd partnerschap heeft en de reden ontbinding huwelijk /partnerschap
-                                    de waarde S of V heeft. (Zie landelijke tabel 41 RVIG)</p>
+                                <p>Indien er bij de persoon een ontbonden huwelijk/geregistreerd partnerschap is
+                                    geregistreerd (categorie 05.06 komt niet voor en categorie 05.07 komt wel voor)
+                                    en de Soort verbintenis (05.15.10) de waarde P - geregistreerd partnerschap
+                                    heeft en de reden ontbinding huwelijk /partnerschap (05.07.40) de waarde S, V of
+                                    N heeft.</p>
                                 <p></p>
                                 <p>7 — Achtergebleven partner</p>
-                                <p></p>
-                                <p>Indien er bij de persoon geen 'actueel' huwelijk/geregistreerd partnerschap is
-                                    geregistreerd maar wel een 'niet actueel' huwelijk/geregistreerd partnerschap is
-                                    geregistreerd waarvan bij de meest recente de Soort verbintenis de waarde P -
-                                    geregistreerd partnerschap heeft en de reden ontbinding huwelijk /partnerschap
-                                    de waarde O of R heeft. (Zie landelijke tabel 41 RVIG)</p>
-                                <p></p>
+                                <p>Indien er bij de persoon een ontbonden huwelijk/geregistreerd partnerschap is
+                                    geregistreerd (categorie 05.06 komt niet voor en categorie 05.07 komt wel voor)
+                                    en de Soort verbintenis (05.15.10) de waarde P - geregistreerd partnerschap
+                                    heeft en de reden ontbinding huwelijk/partnerschap (05.07.40) de waarde O of R
+                                    heeft.</p>
                             </td>
                         </tr>
                         <tr>
@@ -21804,11 +21829,15 @@
                         <tr>
                             <th scope="row">Definitie</th>
                             <td>
-                                <p>Bij inschrijving op grond van een aangifte door de burger van zijn vestiging in
-                                    een (volgende) gemeente is dit de aangiftedatum. Bij inschrijving op grond van
-                                    een geboorte-akte is dit de geboortedatum. Bij ambtshalve inschrijving is dit de
-                                    datum waarop de betrokkene schriftelijk van het voornemen van ambtshalve
-                                    opneming mededeling is gedaan.</p>
+                                <p>Bij een tijdige aangifte (tussen vier weken voor en vijf dagen na de
+                                    verhuizing) van vestiging in de gemeente is dit de in de aangifte
+                                    vermelde datum van adreswijziging. Bij een niet tijdige aangifte is dit
+                                    de aangiftedatum. Bij inschrijving op grond van een geboorteakte is dit
+                                    de geboortedatum. Bij ambtshalve inschrijving is dit de datum waarop
+                                    de betrokkene schriftelijk van het voornemen van ambtshalve
+                                    opneming mededeling is gedaan. In categorie 16 betreft het de datum
+                                    waarop betrokkene voor het eerst op een tijdelijk verblijfsadres in de
+                                    gemeente is gaan wonen.</p>
                             </td>
                         </tr>
                         <tr>
@@ -21879,6 +21908,10 @@
                     </tbody>
                 </table>
                 <div class="notoc"><strong>Toelichting </strong>
+                    <p>De naam van het element in het LO-BRP waar dit attribuutsoort aan ontleend is is "Datum
+                        inschrijving". Echter, in de contaxt van de verblijfplaats (categorie 08) wordt de naam
+                        "Datum inschrijving in de gemeente" gebruikt</p>
+                    <p></p>
                     <p>Uit documentatie versie 2.02 (vervallen tagged values):</p>
                     <p>Code attribuutsoort: 09.20</p>
                 </div>
@@ -22902,16 +22935,17 @@
                     <p>Code attribuutsoort: 07.67.20</p>
                 </div>
             </section>
-            <section id="detail_attribute_Model_INGESCHREVENPERSOON_Signaleringreisdocument">
+            <section
+                id="detail_attribute_Model_INGESCHREVENPERSOON_SignaleringmetbetrekkingtotverstrekkenNederlandsreisdocument">
                 <h6>Attribuutsoort details <a href="#global_class_Model_INGESCHREVENPERSOON">INGESCHREVEN
-                        PERSOON</a> Signalering reisdocument</h6>
+                        PERSOON</a> Signalering met betrekking tot verstrekken Nederlands reisdocument</h6>
                 <table style="width: 100%;">
                     <colgroup style="width: 30%;"></colgroup>
                     <colgroup style="width: 70%;"></colgroup>
                     <tbody>
                         <tr>
                             <th scope="row">Naam</th>
-                            <td>Signalering reisdocument</td>
+                            <td>Signalering met betrekking tot verstrekken Nederlands reisdocument</td>
                         </tr>
                         <tr>
                             <th scope="row">Herkomst</th>
@@ -23000,7 +23034,7 @@
                     <p>Aanduiding documentidentificatie: Documentidentificatie, Documentdatum, Documentgemeente</p>
                 </div>
             </section>
-            <section id="detail_association_Model_INGESCHREVENPERSOON_ouder">
+            <section id="detail_association_Model_INGESCHREVENPERSOON_heeftalsouders">
                 <h6>Relatiesoort details <a href="#global_class_Model_INGESCHREVENPERSOON">INGESCHREVEN PERSOON</a>
                     heeft als ouders</h6>
                 <table style="width: 100%;">
@@ -23074,16 +23108,16 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_INGESCHREVENPERSOON_partner">
+            <section id="detail_association_Model_INGESCHREVENPERSOON_heeftalspartner">
                 <h6>Relatiesoort details <a href="#global_class_Model_INGESCHREVENPERSOON">INGESCHREVEN PERSOON</a>
-                    heeft</h6>
+                    heeft als partner</h6>
                 <table style="width: 100%;">
                     <colgroup style="width: 30%;"></colgroup>
                     <colgroup style="width: 70%;"></colgroup>
                     <tbody>
                         <tr>
                             <th scope="row">Naam</th>
-                            <td>heeft</td>
+                            <td>heeft als partner</td>
                         </tr>
                         <tr>
                             <th scope="row">Gerelateerd objecttype</th>
@@ -24230,7 +24264,7 @@
                     <p></p>
                 </div>
             </section>
-            <section id="detail_association_Model_INGEZETENE_verblijfstitel">
+            <section id="detail_association_Model_INGEZETENE_beschiktover">
                 <h6>Relatiesoort details <a href="#global_class_Model_INGEZETENE">INGEZETENE</a> beschikt over</h6>
                 <table style="width: 100%;">
                     <colgroup style="width: 30%;"></colgroup>
@@ -24871,7 +24905,9 @@
                         </tr>
                         <tr>
                             <th scope="row">Formaat</th>
-                            <td><a class="link" href="#global_class_Model_ScopedName">Scoped­Name</a></td>
+                            <td><a class="external-link"
+                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">Patroon</th>
@@ -26421,7 +26457,7 @@
                     aangesloten bij de huidige praktijk van het gebruik van de zgn. ‘kadastraal object letter’ als
                     onderdeel van de idientificatie van genoemde typen kadastrale onroerende zaken.</div>
             </section>
-            <section id="detail_association_Model_KADASTRALEONROERENDEZAAK_gemeente">
+            <section id="detail_association_Model_KADASTRALEONROERENDEZAAK_ligtin">
                 <h6>Relatiesoort details <a href="#global_class_Model_KADASTRALEONROERENDEZAAK">KADASTRALE
                         ONROERENDE ZAAK</a> ligt in</h6>
                 <table style="width: 100%;">
@@ -26571,7 +26607,8 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_KADASTRALEONROERENDEZAAK_oorsprong">
+            <section
+                id="detail_association_Model_KADASTRALEONROERENDEZAAK_isontstaanuitanderekadastraleonroerendezaakbij">
                 <h6>Relatiesoort details <a href="#global_class_Model_KADASTRALEONROERENDEZAAK">KADASTRALE
                         ONROERENDE ZAAK</a> is ontstaan uit andere kadastrale onroerende zaak bij</h6>
                 <table style="width: 100%;">
@@ -26645,7 +26682,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_KADASTRALEONROERENDEZAAK_voornaamstezakelijkgerechtigde">
+            <section id="detail_association_Model_KADASTRALEONROERENDEZAAK_heeftalsvoornaamstezakelijkgerechtigde">
                 <h6>Relatiesoort details <a href="#global_class_Model_KADASTRALEONROERENDEZAAK">KADASTRALE
                         ONROERENDE ZAAK</a> heeft als voornaamste zakelijk gerechtigde</h6>
                 <table style="width: 100%;">
@@ -27194,7 +27231,9 @@
                         </tr>
                         <tr>
                             <th scope="row">Formaat</th>
-                            <td><a class="link" href="#global_class_Model_ScopedName">Scoped­Name</a></td>
+                            <td><a class="external-link"
+                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">Patroon</th>
@@ -28143,7 +28182,7 @@
                     <p>Aanduiding documentidentificatie: Documentidentificatie</p>
                 </div>
             </section>
-            <section id="detail_association_Model_KADASTRALEONROERENDEZAAKAANTEKENING_onroerendezaak">
+            <section id="detail_association_Model_KADASTRALEONROERENDEZAAKAANTEKENING_behoortbij">
                 <h6>Relatiesoort details <a href="#global_class_Model_KADASTRALEONROERENDEZAAKAANTEKENING">KADASTRALE
                         ONROERENDE ZAAK
                         AANTEKENING</a> behoort bij</h6>
@@ -28217,7 +28256,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_KADASTRALEONROERENDEZAAKAANTEKENING_rechtspersoon">
+            <section id="detail_association_Model_KADASTRALEONROERENDEZAAKAANTEKENING_heeftbetrokken">
                 <h6>Relatiesoort details <a href="#global_class_Model_KADASTRALEONROERENDEZAAKAANTEKENING">KADASTRALE
                         ONROERENDE ZAAK
                         AANTEKENING</a> heeft betrokken</h6>
@@ -28589,7 +28628,7 @@
                     <p>Aanduiding documentidentificatie: Documentidentificatie, Documentdatum</p>
                 </div>
             </section>
-            <section id="detail_association_Model_LIGPLAATS_nevenadres">
+            <section id="detail_association_Model_LIGPLAATS_heeftalsnevenadressen">
                 <h6>Relatiesoort details <a href="#global_class_Model_LIGPLAATS">LIGPLAATS</a> heeft als
                     nevenadressen</h6>
                 <table style="width: 100%;">
@@ -28664,7 +28703,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_LIGPLAATS_hoofdadres">
+            <section id="detail_association_Model_LIGPLAATS_heeftalshoofdadres">
                 <h6>Relatiesoort details <a href="#global_class_Model_LIGPLAATS">LIGPLAATS</a> heeft als hoofdadres
                 </h6>
                 <table style="width: 100%;">
@@ -29121,7 +29160,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_MAATSCHAPPELIJKEACTIVITEIT_eigenaar">
+            <section id="detail_association_Model_MAATSCHAPPELIJKEACTIVITEIT_heeftalseigenaar">
                 <h6>Relatiesoort details <a href="#global_class_Model_MAATSCHAPPELIJKEACTIVITEIT">MAATSCHAPPELIJKE
                         ACTIVITEIT</a> heeft als eigenaar</h6>
                 <table style="width: 100%;">
@@ -29776,7 +29815,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_NIETNATUURLIJKPERSOON_bezoekadres">
+            <section id="detail_association_Model_NIETNATUURLIJKPERSOON_heeftalsbezoekadres">
                 <h6>Relatiesoort details <a href="#global_class_Model_NIETNATUURLIJKPERSOON">NIET-NATUURLIJK
                         PERSOON</a> heeft als bezoekadres</h6>
                 <table style="width: 100%;">
@@ -30696,7 +30735,7 @@
                     <p>Aanduiding documentidentificatie: Documentidentificatie, Documentdatum</p>
                 </div>
             </section>
-            <section id="detail_association_Model_OPENBARERUIMTE_gemeentelijkeopenbareruimte">
+            <section id="detail_association_Model_OPENBARERUIMTE_maaktdeeluitvan">
                 <h6>Relatiesoort details <a href="#global_class_Model_OPENBARERUIMTE">OPENBARE RUIMTE</a> maakt deel
                     uit van</h6>
                 <table style="width: 100%;">
@@ -30769,7 +30808,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_OPENBARERUIMTE_woonplaats">
+            <section id="detail_association_Model_OPENBARERUIMTE_ligtin">
                 <h6>Relatiesoort details <a href="#global_class_Model_OPENBARERUIMTE">OPENBARE RUIMTE</a> ligt in
                 </h6>
                 <table style="width: 100%;">
@@ -31262,7 +31301,7 @@
                     <p></p>
                 </div>
             </section>
-            <section id="detail_association_Model_OVERIGGEBOUWDOBJECT_adres">
+            <section id="detail_association_Model_OVERIGGEBOUWDOBJECT_heeftalsofficieeladres">
                 <h6>Relatiesoort details <a href="#global_class_Model_OVERIGGEBOUWDOBJECT">OVERIG GEBOUWD OBJECT</a>
                     heeft als officieel adres</h6>
                 <table style="width: 100%;">
@@ -31336,7 +31375,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_OVERIGGEBOUWDOBJECT_locatieadres">
+            <section id="detail_association_Model_OVERIGGEBOUWDOBJECT_heeftlocatieadresicm">
                 <h6>Relatiesoort details <a href="#global_class_Model_OVERIGGEBOUWDOBJECT">OVERIG GEBOUWD OBJECT</a>
                     heeft locatie-adres i.c.m.</h6>
                 <table style="width: 100%;">
@@ -31409,7 +31448,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_OVERIGGEBOUWDOBJECT_openbareruimte">
+            <section id="detail_association_Model_OVERIGGEBOUWDOBJECT_heeftstraatadresicm">
                 <h6>Relatiesoort details <a href="#global_class_Model_OVERIGGEBOUWDOBJECT">OVERIG GEBOUWD OBJECT</a>
                     heeft straatadres i.c.m.</h6>
                 <table style="width: 100%;">
@@ -31688,7 +31727,7 @@
                     <p>Aanduiding documentidentificatie: Documentidentificatie, Documentdatum</p>
                 </div>
             </section>
-            <section id="detail_association_Model_OVERIGTERREIN_adres">
+            <section id="detail_association_Model_OVERIGTERREIN_heeftalsofficieeladres">
                 <h6>Relatiesoort details <a href="#global_class_Model_OVERIGTERREIN">OVERIG TERREIN</a> heeft als
                     officieel adres</h6>
                 <table style="width: 100%;">
@@ -33555,7 +33594,7 @@
                 <div class="notoc"><strong>Toelichting </strong>Zie ‘Status voortgang bouw’ bij VERBLIJFSOBJECT.
                 </div>
             </section>
-            <section id="detail_association_Model_PAND_buurt">
+            <section id="detail_association_Model_PAND_zonderverblijfsobjectligtin">
                 <h6>Relatiesoort details <a href="#global_class_Model_PAND">PAND</a> zonder verblijfsobject ligt in
                 </h6>
                 <table style="width: 100%;">
@@ -33631,7 +33670,7 @@
         </section>
         <section id="detail_class_Model_RECHTSPERSOON">
             <h5> RECHTSPERSOON</h5>
-            <section id="detail_association_Model_RECHTSPERSOON_vertegenwoordiger">
+            <section id="detail_association_Model_RECHTSPERSOON_isfunctionarisvan">
                 <h6>Relatiesoort details <a href="#global_class_Model_RECHTSPERSOON">RECHTSPERSOON</a> is
                     functionaris van</h6>
                 <table style="width: 100%;">
@@ -34529,7 +34568,7 @@
                     <p>Code attribuutsoort: 12.35</p>
                 </div>
             </section>
-            <section id="detail_association_Model_REISDOCUMENT_bijgeschrevene">
+            <section id="detail_association_Model_REISDOCUMENT_kentalsbijgeschrevene">
                 <h6>Relatiesoort details <a href="#global_class_Model_REISDOCUMENT">REISDOCUMENT</a> kent als
                     bijgeschrevene</h6>
                 <table style="width: 100%;">
@@ -34602,7 +34641,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_REISDOCUMENT_houder">
+            <section id="detail_association_Model_REISDOCUMENT_heeftalshouder">
                 <h6>Relatiesoort details <a href="#global_class_Model_REISDOCUMENT">REISDOCUMENT</a> heeft als
                     houder</h6>
                 <table style="width: 100%;">
@@ -35151,7 +35190,9 @@
                         </tr>
                         <tr>
                             <th scope="row">Formaat</th>
-                            <td><a class="link" href="#global_class_Model_ScopedName">Scoped­Name</a></td>
+                            <td><a class="external-link"
+                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">Patroon</th>
@@ -35867,7 +35908,7 @@
                     <p>Aanduiding documentidentificatie: Documentidentificatie, Documentdatum</p>
                 </div>
             </section>
-            <section id="detail_association_Model_STANDPLAATS_nevenadres">
+            <section id="detail_association_Model_STANDPLAATS_heeftalsnevenadressen">
                 <h6>Relatiesoort details <a href="#global_class_Model_STANDPLAATS">STANDPLAATS</a> heeft als
                     nevenadressen</h6>
                 <table style="width: 100%;">
@@ -35942,7 +35983,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_STANDPLAATS_hoofdadres">
+            <section id="detail_association_Model_STANDPLAATS_heeftalshoofdadres">
                 <h6>Relatiesoort details <a href="#global_class_Model_STANDPLAATS">STANDPLAATS</a> heeft als
                     hoofdadres</h6>
                 <table style="width: 100%;">
@@ -37289,7 +37330,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_SUBJECT_correspondentieadres">
+            <section id="detail_association_Model_SUBJECT_heeftalscorrespondentieadres">
                 <h6>Relatiesoort details <a href="#global_class_Model_SUBJECT">SUBJECT</a> heeft als
                     correspondentieadres</h6>
                 <table style="width: 100%;">
@@ -37841,7 +37882,9 @@
                         </tr>
                         <tr>
                             <th scope="row">Formaat</th>
-                            <td><a class="link" href="#global_class_Model_ScopedName">Scoped­Name</a></td>
+                            <td><a class="external-link"
+                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">Patroon</th>
@@ -39289,7 +39332,7 @@
                     <p>Aanduiding documentidentificatie: Documentidentificatie, Documentdatum</p>
                 </div>
             </section>
-            <section id="detail_association_Model_VERBLIJFSOBJECT_pand">
+            <section id="detail_association_Model_VERBLIJFSOBJECT_maaktdeeluitvan">
                 <h6>Relatiesoort details <a href="#global_class_Model_VERBLIJFSOBJECT">VERBLIJFSOBJECT</a> maakt
                     deel uit van</h6>
                 <table style="width: 100%;">
@@ -39362,7 +39405,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_VERBLIJFSOBJECT_nevenadres">
+            <section id="detail_association_Model_VERBLIJFSOBJECT_heeftalsnevenadressen">
                 <h6>Relatiesoort details <a href="#global_class_Model_VERBLIJFSOBJECT">VERBLIJFSOBJECT</a> heeft als
                     nevenadres(sen)</h6>
                 <table style="width: 100%;">
@@ -39437,7 +39480,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_VERBLIJFSOBJECT_hoofdadres">
+            <section id="detail_association_Model_VERBLIJFSOBJECT_heeftalshoofdadres">
                 <h6>Relatiesoort details <a href="#global_class_Model_VERBLIJFSOBJECT">VERBLIJFSOBJECT</a> heeft als
                     hoofdadres</h6>
                 <table style="width: 100%;">
@@ -40297,7 +40340,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_VESTIGING_benoemdobject">
+            <section id="detail_association_Model_VESTIGING_heeftnevenlocatieinofop">
                 <h6>Relatiesoort details <a href="#global_class_Model_VESTIGING">VESTIGING</a> heeft nevenlocatie in
                     of op</h6>
                 <table style="width: 100%;">
@@ -40377,7 +40420,7 @@
                     <p></p>
                 </div>
             </section>
-            <section id="detail_association_Model_VESTIGING_benoemdobject">
+            <section id="detail_association_Model_VESTIGING_heefthoofdlocatieinofop">
                 <h6>Relatiesoort details <a href="#global_class_Model_VESTIGING">VESTIGING</a> heeft hoofdlocatie in
                     of op</h6>
                 <table style="width: 100%;">
@@ -40451,7 +40494,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_VESTIGING_activiteit">
+            <section id="detail_association_Model_VESTIGING_betreftuitoefeningvanactiviteitendoor">
                 <h6>Relatiesoort details <a href="#global_class_Model_VESTIGING">VESTIGING</a> betreft uitoefening
                     van activiteiten door</h6>
                 <table style="width: 100%;">
@@ -41080,7 +41123,9 @@
                         </tr>
                         <tr>
                             <th scope="row">Formaat</th>
-                            <td><a class="link" href="#global_class_Model_ScopedName">Scoped­Name</a></td>
+                            <td><a class="external-link"
+                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">Patroon</th>
@@ -41963,7 +42008,9 @@
                         </tr>
                         <tr>
                             <th scope="row">Formaat</th>
-                            <td><a class="link" href="#global_class_Model_ScopedName">Scoped­Name</a></td>
+                            <td><a class="external-link"
+                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">Patroon</th>
@@ -42982,7 +43029,7 @@
                     <p>Code attribuutsoort: 95.91</p>
                 </div>
             </section>
-            <section id="detail_association_Model_WIJK_gemeente">
+            <section id="detail_association_Model_WIJK_ligtin">
                 <h6>Relatiesoort details <a href="#global_class_Model_WIJK">WIJK</a> ligt in</h6>
                 <table style="width: 100%;">
                     <colgroup style="width: 30%;"></colgroup>
@@ -44446,7 +44493,7 @@
                     <p>Code attribuutsoort: 64.23</p>
                 </div>
             </section>
-            <section id="detail_association_Model_WOZDEELOBJECT_pand">
+            <section id="detail_association_Model_WOZDEELOBJECT_bestaatuit">
                 <h6>Relatiesoort details <a href="#global_class_Model_WOZDEELOBJECT">WOZ-DEELOBJECT</a> bestaat uit
                 </h6>
                 <table style="width: 100%;">
@@ -44519,7 +44566,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_WOZDEELOBJECT_benoemdobject">
+            <section id="detail_association_Model_WOZDEELOBJECT_isgedeeltevan">
                 <h6>Relatiesoort details <a href="#global_class_Model_WOZDEELOBJECT">WOZ-DEELOBJECT</a> is gedeelte
                     van</h6>
                 <table style="width: 100%;">
@@ -45710,7 +45757,7 @@
                     <p>Code attribuutsoort: 01.01</p>
                 </div>
             </section>
-            <section id="detail_association_Model_WOZOBJECT_belanghebbende">
+            <section id="detail_association_Model_WOZOBJECT_heeftalsaangewezenbelanghebbende">
                 <h6>Relatiesoort details <a href="#global_class_Model_WOZOBJECT">WOZ-OBJECT</a> heeft als aangewezen
                     belanghebbende</h6>
                 <table style="width: 100%;">
@@ -45783,7 +45830,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_WOZOBJECT_openbareruimte">
+            <section id="detail_association_Model_WOZOBJECT_ligtaan">
                 <h6>Relatiesoort details <a href="#global_class_Model_WOZOBJECT">WOZ-OBJECT</a> ligt aan</h6>
                 <table style="width: 100%;">
                     <colgroup style="width: 30%;"></colgroup>
@@ -45855,7 +45902,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_WOZOBJECT_deelobject">
+            <section id="detail_association_Model_WOZOBJECT_heeft">
                 <h6>Relatiesoort details <a href="#global_class_Model_WOZOBJECT">WOZ-OBJECT</a> heeft</h6>
                 <table style="width: 100%;">
                     <colgroup style="width: 30%;"></colgroup>
@@ -45927,7 +45974,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_WOZOBJECT_waarde">
+            <section id="detail_association_Model_WOZOBJECT_heeft">
                 <h6>Relatiesoort details <a href="#global_class_Model_WOZOBJECT">WOZ-OBJECT</a> heeft</h6>
                 <table style="width: 100%;">
                     <colgroup style="width: 30%;"></colgroup>
@@ -45998,7 +46045,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_WOZOBJECT_onroerendezaak">
+            <section id="detail_association_Model_WOZOBJECT_bevat">
                 <h6>Relatiesoort details <a href="#global_class_Model_WOZOBJECT">WOZ-OBJECT</a> bevat</h6>
                 <table style="width: 100%;">
                     <colgroup style="width: 30%;"></colgroup>
@@ -47142,7 +47189,7 @@
                     <p>Aanduiding documentidentificatie: Documentidentificatie</p>
                 </div>
             </section>
-            <section id="detail_association_Model_ZAKELIJKRECHT_onroerendezaak">
+            <section id="detail_association_Model_ZAKELIJKRECHT_betreft">
                 <h6>Relatiesoort details <a href="#global_class_Model_ZAKELIJKRECHT">ZAKELIJK RECHT</a> betreft</h6>
                 <table style="width: 100%;">
                     <colgroup style="width: 30%;"></colgroup>
@@ -47215,7 +47262,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_ZAKELIJKRECHT_gerechtigde">
+            <section id="detail_association_Model_ZAKELIJKRECHT_heeftalsgerechtigde">
                 <h6>Relatiesoort details <a href="#global_class_Model_ZAKELIJKRECHT">ZAKELIJK RECHT</a> heeft als
                     gerechtigde</h6>
                 <table style="width: 100%;">
@@ -47788,7 +47835,7 @@
                     <p>Aanduiding documentidentificatie: Documentidentificatie</p>
                 </div>
             </section>
-            <section id="detail_association_Model_ZAKELIJKRECHTAANTEKENING_zakelijkrecht">
+            <section id="detail_association_Model_ZAKELIJKRECHTAANTEKENING_behoortbij">
                 <h6>Relatiesoort details <a href="#global_class_Model_ZAKELIJKRECHTAANTEKENING">ZAKELIJK RECHT
                         AANTEKENING</a> behoort bij</h6>
                 <table style="width: 100%;">
@@ -47860,7 +47907,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_ZAKELIJKRECHTAANTEKENING_rechtspersoon">
+            <section id="detail_association_Model_ZAKELIJKRECHTAANTEKENING_heeftbetrokken">
                 <h6>Relatiesoort details <a href="#global_class_Model_ZAKELIJKRECHTAANTEKENING">ZAKELIJK RECHT
                         AANTEKENING</a> heeft betrokken</h6>
                 <table style="width: 100%;">
@@ -54626,7 +54673,7 @@
                     <p>Code attribuutsoort: 08.12.10</p>
                 </div>
             </section>
-            <section id="detail_association_Model_VerblijfadresINGESCHREVENPERSOON_verblijfsobject">
+            <section id="detail_association_Model_VerblijfadresINGESCHREVENPERSOON_verblijftin">
                 <h6>Relatiesoort details <a href="#global_class_Model_VerblijfadresINGESCHREVENPERSOON">Verblijfadres
                         INGESCHREVEN
                         PERSOON</a> verblijft in</h6>
@@ -54699,7 +54746,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_VerblijfadresINGESCHREVENPERSOON_standplaats">
+            <section id="detail_association_Model_VerblijfadresINGESCHREVENPERSOON_verblijftop">
                 <h6>Relatiesoort details <a href="#global_class_Model_VerblijfadresINGESCHREVENPERSOON">Verblijfadres
                         INGESCHREVEN
                         PERSOON</a> verblijft op</h6>
@@ -54772,7 +54819,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_VerblijfadresINGESCHREVENPERSOON_nummeraanduiding">
+            <section id="detail_association_Model_VerblijfadresINGESCHREVENPERSOON_isingeschrevenop">
                 <h6>Relatiesoort details <a href="#global_class_Model_VerblijfadresINGESCHREVENPERSOON">Verblijfadres
                         INGESCHREVEN
                         PERSOON</a> is ingeschreven op</h6>
@@ -54847,7 +54894,7 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_association_Model_VerblijfadresINGESCHREVENPERSOON_ligplaats">
+            <section id="detail_association_Model_VerblijfadresINGESCHREVENPERSOON_verblijftop">
                 <h6>Relatiesoort details <a href="#global_class_Model_VerblijfadresINGESCHREVENPERSOON">Verblijfadres
                         INGESCHREVEN
                         PERSOON</a> verblijft op</h6>
@@ -60247,22 +60294,15 @@
         </section>
         <section id="detail_class_Model_NATIONALITEIT">
             <h5>Referentielijst NATIONALITEIT</h5>
-            <section id="detail_attribute_Model_NATIONALITEIT_Begindatumgeldigheidnationaliteit">
-                <h6>Referentie element <a href="#global_class_Model_NATIONALITEIT">NATIONALITEIT</a> Begindatum
-                    geldigheid nationaliteit</h6>
+            <section id="detail_attribute_Model_NATIONALITEIT_Code">
+                <h6>Referentie element <a href="#global_class_Model_NATIONALITEIT">NATIONALITEIT</a> Code</h6>
                 <table style="width: 100%;">
                     <colgroup style="width: 30%;"></colgroup>
                     <colgroup style="width: 70%;"></colgroup>
                     <tbody>
                         <tr>
                             <th scope="row">Naam</th>
-                            <td>Begindatum geldigheid nationaliteit</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Alias</th>
-                            <td>
-                                <alias>tijdvak­Object.begin­Object</alias>
-                            </td>
+                            <td>Code</td>
                         </tr>
                         <tr>
                             <th scope="row">Herkomst</th>
@@ -60271,7 +60311,7 @@
                         <tr>
                             <th scope="row">Definitie</th>
                             <td>
-                                <p>De datum waarop de nationaliteit is ontstaan.</p>
+                                <p>Een code die aangeeft welke nationaliteit de ingeschrevene heeft.</p>
                             </td>
                         </tr>
                         <tr>
@@ -60280,118 +60320,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Datum opname</th>
-                            <td>1 maart 2008</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Indicatie kardinaliteit</th>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Formaat</th>
-                            <td>Datum­Onvolledig</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Patroon</th>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Indicatie identificerend</th>
-                            <td>Nee</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="notoc"><strong>Toelichting </strong>Het gaat hier om veranderingen in de lijst van codes
-                    en omschrijvingen. Niet te verwarren met de datum waarop een natuurlijke persoon zijn of haar
-                    nationaliteit verkrijgt.</div>
-            </section>
-            <section id="detail_attribute_Model_NATIONALITEIT_Einddatumgeldigheidnationaliteit">
-                <h6>Referentie element <a href="#global_class_Model_NATIONALITEIT">NATIONALITEIT</a> Einddatum
-                    geldigheid nationaliteit</h6>
-                <table style="width: 100%;">
-                    <colgroup style="width: 30%;"></colgroup>
-                    <colgroup style="width: 70%;"></colgroup>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Naam</th>
-                            <td>Einddatum geldigheid nationaliteit</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Alias</th>
-                            <td>
-                                <alias>tijdvak­Object.eind­Object</alias>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Herkomst</th>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Definitie</th>
-                            <td>
-                                <p>De datum waarop de nationaliteit is opgeheven.</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Herkomst definitie</th>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Datum opname</th>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Indicatie kardinaliteit</th>
-                            <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Formaat</th>
-                            <td>Datum­Onvolledig</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Patroon</th>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Indicatie identificerend</th>
-                            <td>Nee</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <section id="detail_attribute_Model_NATIONALITEIT_Nationaliteitcode">
-                <h6>Referentie element <a href="#global_class_Model_NATIONALITEIT">NATIONALITEIT</a>
-                    Nationaliteitcode</h6>
-                <table style="width: 100%;">
-                    <colgroup style="width: 30%;"></colgroup>
-                    <colgroup style="width: 70%;"></colgroup>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Naam</th>
-                            <td>Nationaliteitcode</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Alias</th>
-                            <td>
-                                <alias>code</alias>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Herkomst</th>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Definitie</th>
-                            <td>
-                                <p>Een code die aangeeft welke nationaliteit de ingeschrevene bezit.</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Herkomst definitie</th>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Datum opname</th>
-                            <td> </td>
+                            <td>1 maart 2009</td>
                         </tr>
                         <tr>
                             <th scope="row">Indicatie kardinaliteit</th>
@@ -60414,22 +60343,119 @@
                     </tbody>
                 </table>
             </section>
-            <section id="detail_attribute_Model_NATIONALITEIT_Nationaliteitomschrijving">
-                <h6>Referentie element <a href="#global_class_Model_NATIONALITEIT">NATIONALITEIT</a>
-                    Nationaliteitomschrijving</h6>
+            <section id="detail_attribute_Model_NATIONALITEIT_Datumeinde">
+                <h6>Referentie element <a href="#global_class_Model_NATIONALITEIT">NATIONALITEIT</a> Datum einde
+                </h6>
                 <table style="width: 100%;">
                     <colgroup style="width: 30%;"></colgroup>
                     <colgroup style="width: 70%;"></colgroup>
                     <tbody>
                         <tr>
                             <th scope="row">Naam</th>
-                            <td>Nationaliteitomschrijving</td>
+                            <td>Datum einde</td>
                         </tr>
                         <tr>
-                            <th scope="row">Alias</th>
+                            <th scope="row">Herkomst</th>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Definitie</th>
                             <td>
-                                <alias>omschrijving</alias>
+                                <p>De datum tot wanneer nationaliteit als referentiewaarde mocht worden gebruikt.
+                                </p>
                             </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Herkomst definitie</th>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Datum opname</th>
+                            <td>1 maart 2008</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Indicatie kardinaliteit</th>
+                            <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Formaat</th>
+                            <td>Datum­Onvolledig</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Patroon</th>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Indicatie identificerend</th>
+                            <td>Nee</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="detail_attribute_Model_NATIONALITEIT_Datumingang">
+                <h6>Referentie element <a href="#global_class_Model_NATIONALITEIT">NATIONALITEIT</a> Datum ingang
+                </h6>
+                <table style="width: 100%;">
+                    <colgroup style="width: 30%;"></colgroup>
+                    <colgroup style="width: 70%;"></colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Naam</th>
+                            <td>Datum ingang</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Herkomst</th>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Definitie</th>
+                            <td>
+                                <p>De datum vanaf wanneer nationaliteit als referentiewaarde mocht worden gebruikt.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Herkomst definitie</th>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Datum opname</th>
+                            <td>1 maart 2008</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Indicatie kardinaliteit</th>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Formaat</th>
+                            <td><a class="external-link"
+                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Patroon</th>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Indicatie identificerend</th>
+                            <td>Nee</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="notoc"><strong>Toelichting </strong>Dit is een referentielijst die gebaseerd is op de
+                    landelijke tabel 32 zoals die door de RVIG wordt gepubliceerd op
+                    https://publicaties.rvig.nl/landelijke-tabellen-32-tm-61</div>
+            </section>
+            <section id="detail_attribute_Model_NATIONALITEIT_Omschrijving">
+                <h6>Referentie element <a href="#global_class_Model_NATIONALITEIT">NATIONALITEIT</a> Omschrijving
+                </h6>
+                <table style="width: 100%;">
+                    <colgroup style="width: 30%;"></colgroup>
+                    <colgroup style="width: 70%;"></colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Naam</th>
+                            <td>Omschrijving</td>
                         </tr>
                         <tr>
                             <th scope="row">Herkomst</th>
@@ -60447,7 +60473,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Datum opname</th>
-                            <td> </td>
+                            <td>1 maart 2009</td>
                         </tr>
                         <tr>
                             <th scope="row">Indicatie kardinaliteit</th>
