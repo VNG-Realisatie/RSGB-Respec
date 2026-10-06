@@ -65,11 +65,11 @@ let respecConfig = {
     },
     {
       value: "Revisiehistorie",
-      href: "https://github.com/VNG-Realisatie/Actualisering-RSGB/commits"
+      href: "https://github.com/VNG-Realisatie/RSGB-Respec/commits"
     },
     {
       value: "Pull requests",
-      href: "https://github.com/VNG-Realisatie/Actualisering-RSGB/pulls"
+      href: "https://github.com/VNG-Realisatie/RSGB-Respec/pulls"
     },
     ]
   }],
