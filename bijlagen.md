@@ -1,6 +1,8 @@
+# Bijlagen
+
 # Bijlage 1: Design decisions bij het actualiseren.
 
-| Datum     | Issue-nummer  |  Samenvatting beslissing    | 
+| Datum     | Issue-nummer   |  Samenvatting beslissing    | 
 | --------- | -------------- | --------------------------- | 
 | 22-09-2026 | [#6](https://github.com/orgs/VNG-Realisatie/projects/24/views/1?pane=issue&itemId=192119102&issue=VNG-Realisatie%7CActualisering-RSGB%7C6) | Element  "69.10 Gemeente waar de PK zich bevindt" wordt niet opgenomen in het RSGB. |
 
