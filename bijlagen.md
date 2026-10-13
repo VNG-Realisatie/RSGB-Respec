@@ -1,4 +1,10 @@
-# Bijlage 1: Relatie tot GFO Basisgegevens
+
+
+
+
+
+
+# Bijlage 2: Relatie tot GFO Basisgegevens (Obsoleet. Zal verwijderd worden)
 
 In dit referentiemodel hebben we het GFO BasisGegevens niet compleet overgenomen. Zie voor de motivering hiervan bijlage 1 van het RSGB versie 1.0. Hieronder geven we per gegevensgroep (in het GFO BG) aan welke gegevens wel en welke niet zijn overgenomen.
 
