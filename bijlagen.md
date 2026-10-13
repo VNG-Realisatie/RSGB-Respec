@@ -1,4 +1,4 @@
-# Bijlage 2: Design decisions bij het actualiseren.
+# Bijlage 1: Design decisions bij het actualiseren.
 
 | Datum     | Issue-nummer  |  Samenvatting beslissing    | 
 | --------- | -------------- | --------------------------- | 
