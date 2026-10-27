@@ -224,3 +224,4 @@ Vergelijking tussen RSGB en GFO‑BG. Veel objecttypen zijn herzien, vervallen o
 | --------- | -------------- | --------------------------- | 
 | 22-09-2026 | [#6](https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/6) | Element  "69.10 Gemeente waar de PK zich bevindt" wordt niet opgenomen in het RSGB. |
 | 27-10-2026 | [#29](https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/29) | Element 88.20 "Omschrijving verdrag" wordt niet opgenomen in de het RSGB | 
+| 27-10-2026 | [#30](https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/30) | Indicatie Blokkering wordt uit het RSGB verwijderd en datum ingang blokkering PL wordt niet opgenomen in het RSGB.  |
