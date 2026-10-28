@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
     <h2>Gegevensdefinitie</h2>
-    <p><b>Deze tekst is normatief.</b><!--SIM-RSGB-2.03-1-20260401-20261028-172118 imvertor Nightly-build.0--></p>
+    <p><b>Deze tekst is normatief.</b><!--SIM-RSGB-2.03-1-20260401-20261028-175533 imvertor Nightly-build.0--></p>
     <section>
         <h3>Objecttypen </h3>
         <section id="global_class_Model_ADRESSEERBAAROBJECTAANDUIDING">
@@ -11558,7 +11558,7 @@
                     </tr>
                     <tr>
                         <th scope="row">Unieke aanduiding</th>
-                        <td>Reisdocumentnummer + Soort</td>
+                        <td>Nummer + Soort</td>
                     </tr>
                     <tr>
                         <th scope="row">Indicatie abstract object</th>
@@ -11581,11 +11581,11 @@
                     </tr>
                     <tr>
                         <td><a class="link"
-                                href="#detail_attribute_Model_REISDOCUMENT_Aanduidinginhoudingofvermissing">Aanduiding
-                                inhouding of vermissing</a></td>
+                                href="#detail_attribute_Model_REISDOCUMENT_Aanduidinginhoudingdanwelvermissing">Aanduiding
+                                inhouding danwel vermissing</a></td>
                         <td>
                             <p>Een aanduiding dat een Nederlands reisdocument is vermist,
-                                ingehouden, dan wel ingeleverd.</p>
+                                ingehouden, ingeleverd, dan wel van rechtswege is vervallen.</p>
                         </td>
                         <td><a class="link"
                                 href="#detail_class_Model_aanduidingInhoudingVermissingReisdocument">aanduiding­Inhouding­Vermissing­Reisdocument</a>
@@ -11593,14 +11593,16 @@
                         <td>0 .. 1</td>
                     </tr>
                     <tr>
-                        <td><a class="link" href="#detail_attribute_Model_REISDOCUMENT_Autoriteituitgifte">Autoriteit
-                                uitgifte</a></td>
+                        <td><a class="link" href="#detail_attribute_Model_REISDOCUMENT_Autoriteitvanuitgifte">Autoriteit
+                                van uitgifte</a></td>
                         <td>
-                            <p>Een codering die aangeeft welke autoriteit het Nederlands reisdocument heeft verstrekt of
-                                de bijschrijving heeft verricht.</p>
+                            <p>Een codering, opgenomen in tabel 49, Tabel Autoriteit van afgifte
+                                Nederlands reisdocument, die aangeeft welke autoriteit het Nederlands
+                                reisdocument heeft verstrekt of de bijschrijving heeft verricht.</p>
                         </td>
                         <td><a class="link"
-                                href="#global_class_Model_AUTORITEITAFGIFTENEDERLANDSREISDOCUMENT">AUTORITEIT</a></td>
+                                href="#global_class_Model_AUTORITEITVANAFGIFTENEDERLANDSREISDOCUMENT">AUTORITEIT</a>
+                        </td>
                         <td>1</td>
                     </tr>
                     <tr>
@@ -11611,11 +11613,24 @@
                         <td>1</td>
                     </tr>
                     <tr>
-                        <td><a class="link" href="#detail_attribute_Model_REISDOCUMENT_Datuminhoudingofvermissing">Datum
-                                inhouding of vermissing</a></td>
+                        <td><a class="link" href="#detail_attribute_Model_REISDOCUMENT_Datumeindegeldigheid">Datum einde
+                                geldigheid</a></td>
                         <td>
-                            <p>De datum waarop een Nederlands reisdocument is vermist, ingehouden, dan wel ingeleverd.
-                            </p>
+                            <p>De datum waarop een Nederlands reisdocument, dat aan de ingeschrevene is verstrekt of
+                                waarin de ingeschrevene is bijgeschreven, zijn geldigheid verliest.</p>
+                        </td>
+                        <td><a class="external-link"
+                                href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                        </td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><a class="link"
+                                href="#detail_attribute_Model_REISDOCUMENT_Datuminhoudingdanwelvermissing">Datum
+                                inhouding danwel vermissing</a></td>
+                        <td>
+                            <p>De datum waarop een Nederlands reisdocument is vermist,
+                                ingehouden, ingeleverd, dan wel van rechtswege is vervallen.</p>
                         </td>
                         <td><a class="external-link"
                                 href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
@@ -11635,34 +11650,7 @@
                         <td>1</td>
                     </tr>
                     <tr>
-                        <td><a class="link"
-                                href="#detail_attribute_Model_REISDOCUMENT_Einddatumgeldigheiddocument">Einddatum
-                                geldigheid document</a></td>
-                        <td>
-                            <p>De datum waarop een Nederlands reisdocument, dat aan de ingeschrevene is verstrekt of
-                                waarin de ingeschrevene is bijgeschreven, zijn geldigheid verliest.</p>
-                        </td>
-                        <td><a class="external-link"
-                                href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
-                        </td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td><a class="link" href="#detail_attribute_Model_REISDOCUMENT_Lengtehouder">Lengte houder</a>
-                        </td>
-                        <td>
-                            <p>De lengte van de ingeschrevene in hele centimeters zoals vermeld in het Nederlands
-                                reisdocument.</p>
-                        </td>
-                        <td><a class="external-link"
-                                href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
-                        </td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td><a class="link"
-                                href="#detail_attribute_Model_REISDOCUMENT_Reisdocumentnummer">Reisdocumentnummer</a>
-                        </td>
+                        <td><a class="link" href="#detail_attribute_Model_REISDOCUMENT_Nummer">Nummer</a></td>
                         <td>
                             <p>Het nummer van het verstrekte Nederlandse reisdocument of het nummer van het Nederlandse
                                 reisdocument waarin de ingeschrevene is bijgeschreven.</p>
@@ -11675,9 +11663,11 @@
                     <tr>
                         <td><a class="link" href="#detail_attribute_Model_REISDOCUMENT_Soort">Soort</a></td>
                         <td>
-                            <p>De model­REISDOCUMENTSOORT van het REISDOCUMENT.</p>
+                            <p>Een codering, opgenomen in tabel 48, Tabel Nederlands reisdocument,
+                                die aangeeft welk Nederlands reisdocument is verstrekt of in welk
+                                reisdocument de ingeschrevene is bijgeschreven.</p>
                         </td>
-                        <td><a class="link" href="#global_class_Model_REISDOCUMENTSOORT">REISDOCUMENTSOORT</a></td>
+                        <td><a class="link" href="#global_class_Model_NEDERLANDSREISDOCUMENT">NEDERLANDS</a></td>
                         <td>1</td>
                     </tr>
                 </tbody>
@@ -16291,25 +16281,26 @@
                 </table>
             </section>
         </section>
-        <section id="global_class_Model_AUTORITEITAFGIFTENEDERLANDSREISDOCUMENT">
-            <h4>Referentielijst AUTORITEIT AFGIFTE NEDERLANDS REISDOCUMENT</h4>
+        <section id="global_class_Model_AUTORITEITVANAFGIFTENEDERLANDSREISDOCUMENT">
+            <h4>Referentielijst AUTORITEIT VAN AFGIFTE NEDERLANDS REISDOCUMENT</h4>
             <table style="width: 100%;" class="overview OVERVIEW-REFERENCELIST">
                 <colgroup style="width: 30%;"></colgroup>
                 <colgroup style="width: 70%;"></colgroup>
                 <tbody>
                     <tr>
                         <th scope="row">Naam</th>
-                        <td>AUTORITEIT AFGIFTE NEDERLANDS REISDOCUMENT</td>
+                        <td>AUTORITEIT VAN AFGIFTE NEDERLANDS REISDOCUMENT</td>
                     </tr>
                     <tr>
                         <th scope="row">Herkomst</th>
-                        <td>GBA</td>
+                        <td>LO-NRP</td>
                     </tr>
                     <tr>
                         <th scope="row">Definitie</th>
                         <td>
-                            <p>Een opsomming van de diverse coderingen van de autoriteiten die een Nederlands
-                                reisdocument kunnen afgegeven</p>
+                            <p>Een opsomming van de autoriteiten die een Nederlands reisdocument
+                                kunnen verstrekken met hun codes, omschrijvingen en
+                                geldigheidstermijnen.</p>
                         </td>
                     </tr>
                     <tr>
@@ -16326,7 +16317,7 @@
                     </tr>
                     <tr>
                         <th scope="row">Unieke aanduiding</th>
-                        <td>Autoriteit van afgifte</td>
+                        <td>Code autoriteit van afgifte</td>
                     </tr>
                     <tr>
                         <th scope="row">Mnemonic</th>
@@ -16350,8 +16341,8 @@
                         </tr>
                         <tr>
                             <td><a class="link"
-                                    href="#detail_attribute_Model_AUTORITEITAFGIFTENEDERLANDSREISDOCUMENT_Autoriteitvanafgifte">Autoriteit
-                                    van afgifte</a></td>
+                                    href="#detail_attribute_Model_AUTORITEITVANAFGIFTENEDERLANDSREISDOCUMENT_Codeautoriteitvanafgifte">Code
+                                    autoriteit van afgifte</a></td>
                             <td>
                                 <p>De code van de autoriteit van afgifte.</p>
                             </td>
@@ -16362,20 +16353,8 @@
                         </tr>
                         <tr>
                             <td><a class="link"
-                                    href="#detail_attribute_Model_AUTORITEITAFGIFTENEDERLANDSREISDOCUMENT_Begindatumgeldigheidautoriteitvanafgifte">Begindatum
-                                    geldigheid autoriteit van afgifte</a></td>
-                            <td>
-                                <p>De datum waarop de autoriteit van afgifte is ontstaan.</p>
-                            </td>
-                            <td><a class="external-link"
-                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
-                            </td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td><a class="link"
-                                    href="#detail_attribute_Model_AUTORITEITAFGIFTENEDERLANDSREISDOCUMENT_Einddatumgeldigheidautoriteitvanafgifte">Einddatum
-                                    geldigheid autoriteit van afgifte</a></td>
+                                    href="#detail_attribute_Model_AUTORITEITVANAFGIFTENEDERLANDSREISDOCUMENT_Datumbeeindigingtabelregel">Datum
+                                    beeindiging tabelregel</a></td>
                             <td>
                                 <p>De datum waarop de autoriteit van aangifte is opgeheven.</p>
                             </td>
@@ -16386,8 +16365,20 @@
                         </tr>
                         <tr>
                             <td><a class="link"
-                                    href="#detail_attribute_Model_AUTORITEITAFGIFTENEDERLANDSREISDOCUMENT_Omschrijvingautoriteit">Omschrijving
-                                    autoriteit</a></td>
+                                    href="#detail_attribute_Model_AUTORITEITVANAFGIFTENEDERLANDSREISDOCUMENT_Datumingangtabelregel">Datum
+                                    ingang tabelregel</a></td>
+                            <td>
+                                <p>De datum waarop de autoriteit van afgifte is ontstaan.</p>
+                            </td>
+                            <td><a class="external-link"
+                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                            </td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><a class="link"
+                                    href="#detail_attribute_Model_AUTORITEITVANAFGIFTENEDERLANDSREISDOCUMENT_Omschrijvingautoriteitvanafgifte">Omschrijving
+                                    autoriteit van afgifte</a></td>
                             <td>
                                 <p>De omschrijving van de autoriteit van afgifte</p>
                             </td>
@@ -17139,15 +17130,15 @@
                 <p>codes, omschrijvingen, soorten en geldigheidstermijnen.</p>
             </section>
         </section>
-        <section id="global_class_Model_REISDOCUMENTSOORT">
-            <h4>Referentielijst REISDOCUMENTSOORT</h4>
+        <section id="global_class_Model_NEDERLANDSREISDOCUMENT">
+            <h4>Referentielijst NEDERLANDS REISDOCUMENT</h4>
             <table style="width: 100%;" class="overview OVERVIEW-REFERENCELIST">
                 <colgroup style="width: 30%;"></colgroup>
                 <colgroup style="width: 70%;"></colgroup>
                 <tbody>
                     <tr>
                         <th scope="row">Naam</th>
-                        <td>REISDOCUMENTSOORT</td>
+                        <td>NEDERLANDS REISDOCUMENT</td>
                     </tr>
                     <tr>
                         <th scope="row">Alias</th>
@@ -17155,7 +17146,7 @@
                     </tr>
                     <tr>
                         <th scope="row">Herkomst</th>
-                        <td> </td>
+                        <td>LO-BRP</td>
                     </tr>
                     <tr>
                         <th scope="row">Definitie</th>
@@ -17169,7 +17160,7 @@
                     </tr>
                     <tr>
                         <th scope="row">Datum opname</th>
-                        <td> </td>
+                        <td>1 maart 2009</td>
                     </tr>
                     <tr>
                         <th scope="row">Data locatie</th>
@@ -17201,28 +17192,8 @@
                         </tr>
                         <tr>
                             <td><a class="link"
-                                    href="#detail_attribute_Model_REISDOCUMENTSOORT_Begindatumgeldigheidreisdocumentsoort">Begindatum
-                                    geldigheid reisdocumentsoort</a></td>
-                            <td>
-                                <p>De datum waarop de reisdocumentsoort is ontstaan.</p>
-                            </td>
-                            <td>Datum­Onvolledig</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td><a class="link"
-                                    href="#detail_attribute_Model_REISDOCUMENTSOORT_Einddatumgeldigheidreisdocumentsoort">Einddatum
-                                    geldigheid reisdocumentsoort</a></td>
-                            <td>
-                                <p>De datum waarop de reisdocumentsoort is opgeheven.</p>
-                            </td>
-                            <td>Datum­Onvolledig</td>
-                            <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                            <td><a class="link"
-                                    href="#detail_attribute_Model_REISDOCUMENTSOORT_Reisdocumentcode">Reisdocumentcode</a>
-                            </td>
+                                    href="#detail_attribute_Model_NEDERLANDSREISDOCUMENT_CodeNederlandsreisdocument">Code
+                                    Nederlands reisdocument</a></td>
                             <td>
                                 <p>Een code voor het model van een Nederlands reisdocument.</p>
                             </td>
@@ -17233,8 +17204,28 @@
                         </tr>
                         <tr>
                             <td><a class="link"
-                                    href="#detail_attribute_Model_REISDOCUMENTSOORT_Reisdocumentomschrijving">Reisdocumentomschrijving</a>
+                                    href="#detail_attribute_Model_NEDERLANDSREISDOCUMENT_Datumbeeindigingtabelregel">Datum
+                                    beeindiging tabelregel</a></td>
+                            <td>
+                                <p>De datum waarop de reisdocumentsoort is opgeheven.</p>
                             </td>
+                            <td>Datum­Onvolledig</td>
+                            <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                            <td><a class="link"
+                                    href="#detail_attribute_Model_NEDERLANDSREISDOCUMENT_Datumingangtabelregel">Datum
+                                    ingang tabelregel</a></td>
+                            <td>
+                                <p>De datum waarop de reisdocumentsoort is ontstaan.</p>
+                            </td>
+                            <td>Datum­Onvolledig</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><a class="link"
+                                    href="#detail_attribute_Model_NEDERLANDSREISDOCUMENT_OmschrijvingNederlandsreisdocument">Omschrijving
+                                    Nederlands reisdocument</a></td>
                             <td>
                                 <p>De omschrijving van het model van het Nederlands reisdocument.</p>
                             </td>
@@ -39395,16 +39386,16 @@
             </section>
             <section id="detail_class_Model_REISDOCUMENT">
                 <h5> REISDOCUMENT</h5>
-                <section id="detail_attribute_Model_REISDOCUMENT_Aanduidinginhoudingofvermissing">
+                <section id="detail_attribute_Model_REISDOCUMENT_Aanduidinginhoudingdanwelvermissing">
                     <h6>Attribuutsoort details <a href="#global_class_Model_REISDOCUMENT">REISDOCUMENT</a> Aanduiding
-                        inhouding of vermissing</h6>
+                        inhouding danwel vermissing</h6>
                     <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
                         <colgroup style="width: 70%;"></colgroup>
                         <tbody>
                             <tr>
                                 <th scope="row">Naam</th>
-                                <td>Aanduiding inhouding of vermissing</td>
+                                <td>Aanduiding inhouding danwel vermissing</td>
                             </tr>
                             <tr>
                                 <th scope="row">Alias</th>
@@ -39412,18 +39403,18 @@
                             </tr>
                             <tr>
                                 <th scope="row">Herkomst</th>
-                                <td>GBA</td>
+                                <td>LO-BRP</td>
                             </tr>
                             <tr>
                                 <th scope="row">Definitie</th>
                                 <td>
                                     <p>Een aanduiding dat een Nederlands reisdocument is vermist,
-                                        ingehouden, dan wel ingeleverd.</p>
+                                        ingehouden, ingeleverd, dan wel van rechtswege is vervallen.</p>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">Herkomst definitie</th>
-                                <td> </td>
+                                <td>LO-BRP</td>
                             </tr>
                             <tr>
                                 <th scope="row">Datum opname</th>
@@ -39497,16 +39488,16 @@
                         <p>Aanduiding documentidentificatie: Documentdatum, Documentomschrijving, Documentgemeente</p>
                     </div>
                 </section>
-                <section id="detail_attribute_Model_REISDOCUMENT_Autoriteituitgifte">
+                <section id="detail_attribute_Model_REISDOCUMENT_Autoriteitvanuitgifte">
                     <h6>Attribuutsoort details <a href="#global_class_Model_REISDOCUMENT">REISDOCUMENT</a> Autoriteit
-                        uitgifte</h6>
+                        van uitgifte</h6>
                     <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
                         <colgroup style="width: 70%;"></colgroup>
                         <tbody>
                             <tr>
                                 <th scope="row">Naam</th>
-                                <td>Autoriteit uitgifte</td>
+                                <td>Autoriteit van uitgifte</td>
                             </tr>
                             <tr>
                                 <th scope="row">Alias</th>
@@ -39514,18 +39505,19 @@
                             </tr>
                             <tr>
                                 <th scope="row">Herkomst</th>
-                                <td>GBA</td>
+                                <td>LO-BRP</td>
                             </tr>
                             <tr>
                                 <th scope="row">Definitie</th>
                                 <td>
-                                    <p>Een codering die aangeeft welke autoriteit het Nederlands reisdocument heeft
-                                        verstrekt of de bijschrijving heeft verricht.</p>
+                                    <p>Een codering, opgenomen in tabel 49, Tabel Autoriteit van afgifte
+                                        Nederlands reisdocument, die aangeeft welke autoriteit het Nederlands
+                                        reisdocument heeft verstrekt of de bijschrijving heeft verricht.</p>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">Herkomst definitie</th>
-                                <td> </td>
+                                <td>LO-BRP</td>
                             </tr>
                             <tr>
                                 <th scope="row">Datum opname</th>
@@ -39561,13 +39553,13 @@
                             </tr>
                             <tr>
                                 <th scope="row">Lengte</th>
-                                <td> </td>
+                                <td>6</td>
                             </tr>
                             <tr>
                                 <th scope="row">Formaat</th>
                                 <td><a class="link"
-                                        href="#detail_class_Model_AUTORITEITAFGIFTENEDERLANDSREISDOCUMENT">AUTORITEIT
-                                        AFGIFTE NEDERLANDS REISDOCUMENT</a></td>
+                                        href="#detail_class_Model_AUTORITEITVANAFGIFTENEDERLANDSREISDOCUMENT">AUTORITEIT
+                                        VAN AFGIFTE NEDERLANDS REISDOCUMENT</a></td>
                             </tr>
                             <tr>
                                 <th scope="row">Patroon</th>
@@ -39592,7 +39584,9 @@
                         </tbody>
                     </table>
                     <div class="notoc"><strong>Toelichting </strong>
-                        <p>Zie de toelichting in de GBA.</p>
+                        <p>In de naamgeving van de attribuutsoort is er voor gekozen de toevoeging "Nederlands
+                            reisdocument"zoals die oin de LO-BRP wordt gebruikt te laten vervallen. </p>
+                        <p>Dit om de attribuutsoornamen niet overbodig lang te laten worden. </p>
                         <p></p>
                         <p>Uit documentatie versie 2.02 (vervallen tagged values):</p>
                         <p>Code attribuutsoort: 35.40</p>
@@ -39929,16 +39923,119 @@
                         </table>
                     </div>
                 </section>
-                <section id="detail_attribute_Model_REISDOCUMENT_Datuminhoudingofvermissing">
-                    <h6>Attribuutsoort details <a href="#global_class_Model_REISDOCUMENT">REISDOCUMENT</a> Datum
-                        inhouding of vermissing</h6>
+                <section id="detail_attribute_Model_REISDOCUMENT_Datumeindegeldigheid">
+                    <h6>Attribuutsoort details <a href="#global_class_Model_REISDOCUMENT">REISDOCUMENT</a> Datum einde
+                        geldigheid</h6>
                     <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
                         <colgroup style="width: 70%;"></colgroup>
                         <tbody>
                             <tr>
                                 <th scope="row">Naam</th>
-                                <td>Datum inhouding of vermissing</td>
+                                <td>Datum einde geldigheid</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Alias</th>
+                                <td>einddatum­Geldigheid</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst</th>
+                                <td>LO-BRP</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Definitie</th>
+                                <td>
+                                    <p>De datum waarop een Nederlands reisdocument, dat aan de ingeschrevene is
+                                        verstrekt of waarin de ingeschrevene is bijgeschreven, zijn geldigheid verliest.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst definitie</th>
+                                <td>LO-BRP</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Datum opname</th>
+                                <td>1 mei 2008</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Mogelijk geen waarde</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie materiële historie</th>
+                                <td>Ja</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie formele historie</th>
+                                <td>Ja</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie in onderzoek</th>
+                                <td>Ja</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Aanduiding strijdigheid/nietigheid</th>
+                                <td>Nee</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie kardinaliteit</th>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie authentiek</th>
+                                <td>Authentiek</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Lengte</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Formaat</th>
+                                <td><a class="external-link"
+                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Patroon</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie classificerend</th>
+                                <td>Nee</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie identificerend</th>
+                                <td>Nee</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie afleidbaar</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Waarde afleidbaar</th>
+                                <td>Nee</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="notoc"><strong>Toelichting </strong>
+                        <p>Zie de toelichting in de GBA.</p>
+                        <p></p>
+                        <p>Uit documentatie versie 2.02 (vervallen tagged values):</p>
+                        <p>Code attribuutsoort: 35.50</p>
+                        <p>Aanduiding documentidentificatie:Documentdatum, Documentomschrijving, Documentgemeente</p>
+                    </div>
+                </section>
+                <section id="detail_attribute_Model_REISDOCUMENT_Datuminhoudingdanwelvermissing">
+                    <h6>Attribuutsoort details <a href="#global_class_Model_REISDOCUMENT">REISDOCUMENT</a> Datum
+                        inhouding danwel vermissing</h6>
+                    <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Naam</th>
+                                <td>Datum inhouding danwel vermissing</td>
                             </tr>
                             <tr>
                                 <th scope="row">Alias</th>
@@ -39946,18 +40043,18 @@
                             </tr>
                             <tr>
                                 <th scope="row">Herkomst</th>
-                                <td>GBA</td>
+                                <td>LO-BRP</td>
                             </tr>
                             <tr>
                                 <th scope="row">Definitie</th>
                                 <td>
-                                    <p>De datum waarop een Nederlands reisdocument is vermist, ingehouden, dan wel
-                                        ingeleverd.</p>
+                                    <p>De datum waarop een Nederlands reisdocument is vermist,
+                                        ingehouden, ingeleverd, dan wel van rechtswege is vervallen.</p>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">Herkomst definitie</th>
-                                <td> </td>
+                                <td>LO-BRP</td>
                             </tr>
                             <tr>
                                 <th scope="row">Datum opname</th>
@@ -40049,7 +40146,7 @@
                             </tr>
                             <tr>
                                 <th scope="row">Herkomst</th>
-                                <td>GBA</td>
+                                <td>LO-BRP</td>
                             </tr>
                             <tr>
                                 <th scope="row">Definitie</th>
@@ -40060,7 +40157,7 @@
                             </tr>
                             <tr>
                                 <th scope="row">Herkomst definitie</th>
-                                <td> </td>
+                                <td>LO-BRP</td>
                             </tr>
                             <tr>
                                 <th scope="row">Datum opname</th>
@@ -40127,224 +40224,24 @@
                         </tbody>
                     </table>
                     <div class="notoc"><strong>Toelichting </strong>
-                        <p>Zie de toelichting in de GBA.</p>
+                        <p>In de naamgeving van de attribuutsoort is er voor gekozen de toevoeging "Nederlands
+                            reisdocument"zoals die oin de LO-BRP wordt gebruikt te laten vervallen. </p>
+                        <p>Dit om de attribuutsoornamen niet overbodig lang te laten worden. </p>
                         <p></p>
                         <p>Uit documentatie versie 2.02 (vervallen tagged values):</p>
                         <p>Code attribuutsoort: 35.50</p>
                         <p>Aanduiding documentidentificatie: Documentdatum, Documentomschrijving, Documentgemeente</p>
                     </div>
                 </section>
-                <section id="detail_attribute_Model_REISDOCUMENT_Einddatumgeldigheiddocument">
-                    <h6>Attribuutsoort details <a href="#global_class_Model_REISDOCUMENT">REISDOCUMENT</a> Einddatum
-                        geldigheid document</h6>
+                <section id="detail_attribute_Model_REISDOCUMENT_Nummer">
+                    <h6>Attribuutsoort details <a href="#global_class_Model_REISDOCUMENT">REISDOCUMENT</a> Nummer</h6>
                     <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
                         <colgroup style="width: 70%;"></colgroup>
                         <tbody>
                             <tr>
                                 <th scope="row">Naam</th>
-                                <td>Einddatum geldigheid document</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Alias</th>
-                                <td>einddatum­Geldigheid</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst</th>
-                                <td>GBA</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Definitie</th>
-                                <td>
-                                    <p>De datum waarop een Nederlands reisdocument, dat aan de ingeschrevene is
-                                        verstrekt of waarin de ingeschrevene is bijgeschreven, zijn geldigheid verliest.
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst definitie</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Datum opname</th>
-                                <td>1 mei 2008</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Mogelijk geen waarde</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie materiële historie</th>
-                                <td>Ja</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie formele historie</th>
-                                <td>Ja</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie in onderzoek</th>
-                                <td>Ja</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Aanduiding strijdigheid/nietigheid</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit</th>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie authentiek</th>
-                                <td>Authentiek</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Lengte</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formaat</th>
-                                <td><a class="external-link"
-                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Patroon</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie classificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie identificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie afleidbaar</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Waarde afleidbaar</th>
-                                <td>Nee</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="notoc"><strong>Toelichting </strong>
-                        <p>Zie de toelichting in de GBA.</p>
-                        <p></p>
-                        <p>Uit documentatie versie 2.02 (vervallen tagged values):</p>
-                        <p>Code attribuutsoort: 35.50</p>
-                        <p>Aanduiding documentidentificatie:Documentdatum, Documentomschrijving, Documentgemeente</p>
-                    </div>
-                </section>
-                <section id="detail_attribute_Model_REISDOCUMENT_Lengtehouder">
-                    <h6>Attribuutsoort details <a href="#global_class_Model_REISDOCUMENT">REISDOCUMENT</a> Lengte houder
-                    </h6>
-                    <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Naam</th>
-                                <td>Lengte houder</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Alias</th>
-                                <td>lengte­Houder</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst</th>
-                                <td>GBA</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Definitie</th>
-                                <td>
-                                    <p>De lengte van de ingeschrevene in hele centimeters zoals vermeld in het
-                                        Nederlands reisdocument.</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst definitie</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Datum opname</th>
-                                <td>1 mei 2008</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Mogelijk geen waarde</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie materiële historie</th>
-                                <td>Ja</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie formele historie</th>
-                                <td>Ja</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie in onderzoek</th>
-                                <td>Ja</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit</th>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie authentiek</th>
-                                <td>Authentiek</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Lengte</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formaat</th>
-                                <td><a class="external-link"
-                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Patroon</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie classificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie identificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie afleidbaar</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Waarde afleidbaar</th>
-                                <td>Nee</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="notoc"><strong>Toelichting </strong>
-                        <p>Zie de toelichting in de GBA.</p>
-                        <p></p>
-                        <p>Uit documentatie versie 2.02 (vervallen tagged values):</p>
-                        <p>Code attribuutsoort: 35.80</p>
-                        <p>Aanduiding documentidentificatie: Documentdatum, Documentomschrijving, Documentgemeente</p>
-                    </div>
-                </section>
-                <section id="detail_attribute_Model_REISDOCUMENT_Reisdocumentnummer">
-                    <h6>Attribuutsoort details <a href="#global_class_Model_REISDOCUMENT">REISDOCUMENT</a>
-                        Reisdocumentnummer</h6>
-                    <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Naam</th>
-                                <td>Reisdocumentnummer</td>
+                                <td>Nummer</td>
                             </tr>
                             <tr>
                                 <th scope="row">Alias</th>
@@ -40352,7 +40249,7 @@
                             </tr>
                             <tr>
                                 <th scope="row">Herkomst</th>
-                                <td>GBA</td>
+                                <td>LO-BRP</td>
                             </tr>
                             <tr>
                                 <th scope="row">Definitie</th>
@@ -40363,7 +40260,7 @@
                             </tr>
                             <tr>
                                 <th scope="row">Herkomst definitie</th>
-                                <td> </td>
+                                <td>LO-BRP</td>
                             </tr>
                             <tr>
                                 <th scope="row">Datum opname</th>
@@ -40430,8 +40327,9 @@
                         </tbody>
                     </table>
                     <div class="notoc"><strong>Toelichting </strong>
-                        <p>In het GFO BG betreft dit het attribuut ‘Nummer identiteitsbewijs’ (96.38). Zie verder de
-                            toelichting in de GBA.</p>
+                        <p>In de naamgeving van de attribuutsoort is er voor gekozen de toevoeging "Nederlands
+                            reisdocument"zoals die oin de LO-BRP wordt gebruikt te laten vervallen. </p>
+                        <p>Dit om de attribuutsoornamen niet overbodig lang te laten worden. </p>
                         <p></p>
                         <p>Uit documentatie versie 2.02 (vervallen tagged values):</p>
                         <p>Code attribuutsoort: 35.20</p>
@@ -40450,17 +40348,19 @@
                             </tr>
                             <tr>
                                 <th scope="row">Herkomst</th>
-                                <td>KING</td>
+                                <td>LO-BRP</td>
                             </tr>
                             <tr>
                                 <th scope="row">Definitie</th>
                                 <td>
-                                    <p>De model­REISDOCUMENTSOORT van het REISDOCUMENT.</p>
+                                    <p>Een codering, opgenomen in tabel 48, Tabel Nederlands reisdocument,
+                                        die aangeeft welk Nederlands reisdocument is verstrekt of in welk
+                                        reisdocument de ingeschrevene is bijgeschreven.</p>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">Herkomst definitie</th>
-                                <td>KING op basis van GBA</td>
+                                <td>LO-BRP</td>
                             </tr>
                             <tr>
                                 <th scope="row">Datum opname</th>
@@ -40492,12 +40392,12 @@
                             </tr>
                             <tr>
                                 <th scope="row">Lengte</th>
-                                <td> </td>
+                                <td>2</td>
                             </tr>
                             <tr>
                                 <th scope="row">Formaat</th>
-                                <td><a class="link" href="#detail_class_Model_REISDOCUMENTSOORT">REISDOCUMENTSOORT</a>
-                                </td>
+                                <td><a class="link" href="#detail_class_Model_NEDERLANDSREISDOCUMENT">NEDERLANDS
+                                        REISDOCUMENT</a></td>
                             </tr>
                             <tr>
                                 <th scope="row">Patroon</th>
@@ -40522,6 +40422,11 @@
                         </tbody>
                     </table>
                     <div class="notoc"><strong>Toelichting </strong>
+                        <p>In de naamgeving van de attribuutsoort is er voor gekozen de toevoeging "Nederlands
+                            reisdocument"zoals die oin de LO-BRP wordt gebruikt te laten vervallen. </p>
+                        <p>Dit om de attribuutsoornamen niet overbodig lang te laten worden. </p>
+                        <p></p>
+                        <p></p>
                         <p>Uit documentatie versie 2.02 (vervallen tagged values):</p>
                         <p>Code attribuutsoort: 12.35</p>
                     </div>
@@ -66918,23 +66823,24 @@
                     </table>
                 </section>
             </section>
-            <section id="detail_class_Model_AUTORITEITAFGIFTENEDERLANDSREISDOCUMENT">
-                <h5>Referentielijst AUTORITEIT AFGIFTE NEDERLANDS REISDOCUMENT</h5>
-                <section id="detail_attribute_Model_AUTORITEITAFGIFTENEDERLANDSREISDOCUMENT_Autoriteitvanafgifte">
+            <section id="detail_class_Model_AUTORITEITVANAFGIFTENEDERLANDSREISDOCUMENT">
+                <h5>Referentielijst AUTORITEIT VAN AFGIFTE NEDERLANDS REISDOCUMENT</h5>
+                <section
+                    id="detail_attribute_Model_AUTORITEITVANAFGIFTENEDERLANDSREISDOCUMENT_Codeautoriteitvanafgifte">
                     <h6>Referentie element <a
-                            href="#global_class_Model_AUTORITEITAFGIFTENEDERLANDSREISDOCUMENT">AUTORITEIT AFGIFTE
-                            NEDERLANDS REISDOCUMENT</a> Autoriteit van afgifte</h6>
+                            href="#global_class_Model_AUTORITEITVANAFGIFTENEDERLANDSREISDOCUMENT">AUTORITEIT VAN AFGIFTE
+                            NEDERLANDS REISDOCUMENT</a> Code autoriteit van afgifte</h6>
                     <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
                         <colgroup style="width: 70%;"></colgroup>
                         <tbody>
                             <tr>
                                 <th scope="row">Naam</th>
-                                <td>Autoriteit van afgifte</td>
+                                <td>Code autoriteit van afgifte</td>
                             </tr>
                             <tr>
                                 <th scope="row">Herkomst</th>
-                                <td>VNG-R</td>
+                                <td>LO-BRP</td>
                             </tr>
                             <tr>
                                 <th scope="row">Definitie</th>
@@ -66944,7 +66850,7 @@
                             </tr>
                             <tr>
                                 <th scope="row">Herkomst definitie</th>
-                                <td>VNG-R</td>
+                                <td>LO-BRP</td>
                             </tr>
                             <tr>
                                 <th scope="row">Datum opname</th>
@@ -66972,21 +66878,72 @@
                     </table>
                 </section>
                 <section
-                    id="detail_attribute_Model_AUTORITEITAFGIFTENEDERLANDSREISDOCUMENT_Begindatumgeldigheidautoriteitvanafgifte">
+                    id="detail_attribute_Model_AUTORITEITVANAFGIFTENEDERLANDSREISDOCUMENT_Datumbeeindigingtabelregel">
                     <h6>Referentie element <a
-                            href="#global_class_Model_AUTORITEITAFGIFTENEDERLANDSREISDOCUMENT">AUTORITEIT AFGIFTE
-                            NEDERLANDS REISDOCUMENT</a> Begindatum geldigheid autoriteit van afgifte</h6>
+                            href="#global_class_Model_AUTORITEITVANAFGIFTENEDERLANDSREISDOCUMENT">AUTORITEIT VAN AFGIFTE
+                            NEDERLANDS REISDOCUMENT</a> Datum beeindiging tabelregel</h6>
                     <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
                         <colgroup style="width: 70%;"></colgroup>
                         <tbody>
                             <tr>
                                 <th scope="row">Naam</th>
-                                <td>Begindatum geldigheid autoriteit van afgifte</td>
+                                <td>Datum beeindiging tabelregel</td>
                             </tr>
                             <tr>
                                 <th scope="row">Herkomst</th>
-                                <td>VNG-R</td>
+                                <td>LO-BRP</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Definitie</th>
+                                <td>
+                                    <p>De datum waarop de autoriteit van aangifte is opgeheven.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst definitie</th>
+                                <td>LO-BRP</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Datum opname</th>
+                                <td>1 mei 2016</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie kardinaliteit</th>
+                                <td>0 .. 1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Formaat</th>
+                                <td><a class="external-link"
+                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Patroon</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie identificerend</th>
+                                <td>Nee</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="detail_attribute_Model_AUTORITEITVANAFGIFTENEDERLANDSREISDOCUMENT_Datumingangtabelregel">
+                    <h6>Referentie element <a
+                            href="#global_class_Model_AUTORITEITVANAFGIFTENEDERLANDSREISDOCUMENT">AUTORITEIT VAN AFGIFTE
+                            NEDERLANDS REISDOCUMENT</a> Datum ingang tabelregel</h6>
+                    <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Naam</th>
+                                <td>Datum ingang tabelregel</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst</th>
+                                <td>LO-BRP</td>
                             </tr>
                             <tr>
                                 <th scope="row">Definitie</th>
@@ -66996,7 +66953,7 @@
                             </tr>
                             <tr>
                                 <th scope="row">Herkomst definitie</th>
-                                <td>VNG-R</td>
+                                <td>LO-BRP</td>
                             </tr>
                             <tr>
                                 <th scope="row">Datum opname</th>
@@ -67024,72 +66981,21 @@
                     </table>
                 </section>
                 <section
-                    id="detail_attribute_Model_AUTORITEITAFGIFTENEDERLANDSREISDOCUMENT_Einddatumgeldigheidautoriteitvanafgifte">
+                    id="detail_attribute_Model_AUTORITEITVANAFGIFTENEDERLANDSREISDOCUMENT_Omschrijvingautoriteitvanafgifte">
                     <h6>Referentie element <a
-                            href="#global_class_Model_AUTORITEITAFGIFTENEDERLANDSREISDOCUMENT">AUTORITEIT AFGIFTE
-                            NEDERLANDS REISDOCUMENT</a> Einddatum geldigheid autoriteit van afgifte</h6>
+                            href="#global_class_Model_AUTORITEITVANAFGIFTENEDERLANDSREISDOCUMENT">AUTORITEIT VAN AFGIFTE
+                            NEDERLANDS REISDOCUMENT</a> Omschrijving autoriteit van afgifte</h6>
                     <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
                         <colgroup style="width: 70%;"></colgroup>
                         <tbody>
                             <tr>
                                 <th scope="row">Naam</th>
-                                <td>Einddatum geldigheid autoriteit van afgifte</td>
+                                <td>Omschrijving autoriteit van afgifte</td>
                             </tr>
                             <tr>
                                 <th scope="row">Herkomst</th>
-                                <td>VNG-R</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Definitie</th>
-                                <td>
-                                    <p>De datum waarop de autoriteit van aangifte is opgeheven.</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst definitie</th>
-                                <td>VNG-R</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Datum opname</th>
-                                <td>1 mei 2016</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit</th>
-                                <td>0 .. 1</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formaat</th>
-                                <td><a class="external-link"
-                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Patroon</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie identificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <section id="detail_attribute_Model_AUTORITEITAFGIFTENEDERLANDSREISDOCUMENT_Omschrijvingautoriteit">
-                    <h6>Referentie element <a
-                            href="#global_class_Model_AUTORITEITAFGIFTENEDERLANDSREISDOCUMENT">AUTORITEIT AFGIFTE
-                            NEDERLANDS REISDOCUMENT</a> Omschrijving autoriteit</h6>
-                    <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Naam</th>
-                                <td>Omschrijving autoriteit</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst</th>
-                                <td>VNG-R</td>
+                                <td>LO-BRP</td>
                             </tr>
                             <tr>
                                 <th scope="row">Definitie</th>
@@ -67099,7 +67005,7 @@
                             </tr>
                             <tr>
                                 <th scope="row">Herkomst definitie</th>
-                                <td>VNG-R</td>
+                                <td>LO-BRP</td>
                             </tr>
                             <tr>
                                 <th scope="row">Datum opname</th>
@@ -68731,122 +68637,18 @@
                     </table>
                 </section>
             </section>
-            <section id="detail_class_Model_REISDOCUMENTSOORT">
-                <h5>Referentielijst REISDOCUMENTSOORT</h5>
-                <section id="detail_attribute_Model_REISDOCUMENTSOORT_Begindatumgeldigheidreisdocumentsoort">
-                    <h6>Referentie element <a href="#global_class_Model_REISDOCUMENTSOORT">REISDOCUMENTSOORT</a>
-                        Begindatum geldigheid reisdocumentsoort</h6>
+            <section id="detail_class_Model_NEDERLANDSREISDOCUMENT">
+                <h5>Referentielijst NEDERLANDS REISDOCUMENT</h5>
+                <section id="detail_attribute_Model_NEDERLANDSREISDOCUMENT_CodeNederlandsreisdocument">
+                    <h6>Referentie element <a href="#global_class_Model_NEDERLANDSREISDOCUMENT">NEDERLANDS
+                            REISDOCUMENT</a> Code Nederlands reisdocument</h6>
                     <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
                         <colgroup style="width: 70%;"></colgroup>
                         <tbody>
                             <tr>
                                 <th scope="row">Naam</th>
-                                <td>Begindatum geldigheid reisdocumentsoort</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Alias</th>
-                                <td>tijdvak­Object.begin­Object</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Definitie</th>
-                                <td>
-                                    <p>De datum waarop de reisdocumentsoort is ontstaan.</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst definitie</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Datum opname</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit</th>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formaat</th>
-                                <td>Datum­Onvolledig</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Patroon</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie identificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <section id="detail_attribute_Model_REISDOCUMENTSOORT_Einddatumgeldigheidreisdocumentsoort">
-                    <h6>Referentie element <a href="#global_class_Model_REISDOCUMENTSOORT">REISDOCUMENTSOORT</a>
-                        Einddatum geldigheid reisdocumentsoort</h6>
-                    <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Naam</th>
-                                <td>Einddatum geldigheid reisdocumentsoort</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Alias</th>
-                                <td>tijdvak­Object.eind­Object</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Definitie</th>
-                                <td>
-                                    <p>De datum waarop de reisdocumentsoort is opgeheven.</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst definitie</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Datum opname</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit</th>
-                                <td>0 .. 1</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formaat</th>
-                                <td>Datum­Onvolledig</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Patroon</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie identificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <section id="detail_attribute_Model_REISDOCUMENTSOORT_Reisdocumentcode">
-                    <h6>Referentie element <a href="#global_class_Model_REISDOCUMENTSOORT">REISDOCUMENTSOORT</a>
-                        Reisdocumentcode</h6>
-                    <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Naam</th>
-                                <td>Reisdocumentcode</td>
+                                <td>Code Nederlands reisdocument</td>
                             </tr>
                             <tr>
                                 <th scope="row">Alias</th>
@@ -68892,16 +68694,112 @@
                     </table>
                     <div class="notoc"><strong>Toelichting </strong>Zie het LO GBA</div>
                 </section>
-                <section id="detail_attribute_Model_REISDOCUMENTSOORT_Reisdocumentomschrijving">
-                    <h6>Referentie element <a href="#global_class_Model_REISDOCUMENTSOORT">REISDOCUMENTSOORT</a>
-                        Reisdocumentomschrijving</h6>
+                <section id="detail_attribute_Model_NEDERLANDSREISDOCUMENT_Datumbeeindigingtabelregel">
+                    <h6>Referentie element <a href="#global_class_Model_NEDERLANDSREISDOCUMENT">NEDERLANDS
+                            REISDOCUMENT</a> Datum beeindiging tabelregel</h6>
                     <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
                         <colgroup style="width: 70%;"></colgroup>
                         <tbody>
                             <tr>
                                 <th scope="row">Naam</th>
-                                <td>Reisdocumentomschrijving</td>
+                                <td>Datum beeindiging tabelregel</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Definitie</th>
+                                <td>
+                                    <p>De datum waarop de reisdocumentsoort is opgeheven.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst definitie</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Datum opname</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie kardinaliteit</th>
+                                <td>0 .. 1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Formaat</th>
+                                <td>Datum­Onvolledig</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Patroon</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie identificerend</th>
+                                <td>Nee</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="detail_attribute_Model_NEDERLANDSREISDOCUMENT_Datumingangtabelregel">
+                    <h6>Referentie element <a href="#global_class_Model_NEDERLANDSREISDOCUMENT">NEDERLANDS
+                            REISDOCUMENT</a> Datum ingang tabelregel</h6>
+                    <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Naam</th>
+                                <td>Datum ingang tabelregel</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Definitie</th>
+                                <td>
+                                    <p>De datum waarop de reisdocumentsoort is ontstaan.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst definitie</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Datum opname</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie kardinaliteit</th>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Formaat</th>
+                                <td>Datum­Onvolledig</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Patroon</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie identificerend</th>
+                                <td>Nee</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="detail_attribute_Model_NEDERLANDSREISDOCUMENT_OmschrijvingNederlandsreisdocument">
+                    <h6>Referentie element <a href="#global_class_Model_NEDERLANDSREISDOCUMENT">NEDERLANDS
+                            REISDOCUMENT</a> Omschrijving Nederlands reisdocument</h6>
+                    <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Naam</th>
+                                <td>Omschrijving Nederlands reisdocument</td>
                             </tr>
                             <tr>
                                 <th scope="row">Alias</th>
