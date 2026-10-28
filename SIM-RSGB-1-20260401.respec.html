@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
     <h2>Gegevensdefinitie</h2>
-    <p><b>Deze tekst is normatief.</b><!--SIM-RSGB-2.03-1-20260401-20261028-105514 imvertor Nightly-build.0--></p>
+    <p><b>Deze tekst is normatief.</b><!--SIM-RSGB-2.03-1-20260401-20261028-134400 imvertor Nightly-build.0--></p>
     <section>
         <h3>Objecttypen </h3>
         <section id="global_class_Model_ADRESSEERBAAROBJECTAANDUIDING">
@@ -3940,6 +3940,50 @@
                         <td>0 .. 1</td>
                     </tr>
                     <tr>
+                        <td>Verblijfstitel:</td>
+                        <td></td>
+                        <td><a class="link" href="#detail_class_Model_Verblijfstitel">Verblijfstitel</a></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>- <a class="link"
+                                href="#detail_attribute_Model_Verblijfstitel_Aanduidingverblijfstitel">Aanduiding
+                                verblijfstitel</a></td>
+                        <td>
+                            <p>Een code, opgenomen in tabel 56, Verblijfstiteltabel, die aangeeft over
+                                welke verblijfsrechtelijke status de ingeschrevene beschikt.</p>
+                        </td>
+                        <td><a class="link" href="#global_class_Model_VERBLIJFSTITEL">VERBLIJFSTITEL</a></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>- <a class="link"
+                                href="#detail_attribute_Model_Verblijfstitel_Datumeindeverblijfstitel">Datum einde
+                                verblijfstitel</a></td>
+                        <td>
+                            <p>De datum waarop de verblijfstitel zijn geldigheid verliest.
+                                Dit element wordt uitsluitend opgenomen indien er sprake is van een
+                                verblijfstitel voor bepaalde tijd. Bij een verblijfstitel voor het leven komt
+                                het element niet voor.</p>
+                            <p>Noot. Dit element komt op deze wijze voor in het LO-BRP terwijl er voor verblijfstitel
+                                ook groep 85 Geldigheid is gedefinieerd. We volgen hierin het LO-BRP</p>
+                        </td>
+                        <td>Datum­Onvolledig</td>
+                        <td>0 .. 1</td>
+                    </tr>
+                    <tr>
+                        <td>- <a class="link"
+                                href="#detail_attribute_Model_Verblijfstitel_Ingangsdatumverblijfstitel">Ingangsdatum
+                                verblijfstitel</a></td>
+                        <td>
+                            <p>De datum waarop de verblijfstitel zijn geldigheid krijgt.</p>
+                            <p>Noot. Dit element komt op deze wijze voor in het LO-BRP terwijl er voor verblijfstitel
+                                ook groep 85 Geldigheid is gedefinieerd. We volgen hierin het LO-BRP</p>
+                        </td>
+                        <td>Datum­Onvolledig</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
                         <td colspan="10" class="tussenkop">Attribuutsoorten geërfd van <a class="link"
                                 href="#global_class_Model_NATUURLIJKPERSOON">NATUURLIJK PERSOON</a></td>
                     </tr>
@@ -5027,6 +5071,50 @@
                         <td>0 .. 1</td>
                     </tr>
                     <tr>
+                        <td>Verblijfstitel:</td>
+                        <td></td>
+                        <td><a class="link" href="#detail_class_Model_Verblijfstitel">Verblijfstitel</a></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>- <a class="link"
+                                href="#detail_attribute_Model_Verblijfstitel_Aanduidingverblijfstitel">Aanduiding
+                                verblijfstitel</a></td>
+                        <td>
+                            <p>Een code, opgenomen in tabel 56, Verblijfstiteltabel, die aangeeft over
+                                welke verblijfsrechtelijke status de ingeschrevene beschikt.</p>
+                        </td>
+                        <td><a class="link" href="#global_class_Model_VERBLIJFSTITEL">VERBLIJFSTITEL</a></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>- <a class="link"
+                                href="#detail_attribute_Model_Verblijfstitel_Datumeindeverblijfstitel">Datum einde
+                                verblijfstitel</a></td>
+                        <td>
+                            <p>De datum waarop de verblijfstitel zijn geldigheid verliest.
+                                Dit element wordt uitsluitend opgenomen indien er sprake is van een
+                                verblijfstitel voor bepaalde tijd. Bij een verblijfstitel voor het leven komt
+                                het element niet voor.</p>
+                            <p>Noot. Dit element komt op deze wijze voor in het LO-BRP terwijl er voor verblijfstitel
+                                ook groep 85 Geldigheid is gedefinieerd. We volgen hierin het LO-BRP</p>
+                        </td>
+                        <td>Datum­Onvolledig</td>
+                        <td>0 .. 1</td>
+                    </tr>
+                    <tr>
+                        <td>- <a class="link"
+                                href="#detail_attribute_Model_Verblijfstitel_Ingangsdatumverblijfstitel">Ingangsdatum
+                                verblijfstitel</a></td>
+                        <td>
+                            <p>De datum waarop de verblijfstitel zijn geldigheid krijgt.</p>
+                            <p>Noot. Dit element komt op deze wijze voor in het LO-BRP terwijl er voor verblijfstitel
+                                ook groep 85 Geldigheid is gedefinieerd. We volgen hierin het LO-BRP</p>
+                        </td>
+                        <td>Datum­Onvolledig</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
                         <td colspan="10" class="tussenkop">Attribuutsoorten geërfd van <a class="link"
                                 href="#global_class_Model_NATUURLIJKPERSOON">NATUURLIJK PERSOON</a></td>
                     </tr>
@@ -5433,16 +5521,6 @@
                     <tr>
                         <th scope="col">Relatienaam met kardinaliteiten</th>
                         <th scope="col">Definitie</th>
-                    </tr>
-                    <tr>
-                        <td>INGEZETENE [ 0 .. * ] <a class="link"
-                                href="#detail_association_Model_INGEZETENE_beschiktover">beschikt over</a> <a
-                                class="link" href="#global_class_Model_VERBLIJFSTITEL">VERBLIJFSTITEL</a> [ 0 .. 1 ]
-                        </td>
-                        <td>
-                            <p>De verwijzing naar de VERBLIJFSTITEL die aangeeft over welke verblijfsrechtelijke status
-                                de ingezetene beschikt.</p>
-                        </td>
                     </tr>
                     <tr>
                         <td>INGEZETENE is specialisatie van <a class="link"
@@ -8460,6 +8538,50 @@
                         </td>
                         <td><a class="link" href="#global_class_Model_LIGPLAATS">LIGPLAATS</a></td>
                         <td>0 .. 1</td>
+                    </tr>
+                    <tr>
+                        <td>Verblijfstitel:</td>
+                        <td></td>
+                        <td><a class="link" href="#detail_class_Model_Verblijfstitel">Verblijfstitel</a></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>- <a class="link"
+                                href="#detail_attribute_Model_Verblijfstitel_Aanduidingverblijfstitel">Aanduiding
+                                verblijfstitel</a></td>
+                        <td>
+                            <p>Een code, opgenomen in tabel 56, Verblijfstiteltabel, die aangeeft over
+                                welke verblijfsrechtelijke status de ingeschrevene beschikt.</p>
+                        </td>
+                        <td><a class="link" href="#global_class_Model_VERBLIJFSTITEL">VERBLIJFSTITEL</a></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>- <a class="link"
+                                href="#detail_attribute_Model_Verblijfstitel_Datumeindeverblijfstitel">Datum einde
+                                verblijfstitel</a></td>
+                        <td>
+                            <p>De datum waarop de verblijfstitel zijn geldigheid verliest.
+                                Dit element wordt uitsluitend opgenomen indien er sprake is van een
+                                verblijfstitel voor bepaalde tijd. Bij een verblijfstitel voor het leven komt
+                                het element niet voor.</p>
+                            <p>Noot. Dit element komt op deze wijze voor in het LO-BRP terwijl er voor verblijfstitel
+                                ook groep 85 Geldigheid is gedefinieerd. We volgen hierin het LO-BRP</p>
+                        </td>
+                        <td>Datum­Onvolledig</td>
+                        <td>0 .. 1</td>
+                    </tr>
+                    <tr>
+                        <td>- <a class="link"
+                                href="#detail_attribute_Model_Verblijfstitel_Ingangsdatumverblijfstitel">Ingangsdatum
+                                verblijfstitel</a></td>
+                        <td>
+                            <p>De datum waarop de verblijfstitel zijn geldigheid krijgt.</p>
+                            <p>Noot. Dit element komt op deze wijze voor in het LO-BRP terwijl er voor verblijfstitel
+                                ook groep 85 Geldigheid is gedefinieerd. We volgen hierin het LO-BRP</p>
+                        </td>
+                        <td>Datum­Onvolledig</td>
+                        <td>1</td>
                     </tr>
                     <tr>
                         <td colspan="10" class="tussenkop">Attribuutsoorten geërfd van <a class="link"
@@ -12903,134 +13025,6 @@
                 <p>Een verblijfsobject maakt in de BAG-terminologie deel uit van de groep adresseerbare objecten. </p>
             </section>
         </section>
-        <section id="global_class_Model_VERBLIJFSTITEL">
-            <h4> VERBLIJFSTITEL</h4>
-            <table style="width: 100%;" class="overview OVERVIEW-OBJECTTYPE">
-                <colgroup style="width: 30%;"></colgroup>
-                <colgroup style="width: 70%;"></colgroup>
-                <tbody>
-                    <tr>
-                        <th scope="row">Naam</th>
-                        <td>VERBLIJFSTITEL</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Alias</th>
-                        <td>(VBT)</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Herkomst</th>
-                        <td>GFO BG</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Definitie</th>
-                        <td>
-                            <p>Rechtsgrond op basis waarvan men bevoegd is in een land te verblijven.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Herkomst definitie</th>
-                        <td>GFO BG</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Datum opname</th>
-                        <td>1 maart 2009</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Unieke aanduiding</th>
-                        <td>Aanduiding verblijfstitel</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Indicatie abstract object</th>
-                        <td>Nee</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h5>Overzicht attributen </h5>
-            <table style="width: 100%;">
-                <colgroup style="width: 30%;"></colgroup>
-                <colgroup style="width: 50%;"></colgroup>
-                <colgroup style="width: 10%;"></colgroup>
-                <colgroup style="width: 10%;"></colgroup>
-                <tbody>
-                    <tr>
-                        <th scope="col">Attribuutnaam</th>
-                        <th scope="col">Definitie</th>
-                        <th scope="col">Formaat</th>
-                        <th scope="col">Card</th>
-                    </tr>
-                    <tr>
-                        <td><a class="link"
-                                href="#detail_attribute_Model_VERBLIJFSTITEL_Aanduidingverblijfstitel">Aanduiding
-                                verblijfstitel</a></td>
-                        <td>
-                            <p>De code uit de Verblijfstiteltabel die aangeeft over welke verblijfsrechtelijke status de
-                                ingezetene beschikt.</p>
-                        </td>
-                        <td><a class="external-link"
-                                href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
-                        </td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td><a class="link"
-                                href="#detail_attribute_Model_VERBLIJFSTITEL_Begindatumgeldigheidverblijfstitel">Begindatum
-                                geldigheid verblijfstitel</a></td>
-                        <td>
-                            <p>De datum waarop de verblijfstitel is ontstaan.</p>
-                        </td>
-                        <td>Datum­Onvolledig</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td><a class="link"
-                                href="#detail_attribute_Model_VERBLIJFSTITEL_Einddatumgeldigheidverblijfstitel">Einddatum
-                                geldigheid verblijfstitel</a></td>
-                        <td>
-                            <p>De datum waarop de verblijfstitel is opgeheven.</p>
-                        </td>
-                        <td>Datum­Onvolledig</td>
-                        <td>0 .. 1</td>
-                    </tr>
-                    <tr>
-                        <td><a class="link"
-                                href="#detail_attribute_Model_VERBLIJFSTITEL_Verblijfstitelomschrijving">Verblijfstitelomschrijving</a>
-                        </td>
-                        <td>
-                            <p>Omschrijving van de verblijfsrechtelijke status van de ingeschrevene.</p>
-                        </td>
-                        <td><a class="external-link"
-                                href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
-                        </td>
-                        <td>1</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h5>Overzicht relaties </h5>
-            <table style="width: 100%;">
-                <colgroup style="width: 50%;"></colgroup>
-                <colgroup style="width: 50%;"></colgroup>
-                <tbody>
-                    <tr>
-                        <th scope="col">Relatienaam met kardinaliteiten</th>
-                        <th scope="col">Definitie</th>
-                    </tr>
-                    <tr>
-                        <td><a class="link" href="#global_class_Model_INGEZETENE">INGEZETENE</a> [ 0 .. * ] <a
-                                class="link" href="#detail_association_Model_INGEZETENE_beschiktover">beschikt
-                                over</a> VERBLIJFSTITEL [ 0 .. 1 ]</td>
-                        <td>
-                            <p>De verwijzing naar de VERBLIJFSTITEL die aangeeft over welke verblijfsrechtelijke status
-                                de ingezetene beschikt.</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <section class="notoc">
-                <h5>Toelichting </h5>
-                <p>Het betreft een zgn. tabel-objecttype, afgeleid van de Verblijfstiteltabel in de GBA.</p>
-                <p></p>
-            </section>
-        </section>
         <section id="global_class_Model_VESTIGING">
             <h4> VESTIGING</h4>
             <table style="width: 100%;" class="overview OVERVIEW-OBJECTTYPE">
@@ -15632,6 +15626,106 @@
     </section>
     <section>
         <h3>Referentielijsten </h3>
+        <section id="global_class_Model_ADELLIJKETITELPREDIKAAT">
+            <h4>Referentielijst ADELLIJKE TITEL/PREDIKAAT</h4>
+            <table style="width: 100%;" class="overview OVERVIEW-REFERENCELIST">
+                <colgroup style="width: 30%;"></colgroup>
+                <colgroup style="width: 70%;"></colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">Naam</th>
+                        <td>ADELLIJKE TITEL/PREDIKAAT</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Herkomst</th>
+                        <td>GBA</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Definitie</th>
+                        <td>
+                            <p>Een opsomming van de adellijke titels en/of predikaten die een persoon kan bezitten of
+                                die aan een persoon kunnen worden toegekend met hun codes, omschrijvingen en soorten,
+                                gebaseerd op landelijke tabel 38.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Herkomst definitie</th>
+                        <td>GBA</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Datum opname</th>
+                        <td>1 april 2018</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Data locatie</th>
+                        <td><span class="url">http://publicaties.rvig.nl/Landelijke_tabellen</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Unieke aanduiding</th>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mnemonic</th>
+                        <td> </td>
+                    </tr>
+                </tbody>
+            </table>
+            <section>
+                <h5>Overzicht referentie elementen </h5>
+                <table style="width: 100%;">
+                    <colgroup style="width: 30%;"></colgroup>
+                    <colgroup style="width: 50%;"></colgroup>
+                    <colgroup style="width: 10%;"></colgroup>
+                    <colgroup style="width: 10%;"></colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="col">Referentie element</th>
+                            <th scope="col">Definitie</th>
+                            <th scope="col">Formaat</th>
+                            <th scope="col">Card</th>
+                        </tr>
+                        <tr>
+                            <td><a class="link"
+                                    href="#detail_attribute_Model_ADELLIJKETITELPREDIKAAT_Adellijketitelpredikaat">Adellijke
+                                    titel/predikaat</a></td>
+                            <td>
+                                <p>De code van de Adellijke titel/predikaat</p>
+                            </td>
+                            <td><a class="external-link"
+                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                            </td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><a class="link"
+                                    href="#detail_attribute_Model_ADELLIJKETITELPREDIKAAT_Omschrijving">Omschrijving</a>
+                            </td>
+                            <td>
+                                <p>De omschrijving van de adellijke titel en/of het predikaat.</p>
+                            </td>
+                            <td><a class="external-link"
+                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                            </td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><a class="link" href="#detail_attribute_Model_ADELLIJKETITELPREDIKAAT_Soort">Soort</a>
+                            </td>
+                            <td>
+                                <p>De soort van de Adellijke titel/predikaat</p>
+                            </td>
+                            <td><a class="external-link"
+                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                            </td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="notoc">
+                <h5>Toelichting </h5><span class="url">https://publicaties.rvig.nl/landelijke-tabellen-32-tm-61</span>
+            </section>
+        </section>
         <section id="global_class_Model_AARDAANTEKENING">
             <h4>Referentielijst AARD AANTEKENING</h4>
             <table style="width: 100%;" class="overview OVERVIEW-REFERENCELIST">
@@ -16369,6 +16463,107 @@
                 </table>
             </section>
         </section>
+        <section id="global_class_Model_GEZAGSVERHOUDING">
+            <h4>Referentielijst GEZAGSVERHOUDING</h4>
+            <table style="width: 100%;" class="overview OVERVIEW-REFERENCELIST">
+                <colgroup style="width: 30%;"></colgroup>
+                <colgroup style="width: 70%;"></colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">Naam</th>
+                        <td>GEZAGSVERHOUDING</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Herkomst</th>
+                        <td>RVIG</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Definitie</th>
+                        <td>
+                            <p>De landelijke tabel 61 Gezagsverhouding zoals die gepubliceerd wordt door het RVIG op
+                                https://publicaties.rvig.nl/landelijke-tabellen-32-tm-61</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Herkomst definitie</th>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Datum opname</th>
+                        <td>06-04-2026</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Data locatie</th>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Unieke aanduiding</th>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mnemonic</th>
+                        <td> </td>
+                    </tr>
+                </tbody>
+            </table>
+            <section>
+                <h5>Overzicht referentie elementen </h5>
+                <table style="width: 100%;">
+                    <colgroup style="width: 30%;"></colgroup>
+                    <colgroup style="width: 50%;"></colgroup>
+                    <colgroup style="width: 10%;"></colgroup>
+                    <colgroup style="width: 10%;"></colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="col">Referentie element</th>
+                            <th scope="col">Definitie</th>
+                            <th scope="col">Formaat</th>
+                            <th scope="col">Card</th>
+                        </tr>
+                        <tr>
+                            <td><a class="link" href="#detail_attribute_Model_GEZAGSVERHOUDING_Code">Code</a></td>
+                            <td></td>
+                            <td><a class="external-link"
+                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                            </td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><a class="link" href="#detail_attribute_Model_GEZAGSVERHOUDING_Datumeinde">Datum
+                                    einde</a></td>
+                            <td></td>
+                            <td><a class="external-link"
+                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                            </td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><a class="link" href="#detail_attribute_Model_GEZAGSVERHOUDING_Datumingang">Datum
+                                    ingang</a></td>
+                            <td></td>
+                            <td><a class="external-link"
+                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                            </td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><a class="link"
+                                    href="#detail_attribute_Model_GEZAGSVERHOUDING_Omschrijving">Omschrijving</a></td>
+                            <td></td>
+                            <td><a class="external-link"
+                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                            </td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="notoc">
+                <h5>Toelichting </h5>
+                <p>Description: Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding.</p>
+                <p></p>
+            </section>
+        </section>
         <section id="global_class_Model_KADASTRALEGEMEENTE">
             <h4>Referentielijst KADASTRALE GEMEENTE</h4>
             <table style="width: 100%;" class="overview OVERVIEW-REFERENCELIST">
@@ -16471,107 +16666,6 @@
                         </tr>
                     </tbody>
                 </table>
-            </section>
-        </section>
-        <section id="global_class_Model_GEZAGSVERHOUDING">
-            <h4>Referentielijst GEZAGSVERHOUDING</h4>
-            <table style="width: 100%;" class="overview OVERVIEW-REFERENCELIST">
-                <colgroup style="width: 30%;"></colgroup>
-                <colgroup style="width: 70%;"></colgroup>
-                <tbody>
-                    <tr>
-                        <th scope="row">Naam</th>
-                        <td>GEZAGSVERHOUDING</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Herkomst</th>
-                        <td>RVIG</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Definitie</th>
-                        <td>
-                            <p>De landelijke tabel 61 Gezagsverhouding zoals die gepubliceerd wordt door het RVIG op
-                                https://publicaties.rvig.nl/landelijke-tabellen-32-tm-61</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Herkomst definitie</th>
-                        <td> </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Datum opname</th>
-                        <td>06-04-2026</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Data locatie</th>
-                        <td> </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Unieke aanduiding</th>
-                        <td> </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Mnemonic</th>
-                        <td> </td>
-                    </tr>
-                </tbody>
-            </table>
-            <section>
-                <h5>Overzicht referentie elementen </h5>
-                <table style="width: 100%;">
-                    <colgroup style="width: 30%;"></colgroup>
-                    <colgroup style="width: 50%;"></colgroup>
-                    <colgroup style="width: 10%;"></colgroup>
-                    <colgroup style="width: 10%;"></colgroup>
-                    <tbody>
-                        <tr>
-                            <th scope="col">Referentie element</th>
-                            <th scope="col">Definitie</th>
-                            <th scope="col">Formaat</th>
-                            <th scope="col">Card</th>
-                        </tr>
-                        <tr>
-                            <td><a class="link" href="#detail_attribute_Model_GEZAGSVERHOUDING_Code">Code</a></td>
-                            <td></td>
-                            <td><a class="external-link"
-                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
-                            </td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td><a class="link" href="#detail_attribute_Model_GEZAGSVERHOUDING_Datumeinde">Datum
-                                    einde</a></td>
-                            <td></td>
-                            <td><a class="external-link"
-                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
-                            </td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td><a class="link" href="#detail_attribute_Model_GEZAGSVERHOUDING_Datumingang">Datum
-                                    ingang</a></td>
-                            <td></td>
-                            <td><a class="external-link"
-                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
-                            </td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td><a class="link"
-                                    href="#detail_attribute_Model_GEZAGSVERHOUDING_Omschrijving">Omschrijving</a></td>
-                            <td></td>
-                            <td><a class="external-link"
-                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
-                            </td>
-                            <td>1</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <section class="notoc">
-                <h5>Toelichting </h5>
-                <p>Description: Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding.</p>
-                <p></p>
             </section>
         </section>
         <section id="global_class_Model_LAND">
@@ -17333,6 +17427,105 @@
                 </table>
             </section>
         </section>
+        <section id="global_class_Model_VERBLIJFSTITEL">
+            <h4>Referentielijst VERBLIJFSTITEL</h4>
+            <table style="width: 100%;" class="overview OVERVIEW-REFERENCELIST">
+                <colgroup style="width: 30%;"></colgroup>
+                <colgroup style="width: 70%;"></colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">Naam</th>
+                        <td>VERBLIJFSTITEL</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Herkomst</th>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Definitie</th>
+                        <td>
+                            <p>Een opsomming van de verblijfsrechtelijke statussen met hun codes,
+                                omschrijvingen en geldigheidstermijnen.</p>
+                            <p>Deze referentielijst correspondeert met landelijke tabel 56 Verblijfstitels.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Herkomst definitie</th>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Datum opname</th>
+                        <td>28-10-2026</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Data locatie</th>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Unieke aanduiding</th>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mnemonic</th>
+                        <td> </td>
+                    </tr>
+                </tbody>
+            </table>
+            <section>
+                <h5>Overzicht referentie elementen </h5>
+                <table style="width: 100%;">
+                    <colgroup style="width: 30%;"></colgroup>
+                    <colgroup style="width: 50%;"></colgroup>
+                    <colgroup style="width: 10%;"></colgroup>
+                    <colgroup style="width: 10%;"></colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="col">Referentie element</th>
+                            <th scope="col">Definitie</th>
+                            <th scope="col">Formaat</th>
+                            <th scope="col">Card</th>
+                        </tr>
+                        <tr>
+                            <td><a class="link" href="#detail_attribute_Model_VERBLIJFSTITEL_Codeverblijfstitel">Code
+                                    verblijfstitel</a></td>
+                            <td></td>
+                            <td><a class="external-link"
+                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                            </td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><a class="link"
+                                    href="#detail_attribute_Model_VERBLIJFSTITEL_Datumbeeindigingtabelregel">Datum
+                                    beeindiging tabelregel</a></td>
+                            <td></td>
+                            <td>Datum­Onvolledig</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><a class="link"
+                                    href="#detail_attribute_Model_VERBLIJFSTITEL_Datumingangtabelregel">Datum ingang
+                                    tabelregel</a></td>
+                            <td></td>
+                            <td>Datum­Onvolledig</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><a class="link"
+                                    href="#detail_attribute_Model_VERBLIJFSTITEL_Omschrijvingverblijfstitel">Omschrijving
+                                    verblijfstitel</a></td>
+                            <td>
+                                <p>Omschrijving van de verblijfsrechtelijke status van de ingeschrevene.</p>
+                            </td>
+                            <td><a class="external-link"
+                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                            </td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
         <section id="global_class_Model_VOORVOEGSEL">
             <h4>Referentielijst VOORVOEGSEL</h4>
             <table style="width: 100%;" class="overview OVERVIEW-REFERENCELIST">
@@ -17535,109 +17728,96 @@
                 </table>
             </section>
         </section>
-        <section id="global_class_Model_ADELLIJKETITELPREDIKAAT">
-            <h4>Referentielijst ADELLIJKE TITEL/PREDIKAAT</h4>
-            <table style="width: 100%;" class="overview OVERVIEW-REFERENCELIST">
+    </section>
+    <section>
+        <h3>Gegevensgroeptypen </h3>
+        <section id="global_class_Model_Verblijfstitel">
+            <h4>Gegevensgroep Verblijfstitel</h4>
+            <table style="width: 100%;" class="overview OVERVIEW-COMPOSITION">
                 <colgroup style="width: 30%;"></colgroup>
                 <colgroup style="width: 70%;"></colgroup>
                 <tbody>
                     <tr>
                         <th scope="row">Naam</th>
-                        <td>ADELLIJKE TITEL/PREDIKAAT</td>
+                        <td>Verblijfstitel</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Alias</th>
+                        <td>(VBT)</td>
                     </tr>
                     <tr>
                         <th scope="row">Herkomst</th>
-                        <td>GBA</td>
+                        <td> </td>
                     </tr>
                     <tr>
                         <th scope="row">Definitie</th>
                         <td>
-                            <p>Een opsomming van de adellijke titels en/of predikaten die een persoon kan bezitten of
-                                die aan een persoon kunnen worden toegekend met hun codes, omschrijvingen en soorten,
-                                gebaseerd op landelijke tabel 38.</p>
+                            <p>Gegevens over de verblijfsrechtelijke status.</p>
                         </td>
                     </tr>
                     <tr>
                         <th scope="row">Herkomst definitie</th>
-                        <td>GBA</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Datum opname</th>
-                        <td>1 april 2018</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Data locatie</th>
-                        <td><span class="url">http://publicaties.rvig.nl/Landelijke_tabellen</span></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Unieke aanduiding</th>
                         <td> </td>
                     </tr>
                     <tr>
-                        <th scope="row">Mnemonic</th>
+                        <th scope="row">Datum opname</th>
                         <td> </td>
                     </tr>
                 </tbody>
             </table>
-            <section>
-                <h5>Overzicht referentie elementen </h5>
-                <table style="width: 100%;">
-                    <colgroup style="width: 30%;"></colgroup>
-                    <colgroup style="width: 50%;"></colgroup>
-                    <colgroup style="width: 10%;"></colgroup>
-                    <colgroup style="width: 10%;"></colgroup>
-                    <tbody>
-                        <tr>
-                            <th scope="col">Referentie element</th>
-                            <th scope="col">Definitie</th>
-                            <th scope="col">Formaat</th>
-                            <th scope="col">Card</th>
-                        </tr>
-                        <tr>
-                            <td><a class="link"
-                                    href="#detail_attribute_Model_ADELLIJKETITELPREDIKAAT_Adellijketitelpredikaat">Adellijke
-                                    titel/predikaat</a></td>
-                            <td>
-                                <p>De code van de Adellijke titel/predikaat</p>
-                            </td>
-                            <td><a class="external-link"
-                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
-                            </td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td><a class="link"
-                                    href="#detail_attribute_Model_ADELLIJKETITELPREDIKAAT_Omschrijving">Omschrijving</a>
-                            </td>
-                            <td>
-                                <p>De omschrijving van de adellijke titel en/of het predikaat.</p>
-                            </td>
-                            <td><a class="external-link"
-                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
-                            </td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td><a class="link" href="#detail_attribute_Model_ADELLIJKETITELPREDIKAAT_Soort">Soort</a>
-                            </td>
-                            <td>
-                                <p>De soort van de Adellijke titel/predikaat</p>
-                            </td>
-                            <td><a class="external-link"
-                                    href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
-                            </td>
-                            <td>1</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <section class="notoc">
-                <h5>Toelichting </h5><span class="url">https://publicaties.rvig.nl/landelijke-tabellen-32-tm-61</span>
-            </section>
+            <h5>Overzicht attributen </h5>
+            <table style="width: 100%;">
+                <colgroup style="width: 30%;"></colgroup>
+                <colgroup style="width: 50%;"></colgroup>
+                <colgroup style="width: 10%;"></colgroup>
+                <colgroup style="width: 10%;"></colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="col">Attribuutnaam</th>
+                        <th scope="col">Definitie</th>
+                        <th scope="col">Formaat</th>
+                        <th scope="col">Card</th>
+                    </tr>
+                    <tr>
+                        <td><a class="link"
+                                href="#detail_attribute_Model_Verblijfstitel_Aanduidingverblijfstitel">Aanduiding
+                                verblijfstitel</a></td>
+                        <td>
+                            <p>Een code, opgenomen in tabel 56, Verblijfstiteltabel, die aangeeft over
+                                welke verblijfsrechtelijke status de ingeschrevene beschikt.</p>
+                        </td>
+                        <td><a class="link" href="#global_class_Model_VERBLIJFSTITEL">VERBLIJFSTITEL</a></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><a class="link" href="#detail_attribute_Model_Verblijfstitel_Datumeindeverblijfstitel">Datum
+                                einde verblijfstitel</a></td>
+                        <td>
+                            <p>De datum waarop de verblijfstitel zijn geldigheid verliest.
+                                Dit element wordt uitsluitend opgenomen indien er sprake is van een
+                                verblijfstitel voor bepaalde tijd. Bij een verblijfstitel voor het leven komt
+                                het element niet voor.</p>
+                            <p>Noot. Dit element komt op deze wijze voor in het LO-BRP terwijl er voor verblijfstitel
+                                ook groep 85 Geldigheid is gedefinieerd. We volgen hierin het LO-BRP</p>
+                        </td>
+                        <td>Datum­Onvolledig</td>
+                        <td>0 .. 1</td>
+                    </tr>
+                    <tr>
+                        <td><a class="link"
+                                href="#detail_attribute_Model_Verblijfstitel_Ingangsdatumverblijfstitel">Ingangsdatum
+                                verblijfstitel</a></td>
+                        <td>
+                            <p>De datum waarop de verblijfstitel zijn geldigheid krijgt.</p>
+                            <p>Noot. Dit element komt op deze wijze voor in het LO-BRP terwijl er voor verblijfstitel
+                                ook groep 85 Geldigheid is gedefinieerd. We volgen hierin het LO-BRP</p>
+                        </td>
+                        <td>Datum­Onvolledig</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
-    </section>
-    <section>
-        <h3>Gegevensgroeptypen </h3>
         <section id="global_class_Model_NaamaanschrijvingNATUURLIJKPERSOON">
             <h4>Gegevensgroep Naam aanschrijving NATUURLIJK PERSOON</h4>
             <table style="width: 100%;" class="overview OVERVIEW-COMPOSITION">
@@ -29710,78 +29890,6 @@
                         <p>Aanduiding documentidentificatie: Documentdatum, Documentomschrijving, Documentgemeente</p>
                         <p></p>
                     </div>
-                </section>
-                <section id="detail_association_Model_INGEZETENE_beschiktover">
-                    <h6>Relatiesoort details <a href="#global_class_Model_INGEZETENE">INGEZETENE</a> beschikt over</h6>
-                    <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Naam</th>
-                                <td>beschikt over</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Gerelateerd objecttype</th>
-                                <td><a class="link" href="#global_class_Model_VERBLIJFSTITEL">VERBLIJFSTITEL</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Definitie</th>
-                                <td>
-                                    <p>De verwijzing naar de VERBLIJFSTITEL die aangeeft over welke verblijfsrechtelijke
-                                        status de ingezetene beschikt.</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst definitie</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Datum opname</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Mogelijk geen waarde</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie materiële historie</th>
-                                <td>Ja</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie formele historie</th>
-                                <td>Ja</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit bron</th>
-                                <td>0 .. *</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie in onderzoek</th>
-                                <td>Ja</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Aanduiding strijdigheid/nietigheid</th>
-                                <td>Ja</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit</th>
-                                <td>0 .. 1</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie authentiek</th>
-                                <td>Authentiek</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Regels</th>
-                                <td> </td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </section>
             </section>
             <section id="detail_class_Model_INRICHTINGSELEMENT">
@@ -44514,405 +44622,6 @@
                     </table>
                 </section>
             </section>
-            <section id="detail_class_Model_VERBLIJFSTITEL">
-                <h5> VERBLIJFSTITEL</h5>
-                <section id="detail_attribute_Model_VERBLIJFSTITEL_Aanduidingverblijfstitel">
-                    <h6>Attribuutsoort details <a href="#global_class_Model_VERBLIJFSTITEL">VERBLIJFSTITEL</a>
-                        Aanduiding verblijfstitel</h6>
-                    <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Naam</th>
-                                <td>Aanduiding verblijfstitel</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Alias</th>
-                                <td>aanduiding</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst</th>
-                                <td>GBA</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Definitie</th>
-                                <td>
-                                    <p>De code uit de Verblijfstiteltabel die aangeeft over welke verblijfsrechtelijke
-                                        status de ingezetene beschikt.</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst definitie</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Datum opname</th>
-                                <td>1 maart 2009</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Mogelijk geen waarde</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie materiële historie</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie formele historie</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie in onderzoek</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Aanduiding strijdigheid/nietigheid</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit</th>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie authentiek</th>
-                                <td>Authentiek</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Lengte</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formaat</th>
-                                <td><a class="external-link"
-                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Patroon</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie classificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie identificerend</th>
-                                <td>Ja</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie afleidbaar</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Waarde afleidbaar</th>
-                                <td>Nee</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="notoc"><strong>Toelichting </strong>
-                        <p>Zie de toelichting in de GBA.</p>
-                        <p></p>
-                        <p>Uit documentatie versie 2.02 (vervallen tagge values):</p>
-                        <p>Code attribuutsoort: 10.39.10</p>
-                    </div>
-                </section>
-                <section id="detail_attribute_Model_VERBLIJFSTITEL_Begindatumgeldigheidverblijfstitel">
-                    <h6>Attribuutsoort details <a href="#global_class_Model_VERBLIJFSTITEL">VERBLIJFSTITEL</a>
-                        Begindatum geldigheid verblijfstitel</h6>
-                    <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Naam</th>
-                                <td>Begindatum geldigheid verblijfstitel</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Alias</th>
-                                <td>tijdvak­Object.begin­Object</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst</th>
-                                <td>GFO BG</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Definitie</th>
-                                <td>
-                                    <p>De datum waarop de verblijfstitel is ontstaan.</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst definitie</th>
-                                <td>GFO BG</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Datum opname</th>
-                                <td>1 maart 2009</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Mogelijk geen waarde</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie materiële historie</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie formele historie</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie in onderzoek</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Aanduiding strijdigheid/nietigheid</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit</th>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie authentiek</th>
-                                <td>Authentiek</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Lengte</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formaat</th>
-                                <td>Datum­Onvolledig</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Patroon</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie classificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie identificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie afleidbaar</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Waarde afleidbaar</th>
-                                <td>Nee</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="notoc"><strong>Toelichting </strong>
-                        <p>Het gaat hier om veranderingen in de lijst van codes en omschrijvingen. Niet te verwarren met
-                            de datum waarop een natuurlijke persoon zijn of haar verblijfstitel verkrijgt.</p>
-                        <p></p>
-                        <p>Uit documentatie versie 2.02 (vervallen tagge values):</p>
-                        <p>Code attribuutsoort: 81.20</p>
-                    </div>
-                </section>
-                <section id="detail_attribute_Model_VERBLIJFSTITEL_Einddatumgeldigheidverblijfstitel">
-                    <h6>Attribuutsoort details <a href="#global_class_Model_VERBLIJFSTITEL">VERBLIJFSTITEL</a> Einddatum
-                        geldigheid verblijfstitel</h6>
-                    <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Naam</th>
-                                <td>Einddatum geldigheid verblijfstitel</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Alias</th>
-                                <td>tijdvak­Object.eind­Object</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst</th>
-                                <td>GFO BG</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Definitie</th>
-                                <td>
-                                    <p>De datum waarop de verblijfstitel is opgeheven.</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst definitie</th>
-                                <td>GFO BG</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Datum opname</th>
-                                <td>1 maart 2009</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Mogelijk geen waarde</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie materiële historie</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie formele historie</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie in onderzoek</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit</th>
-                                <td>0 .. 1</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie authentiek</th>
-                                <td>Authentiek</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Lengte</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formaat</th>
-                                <td>Datum­Onvolledig</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Patroon</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie classificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie identificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie afleidbaar</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Waarde afleidbaar</th>
-                                <td>Nee</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="notoc"><strong>Toelichting </strong>
-                        <p>Het gaat hier om veranderingen in de lijst van codes en omschrijvingen. Niet te verwarren met
-                            de datum waarop een natuurlijke persoon zijn of haar verblijfstitel verliest.</p>
-                        <p></p>
-                        <p>Uit documentatie versie 2.02 (vervallen tagge values):</p>
-                        <p>Code attribuutsoort: 81.30</p>
-                        <p>Aanduiding brondocument: Documentidentificatie, Documentdatum</p>
-                    </div>
-                </section>
-                <section id="detail_attribute_Model_VERBLIJFSTITEL_Verblijfstitelomschrijving">
-                    <h6>Attribuutsoort details <a href="#global_class_Model_VERBLIJFSTITEL">VERBLIJFSTITEL</a>
-                        Verblijfstitelomschrijving</h6>
-                    <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Naam</th>
-                                <td>Verblijfstitelomschrijving</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Alias</th>
-                                <td>omschrijving</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst</th>
-                                <td>GFO BG</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Definitie</th>
-                                <td>
-                                    <p>Omschrijving van de verblijfsrechtelijke status van de ingeschrevene.</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst definitie</th>
-                                <td>GFO BG</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Datum opname</th>
-                                <td>1 maart 2009</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Mogelijk geen waarde</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie materiële historie</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie formele historie</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie in onderzoek</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Aanduiding strijdigheid/nietigheid</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit</th>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie authentiek</th>
-                                <td>Authentiek</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Lengte</th>
-                                <td>100</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formaat</th>
-                                <td><a class="external-link"
-                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Patroon</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie classificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie identificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie afleidbaar</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Waarde afleidbaar</th>
-                                <td>Nee</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="notoc"><strong>Toelichting </strong>
-                        <p></p>
-                        <p>Uit documentatie versie 2.02 (vervallen tagge values):</p>
-                        <p>Code attribuutsoort: 95.88</p>
-                        <p></p>
-                    </div>
-                </section>
-            </section>
             <section id="detail_class_Model_VESTIGING">
                 <h5> VESTIGING</h5>
                 <section id="detail_attribute_Model_VESTIGING_Datumaanvang">
@@ -52815,6 +52524,295 @@
         </section>
         <section>
             <h4>Gegevensgroeptype details </h4>
+            <section id="detail_class_Model_Verblijfstitel">
+                <h5>Gegevensgroeptype Verblijfstitel</h5>
+                <section id="detail_attribute_Model_Verblijfstitel_Aanduidingverblijfstitel">
+                    <h6>Attribuutsoort details <a href="#global_class_Model_Verblijfstitel">Verblijfstitel</a>
+                        Aanduiding verblijfstitel</h6>
+                    <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Naam</th>
+                                <td>Aanduiding verblijfstitel</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Alias</th>
+                                <td>aanduiding</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst</th>
+                                <td>LO-BRP</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Definitie</th>
+                                <td>
+                                    <p>Een code, opgenomen in tabel 56, Verblijfstiteltabel, die aangeeft over
+                                        welke verblijfsrechtelijke status de ingeschrevene beschikt.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst definitie</th>
+                                <td>LO-BRP</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Datum opname</th>
+                                <td>28-10-2026</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Mogelijk geen waarde</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie materiële historie</th>
+                                <td>Nee</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie formele historie</th>
+                                <td>Nee</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie in onderzoek</th>
+                                <td>Nee</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Aanduiding strijdigheid/nietigheid</th>
+                                <td>Nee</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie kardinaliteit</th>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie authentiek</th>
+                                <td>Authentiek</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Lengte</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Formaat</th>
+                                <td><a class="link" href="#detail_class_Model_VERBLIJFSTITEL">VERBLIJFSTITEL</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Patroon</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie classificerend</th>
+                                <td>Nee</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie identificerend</th>
+                                <td>Ja</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie afleidbaar</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Waarde afleidbaar</th>
+                                <td>Nee</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="notoc"><strong>Toelichting </strong>
+                        <p>Uit documentatie versie 2.02 (vervallen tagge values):</p>
+                        <p>Code attribuutsoort: 10.39.10</p>
+                    </div>
+                </section>
+                <section id="detail_attribute_Model_Verblijfstitel_Datumeindeverblijfstitel">
+                    <h6>Attribuutsoort details <a href="#global_class_Model_Verblijfstitel">Verblijfstitel</a> Datum
+                        einde verblijfstitel</h6>
+                    <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Naam</th>
+                                <td>Datum einde verblijfstitel</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Alias</th>
+                                <td>tijdvak­Object.eind­Object</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst</th>
+                                <td>LO-BRP</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Definitie</th>
+                                <td>
+                                    <p>De datum waarop de verblijfstitel zijn geldigheid verliest.
+                                        Dit element wordt uitsluitend opgenomen indien er sprake is van een
+                                        verblijfstitel voor bepaalde tijd. Bij een verblijfstitel voor het leven komt
+                                        het element niet voor.</p>
+                                    <p>Noot. Dit element komt op deze wijze voor in het LO-BRP terwijl er voor
+                                        verblijfstitel ook groep 85 Geldigheid is gedefinieerd. We volgen hierin het
+                                        LO-BRP</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst definitie</th>
+                                <td>LO-BRP</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Datum opname</th>
+                                <td>28-10-2026</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Mogelijk geen waarde</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie materiële historie</th>
+                                <td>Nee</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie formele historie</th>
+                                <td>Nee</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie in onderzoek</th>
+                                <td>Nee</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie kardinaliteit</th>
+                                <td>0 .. 1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie authentiek</th>
+                                <td>Authentiek</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Lengte</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Formaat</th>
+                                <td>Datum­Onvolledig</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Patroon</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie classificerend</th>
+                                <td>Nee</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie identificerend</th>
+                                <td>Nee</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie afleidbaar</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Waarde afleidbaar</th>
+                                <td>Nee</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="detail_attribute_Model_Verblijfstitel_Ingangsdatumverblijfstitel">
+                    <h6>Attribuutsoort details <a href="#global_class_Model_Verblijfstitel">Verblijfstitel</a>
+                        Ingangsdatum verblijfstitel</h6>
+                    <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Naam</th>
+                                <td>Ingangsdatum verblijfstitel</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Alias</th>
+                                <td>tijdvak­Object.begin­Object</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst</th>
+                                <td>LO-BRP</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Definitie</th>
+                                <td>
+                                    <p>De datum waarop de verblijfstitel zijn geldigheid krijgt.</p>
+                                    <p>Noot. Dit element komt op deze wijze voor in het LO-BRP terwijl er voor
+                                        verblijfstitel ook groep 85 Geldigheid is gedefinieerd. We volgen hierin het
+                                        LO-BRP</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst definitie</th>
+                                <td>LO-BRP</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Datum opname</th>
+                                <td>28-10-2026</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Mogelijk geen waarde</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie materiële historie</th>
+                                <td>Nee</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie formele historie</th>
+                                <td>Nee</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie in onderzoek</th>
+                                <td>Nee</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Aanduiding strijdigheid/nietigheid</th>
+                                <td>Nee</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie kardinaliteit</th>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie authentiek</th>
+                                <td>Authentiek</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Lengte</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Formaat</th>
+                                <td>Datum­Onvolledig</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Patroon</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie classificerend</th>
+                                <td>Nee</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie identificerend</th>
+                                <td>Nee</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie afleidbaar</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Waarde afleidbaar</th>
+                                <td>Nee</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
             <section id="detail_class_Model_NaamaanschrijvingNATUURLIJKPERSOON">
                 <h5>Gegevensgroeptype Naam aanschrijving NATUURLIJK PERSOON</h5>
                 <section id="detail_attribute_Model_NaamaanschrijvingNATUURLIJKPERSOON_Aanhefaanschrijving">
@@ -62834,6 +62832,159 @@
         </section>
         <section>
             <h4>Referentielijst </h4>
+            <section id="detail_class_Model_ADELLIJKETITELPREDIKAAT">
+                <h5>Referentielijst ADELLIJKE TITEL/PREDIKAAT</h5>
+                <section id="detail_attribute_Model_ADELLIJKETITELPREDIKAAT_Adellijketitelpredikaat">
+                    <h6>Referentie element <a href="#global_class_Model_ADELLIJKETITELPREDIKAAT">ADELLIJKE
+                            TITEL/PREDIKAAT</a> Adellijke titel/predikaat</h6>
+                    <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Naam</th>
+                                <td>Adellijke titel/predikaat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst</th>
+                                <td>GBA</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Definitie</th>
+                                <td>
+                                    <p>De code van de Adellijke titel/predikaat</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst definitie</th>
+                                <td>VNG-R o.b.v. GBA</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Datum opname</th>
+                                <td>1 april 2018</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie kardinaliteit</th>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Formaat</th>
+                                <td><a class="external-link"
+                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Patroon</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie identificerend</th>
+                                <td>Nee</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="detail_attribute_Model_ADELLIJKETITELPREDIKAAT_Omschrijving">
+                    <h6>Referentie element <a href="#global_class_Model_ADELLIJKETITELPREDIKAAT">ADELLIJKE
+                            TITEL/PREDIKAAT</a> Omschrijving</h6>
+                    <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Naam</th>
+                                <td>Omschrijving</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst</th>
+                                <td>GBA</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Definitie</th>
+                                <td>
+                                    <p>De omschrijving van de adellijke titel en/of het predikaat.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst definitie</th>
+                                <td>VNG-R o.b.v. GBA</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Datum opname</th>
+                                <td>1 april 2018</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie kardinaliteit</th>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Formaat</th>
+                                <td><a class="external-link"
+                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Patroon</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie identificerend</th>
+                                <td>Nee</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="detail_attribute_Model_ADELLIJKETITELPREDIKAAT_Soort">
+                    <h6>Referentie element <a href="#global_class_Model_ADELLIJKETITELPREDIKAAT">ADELLIJKE
+                            TITEL/PREDIKAAT</a> Soort</h6>
+                    <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Naam</th>
+                                <td>Soort</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst</th>
+                                <td>GBA</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Definitie</th>
+                                <td>
+                                    <p>De soort van de Adellijke titel/predikaat</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst definitie</th>
+                                <td>VNG-R o.b.v. GBA</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Datum opname</th>
+                                <td>1 april 2018</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie kardinaliteit</th>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Formaat</th>
+                                <td><a class="external-link"
+                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Patroon</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie identificerend</th>
+                                <td>Nee</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
             <section id="detail_class_Model_AARDAANTEKENING">
                 <h5>Referentielijst AARD AANTEKENING</h5>
                 <section id="detail_attribute_Model_AARDAANTEKENING_Begindatumgeldigheidaardaantekening">
@@ -64145,6 +64296,208 @@
                     </table>
                 </section>
             </section>
+            <section id="detail_class_Model_GEZAGSVERHOUDING">
+                <h5>Referentielijst GEZAGSVERHOUDING</h5>
+                <section id="detail_attribute_Model_GEZAGSVERHOUDING_Code">
+                    <h6>Referentie element <a href="#global_class_Model_GEZAGSVERHOUDING">GEZAGSVERHOUDING</a> Code</h6>
+                    <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Naam</th>
+                                <td>Code</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Definitie</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst definitie</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Datum opname</th>
+                                <td>06-04-2026</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie kardinaliteit</th>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Formaat</th>
+                                <td><a class="external-link"
+                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Patroon</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie identificerend</th>
+                                <td>Nee</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="detail_attribute_Model_GEZAGSVERHOUDING_Datumeinde">
+                    <h6>Referentie element <a href="#global_class_Model_GEZAGSVERHOUDING">GEZAGSVERHOUDING</a> Datum
+                        einde</h6>
+                    <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Naam</th>
+                                <td>Datum einde</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Definitie</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst definitie</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Datum opname</th>
+                                <td>06-04-2026</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie kardinaliteit</th>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Formaat</th>
+                                <td><a class="external-link"
+                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Patroon</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Formeel patroon</th>
+                                <td>Datum</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie identificerend</th>
+                                <td>Nee</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="detail_attribute_Model_GEZAGSVERHOUDING_Datumingang">
+                    <h6>Referentie element <a href="#global_class_Model_GEZAGSVERHOUDING">GEZAGSVERHOUDING</a> Datum
+                        ingang</h6>
+                    <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Naam</th>
+                                <td>Datum ingang</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Definitie</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst definitie</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Datum opname</th>
+                                <td>06-04-2026</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie kardinaliteit</th>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Formaat</th>
+                                <td><a class="external-link"
+                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Patroon</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Formeel patroon</th>
+                                <td>Datum</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie identificerend</th>
+                                <td>Nee</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="detail_attribute_Model_GEZAGSVERHOUDING_Omschrijving">
+                    <h6>Referentie element <a href="#global_class_Model_GEZAGSVERHOUDING">GEZAGSVERHOUDING</a>
+                        Omschrijving</h6>
+                    <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Naam</th>
+                                <td>Omschrijving</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Definitie</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst definitie</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Datum opname</th>
+                                <td>06-04-2026</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie kardinaliteit</th>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Formaat</th>
+                                <td><a class="external-link"
+                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Patroon</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie identificerend</th>
+                                <td>Nee</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
             <section id="detail_class_Model_KADASTRALEGEMEENTE">
                 <h5>Referentielijst KADASTRALE GEMEENTE</h5>
                 <section id="detail_attribute_Model_KADASTRALEGEMEENTE_Code">
@@ -64365,208 +64718,6 @@
                             <tr>
                                 <th scope="row">Datum opname</th>
                                 <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit</th>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formaat</th>
-                                <td><a class="external-link"
-                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Patroon</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie identificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-            </section>
-            <section id="detail_class_Model_GEZAGSVERHOUDING">
-                <h5>Referentielijst GEZAGSVERHOUDING</h5>
-                <section id="detail_attribute_Model_GEZAGSVERHOUDING_Code">
-                    <h6>Referentie element <a href="#global_class_Model_GEZAGSVERHOUDING">GEZAGSVERHOUDING</a> Code</h6>
-                    <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Naam</th>
-                                <td>Code</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Definitie</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst definitie</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Datum opname</th>
-                                <td>06-04-2026</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit</th>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formaat</th>
-                                <td><a class="external-link"
-                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Patroon</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie identificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <section id="detail_attribute_Model_GEZAGSVERHOUDING_Datumeinde">
-                    <h6>Referentie element <a href="#global_class_Model_GEZAGSVERHOUDING">GEZAGSVERHOUDING</a> Datum
-                        einde</h6>
-                    <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Naam</th>
-                                <td>Datum einde</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Definitie</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst definitie</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Datum opname</th>
-                                <td>06-04-2026</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit</th>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formaat</th>
-                                <td><a class="external-link"
-                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Patroon</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formeel patroon</th>
-                                <td>Datum</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie identificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <section id="detail_attribute_Model_GEZAGSVERHOUDING_Datumingang">
-                    <h6>Referentie element <a href="#global_class_Model_GEZAGSVERHOUDING">GEZAGSVERHOUDING</a> Datum
-                        ingang</h6>
-                    <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Naam</th>
-                                <td>Datum ingang</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Definitie</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst definitie</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Datum opname</th>
-                                <td>06-04-2026</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit</th>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formaat</th>
-                                <td><a class="external-link"
-                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Patroon</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formeel patroon</th>
-                                <td>Datum</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie identificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <section id="detail_attribute_Model_GEZAGSVERHOUDING_Omschrijving">
-                    <h6>Referentie element <a href="#global_class_Model_GEZAGSVERHOUDING">GEZAGSVERHOUDING</a>
-                        Omschrijving</h6>
-                    <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Naam</th>
-                                <td>Omschrijving</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Definitie</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst definitie</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Datum opname</th>
-                                <td>06-04-2026</td>
                             </tr>
                             <tr>
                                 <th scope="row">Indicatie kardinaliteit</th>
@@ -66216,6 +66367,199 @@
                     </table>
                 </section>
             </section>
+            <section id="detail_class_Model_VERBLIJFSTITEL">
+                <h5>Referentielijst VERBLIJFSTITEL</h5>
+                <section id="detail_attribute_Model_VERBLIJFSTITEL_Codeverblijfstitel">
+                    <h6>Referentie element <a href="#global_class_Model_VERBLIJFSTITEL">VERBLIJFSTITEL</a> Code
+                        verblijfstitel</h6>
+                    <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Naam</th>
+                                <td>Code verblijfstitel</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Definitie</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst definitie</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Datum opname</th>
+                                <td>28-10-2026</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie kardinaliteit</th>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Formaat</th>
+                                <td><a class="external-link"
+                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Patroon</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie identificerend</th>
+                                <td>Nee</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="detail_attribute_Model_VERBLIJFSTITEL_Datumbeeindigingtabelregel">
+                    <h6>Referentie element <a href="#global_class_Model_VERBLIJFSTITEL">VERBLIJFSTITEL</a> Datum
+                        beeindiging tabelregel</h6>
+                    <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Naam</th>
+                                <td>Datum beeindiging tabelregel</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Definitie</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst definitie</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Datum opname</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie kardinaliteit</th>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Formaat</th>
+                                <td>Datum­Onvolledig</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Patroon</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie identificerend</th>
+                                <td>Nee</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="detail_attribute_Model_VERBLIJFSTITEL_Datumingangtabelregel">
+                    <h6>Referentie element <a href="#global_class_Model_VERBLIJFSTITEL">VERBLIJFSTITEL</a> Datum ingang
+                        tabelregel</h6>
+                    <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Naam</th>
+                                <td>Datum ingang tabelregel</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Definitie</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst definitie</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Datum opname</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie kardinaliteit</th>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Formaat</th>
+                                <td>Datum­Onvolledig</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Patroon</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie identificerend</th>
+                                <td>Nee</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="detail_attribute_Model_VERBLIJFSTITEL_Omschrijvingverblijfstitel">
+                    <h6>Referentie element <a href="#global_class_Model_VERBLIJFSTITEL">VERBLIJFSTITEL</a> Omschrijving
+                        verblijfstitel</h6>
+                    <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Naam</th>
+                                <td>Omschrijving verblijfstitel</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Definitie</th>
+                                <td>
+                                    <p>Omschrijving van de verblijfsrechtelijke status van de ingeschrevene.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Herkomst definitie</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Datum opname</th>
+                                <td>28-10-2026</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie kardinaliteit</th>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Formaat</th>
+                                <td><a class="external-link"
+                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Patroon</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Indicatie identificerend</th>
+                                <td>Nee</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
             <section id="detail_class_Model_VOORVOEGSEL">
                 <h5>Referentielijst VOORVOEGSEL</h5>
                 <section id="detail_attribute_Model_VOORVOEGSEL_Scheidingsteken">
@@ -66549,159 +66893,6 @@
                             <tr>
                                 <th scope="row">Datum opname</th>
                                 <td>1 mei 2016</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit</th>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formaat</th>
-                                <td><a class="external-link"
-                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Patroon</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie identificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-            </section>
-            <section id="detail_class_Model_ADELLIJKETITELPREDIKAAT">
-                <h5>Referentielijst ADELLIJKE TITEL/PREDIKAAT</h5>
-                <section id="detail_attribute_Model_ADELLIJKETITELPREDIKAAT_Adellijketitelpredikaat">
-                    <h6>Referentie element <a href="#global_class_Model_ADELLIJKETITELPREDIKAAT">ADELLIJKE
-                            TITEL/PREDIKAAT</a> Adellijke titel/predikaat</h6>
-                    <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Naam</th>
-                                <td>Adellijke titel/predikaat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst</th>
-                                <td>GBA</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Definitie</th>
-                                <td>
-                                    <p>De code van de Adellijke titel/predikaat</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst definitie</th>
-                                <td>VNG-R o.b.v. GBA</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Datum opname</th>
-                                <td>1 april 2018</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit</th>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formaat</th>
-                                <td><a class="external-link"
-                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Patroon</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie identificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <section id="detail_attribute_Model_ADELLIJKETITELPREDIKAAT_Omschrijving">
-                    <h6>Referentie element <a href="#global_class_Model_ADELLIJKETITELPREDIKAAT">ADELLIJKE
-                            TITEL/PREDIKAAT</a> Omschrijving</h6>
-                    <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Naam</th>
-                                <td>Omschrijving</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst</th>
-                                <td>GBA</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Definitie</th>
-                                <td>
-                                    <p>De omschrijving van de adellijke titel en/of het predikaat.</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst definitie</th>
-                                <td>VNG-R o.b.v. GBA</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Datum opname</th>
-                                <td>1 april 2018</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit</th>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formaat</th>
-                                <td><a class="external-link"
-                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Patroon</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie identificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <section id="detail_attribute_Model_ADELLIJKETITELPREDIKAAT_Soort">
-                    <h6>Referentie element <a href="#global_class_Model_ADELLIJKETITELPREDIKAAT">ADELLIJKE
-                            TITEL/PREDIKAAT</a> Soort</h6>
-                    <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Naam</th>
-                                <td>Soort</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst</th>
-                                <td>GBA</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Definitie</th>
-                                <td>
-                                    <p>De soort van de Adellijke titel/predikaat</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst definitie</th>
-                                <td>VNG-R o.b.v. GBA</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Datum opname</th>
-                                <td>1 april 2018</td>
                             </tr>
                             <tr>
                                 <th scope="row">Indicatie kardinaliteit</th>
