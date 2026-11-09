@@ -6,18 +6,35 @@ Onderdeel van de GEMeentelijke Model Architectuur (GEMMA)
 
 # Voorwoord
 
-Burgers en bedrijven hoeven (straks) nog maar één keer hun gegevens aan de overheid te verstrekken. Landelijke basisregistraties zorgen voor het meervoudig gebruik hiervan binnen de overheid. Vóór die tijd dienen gemeenten minimaal hun basisgegevens op orde te hebben. Vanwege het belang van een goede gegevenshuishouding heeft KING medio 2007 versie 1.0 uitgebracht van het Referentiemodel Stelsel van Gemeentelijke Basisgegevens (RSGB). Daarmee speelden wij in op de overheidsbrede invoering van het landelijk stelsel van basisregistraties. Tevens verving dit het GFO Basisgegevens. In het voorjaar van 2008 hebben we met versie 1.1. het toepassingsgebied van het RSGB vergroot met de Basisregistratie WOZ (Waardering Onroerende Zaken). Voortschrijdend inzicht, de eerste ervaringen met het RSGB, ontwikkelingen in de (catalogi van de) landelijke basisregistraties en het ontwikkelen van de berichtenstandaard StUF-BG hebben ons aanleiding gegeven versie 2.0 van het RSGB uit te brengen. Dit objecten- of gegevensmodel ondersteunt gemeenten bij het stroomlijnen van hun gegevenshuishouding en de daarop gerichte processen voor beheer en gebruik. Ook voorziet het in standaarden voor gegevensuitwisseling, zodat gemeenten een samenhangende informatievoorziening kunnen opzetten. In versie 2.02 zijn wijzigingen doorgevoerd naar aanleiding van de aanpassingen die zijn doorgevoerd in de catalogus BAG (versie 2009) en het Logisch Ontwerp GBA (versie LO3.7). Deze wijzigingen zijn te vinden in een separaat document.
-Beheer
-De rapportage RSGB 2.0 is in mei 2009 vastgesteld door de StUF-regiegroep. Versie 2.02 betreft een patch m.b.t. Een aanpassing van niet-natuurlijke personen op verzoek van de StUF expertgroep.
-Het beheer van het RSGB is per 1 januari 2010 overgenomen door KING, het KwaliteitsInstituut Nederlandse Gemeenten. Voor vragen, suggesties of opmerkingen kunt u contact opnemen met ons.
-Commentaar op deze versie nemen we in de normale beheerprocedure van het RSGB mee. KING-specialisten beoordelen wijzigingsverzoeken en leggen ze ter advisering voor aan werkgroepen met een publiek-private samenstelling. Iedere belangstellende kan wijzigingsverzoeken indienen.
+Het Referentiemodel Stelsel van Gemeentelijke Basisgegevens (RSGB) heeft zijn oorsprong in het streven dat burgers en bedrijven hun gegevens maar één keer aan de overheid hoeven te verstrekken. De landelijke basisregistraties maken het mogelijk dat de overheid die gegevens daarna meervoudig gebruikt. Voor gemeenten was het daarbij van belang om vanuit gemeentelijk perspectief in beeld te brengen hoe het stelsel van basisgegevens samenhangt. Daarnaast was er behoefte om ook gemeentespecifieke gegevens die zich lenen voor hergebruik eenduidig te beschrijven. Daaruit komt het principe voort dat in het RSGB alleen gegevens worden opgenomen die geschikt zijn voor meervoudig gebruik.
+
+Versie 1.0 van het RSGB is medio 2007 gepubliceerd door het toenmalige EGEM, als vervanging van het GFO-Basisgegevens van de VNG. In het voorjaar van 2008 is met versie 1.1 het toepassingsgebied uitgebreid met de Basisregistratie WOZ (Waardering Onroerende Zaken). Voortschrijdend inzicht, de eerste ervaringen met het RSGB, ontwikkelingen in de (catalogi van de) landelijke basisregistraties en de ontwikkeling van de berichtenstandaard StUF-BG leidden tot versie 2.0. Die versie is in mei 2009 vastgesteld door de StUF-regiegroep. Per 1 januari 2010 is het beheer van het RSGB overgegaan naar het Kwaliteitsinstituut Nederlandse Gemeenten (KING). In april 2010 bracht KING versie 2.01 uit, met aanpassingen naar aanleiding van de catalogus BAG (versie 2009) en het Logisch Ontwerp GBA (versie 3.7). Per 1 januari 2017 is KING opgegaan in VNG Realisatie, dat sindsdien verantwoordelijk is voor het beheer van het RSGB. In april 2018 is via de beheerprocedure, op verzoek van de StUF-expertgroep, een patch doorgevoerd voor de modellering van niet-natuurlijke personen. Daarmee ontstond versie 2.02, de laatst vastgestelde versie van het RSGB.
+
+Het RSGB ondersteunt gemeenten bij het stroomlijnen van hun gegevenshuishouding en van de processen voor beheer en gebruik van basisgegevens. Het vormt bovendien de basis voor standaarden voor gegevensuitwisseling, zodat gemeenten een samenhangende informatievoorziening kunnen inrichten.
+
+Dit document beschrijft de volgende versie van het RSGB. Eerder is een initiatief gestart om tot een nieuwe versie te komen, maar dat heeft nooit tot vaststelling geleid. Die versie werd informeel aangeduid als versie 3.02. Om verwarring te voorkomen heeft de versie die nu tot stand komt het nummer 3.1 gekregen.
+
+## Beheer
+
+Het beheer van het RSGB ligt bij VNG Realisatie. Commentaar op deze versie en wijzigingsverzoeken worden meegenomen in de reguliere beheerprocedure van het RSGB. Iedere belangstellende kan een wijzigingsverzoek indienen. Wijzigingsverzoeken worden beoordeeld door specialisten van VNG Realisatie en ter advisering voorgelegd aan werkgroepen met een publiek-private samenstelling. Voor vragen, suggesties of opmerkingen kunt u contact opnemen via [contactpunt / link naar de GitHub-repository].
 
 
 # Leeswijzer
  
-De rapportage richt zich op iedereen die zich beroepsmatig bezighoudt met (het structureren van) de gemeentelijke informatievoorziening, het inrichten en beheren van basisregistraties en/of het tot stand brengen en beheren van gegevensuitwisseling.
-De rapportage is opgebouwd overeenkomstig de gebruikelijke indeling van catalogi voor basisregistraties. Vanwege de omvang is zij in twee delen opgesplitst. Deel I beschrijft het RSGB op hoofdlijnen en licht het referentiemodel nader toe. In hoofdstuk 2 van deel I vindt u een overzicht van het objectenmodel en de daarmee samenhangende aspecten. In bijlage 1 lichten wij de wijzigingen toe ten opzichte van versie 1.1. In bijlage 2 geven we aan welke uit het GFO-BG afkomstige gegevens op welke wijze in het RSGB zijn opgenomen.
-In Deel II vindt u de specificaties van de componenten waaruit het RSGB is opgebouwd: objecttypen (hoofdstuk 1), attribuutsoorten en relatiesoorten (hoofdstuk 2). Dit deel is vooral als ‘naslagwerk’ bedoeld.
+Dit document richt zich op iedereen die beroepsmatig betrokken is bij het structureren van de gemeentelijke informatievoorziening, het inrichten en beheren van basisregistraties en het tot stand brengen en beheren van gegevensuitwisseling.
+
+Het RSGB 3.1 is opgesteld als een conceptueel informatiemodel conform het Metamodel Informatiemodellering (MIM) versie 1.2. Het model beschrijft welke objecten en gegevens voor gemeenten van belang zijn, wat ze betekenen en hoe ze samenhangen. Het model is implementatieneutraal: het schrijft geen database-, berichten- of API-ontwerp voor. Logische en technische modellen, zoals API-specificaties of datastructuren, kunnen erop worden gebaseerd.
+
+De documentatie wordt gepubliceerd volgens de ReSpec-standaard, als één online document met doorklikbare verwijzingen tussen de onderdelen. De opdeling in een deel I (beschrijving) en een deel II (specificaties), zoals in eerdere versies, is daarmee vervallen. Het document is als volgt opgebouwd:
+
+-   Hoofdstuk Inleiding: de achtergrond van het RSGB, de afbakening ten opzichte van de landelijke basisregistraties en de doelen van het model.
+-   Hoofdstuk Uitgangspunten en modelleerprincipes: de keuzes die bij het opstellen van het model zijn gemaakt. Bijvoorbeeld dat alleen gegevens worden opgenomen die geschikt zijn voor meervoudig gebruik, hoe gegevens uit basisregistraties worden opgenomen of waarnaar wordt verwezen, en hoe wordt omgegaan met historie, afgeleide gegevens en waardelijsten.
+-   Hoofdstuk Het informatiemodel op hoofdlijnen: een overzicht van het model aan de hand van diagrammen per domein, zoals personen, adressen en gebouwen, kadaster, WOZ en ondernemingen, met een toelichting op de samenhang.
+-   Hoofdstuk Gegevensdefinities: de specificaties van alle modelelementen volgens MIM. Dat zijn objecttypen, attribuutsoorten, relatiesoorten, gegevensgroepen, keuzes, datatypen, enumeraties en waardelijsten. Per element zijn de MIM-metagegevens opgenomen, zoals naam, definitie, herkomst, kardinaliteit, indicatie materiële en formele historie en indicatie authentiek. Dit hoofdstuk is vooral bedoeld als naslagwerk.
+-   Bijlage Wijzigingen ten opzichte van RSGB 2.02: een overzicht van de doorgevoerde wijzigingen, met verwijzing naar de bijbehorende wijzigingsverzoeken.
+-   Bijlage Relatie met de landelijke basisregistraties: per basisregistratie (zoals de BRP, de BAG en de BRK) hoe de gegevens in het RSGB zijn opgenomen of waarnaar wordt verwezen.
+
+Het UML-model waaruit deze documentatie is gegenereerd, de wijzigingsverzoeken en eerdere versies zijn te vinden op [link naar de GitHub-repository].
 
 
 ---
@@ -25,7 +42,7 @@ In Deel II vindt u de specificaties van de componenten waaruit het RSGB is opgeb
 # Samenvatting
 De invoering van een overheidsbreed stelsel van basisregistraties is één van de meest ingrijpende ontwikkelingen waarmee gemeenten te maken hebben. Het Referentiemodel Stelsel van Gemeentelijke Basisgegevens (RSGB) biedt gemeenten en hun leveranciers houvast bij het invoeren en het gebruiken van deze gegevens.
 Dit objectenmodel voor de gemeentelijke basisgegevens presenteert de samenhang tussen basisregistraties op een logische wijze. Maar gemeenten hebben meer gegevens nodig voor hun werkprocessen dan nu in de landelijke basisregistraties beschikbaar zijn. Het binnengemeentelijk stelsel is dan ook ‘rijker’ dan het landelijke stelsel.
-Dit referentiemodel is onderdeel van de GEMmeentelijke Model Architectuur (GEMMA) van KING. De inhoud is in lijn met de Nederlandse OverheidsReferentieArchitectuur (NORA).
+Dit referentiemodel is onderdeel van de GEMmeentelijke Model Architectuur (GEMMA), gepubliceerd door de VNG. De inhoud is in lijn met de Nederlandse OverheidsReferentieArchitectuur (NORA).
 
 ![#Stelsel van Gemeentelijke Basisgegevens op hoofdlijnen](Images/RSGB_op_hoofdlijnen.png)
 
@@ -50,34 +67,40 @@ Het is de bedoeling om het referentiemodel in de periode 2009 – 2010 geleideli
 # 1. Inleiding
 
 ## 1.1 Aanleiding
-De invoering van een stelsel van basisregistraties bij de gehele overheid is zonder twijfel een van de meest ingrijpende ontwikkelingen waar gemeenten mee te maken hebben. Onder het motto ‘De overheid vraagt niet naar de bekende weg’, is wettelijk vastgelegd dat burgers en bedrijven basisgegevens nog maar éénmaal aan de overheid hoeven te verstrekken. Alle overheidsorganisaties zijn verplicht deze gegevens te gebruiken.
-Voor gemeenten zijn de basisregistraties dáárom zo belangrijk, omdat zij niet alleen gebruiker ervan zijn, maar ook bronhouder van bijvoorbeeld de basisregistraties van Personen, Adressen en Gebouwen. De basisgegevens vormen nog maar het topje van de ijsberg van wat gemeenten aan gegevens nodig hebben om hun processen uit te voeren.
-Om grip te krijgen op de meervoudig gebruikte gegevens, heeft een aantal Voorhoedgemeenten onder leiding van EGEM medio 2007 versie 1.0 uitgebracht van het Referentiemodel Stelsel van Gemeentelijke Basisgegevens (RSGB). Dit model was de opvolger van het ‘oude’ GFO-Basisgegevens van de Vereniging Nederlandse Gemeenten (VNG). In het voorjaar van 2008 hebben we met versie 1.1. het toepassingsgebied van het RSGB vergroot met de Basisregistratie WOZ (Waardering Onroerende Zaken). Daarmee speelden wij in op de overheidsbrede invoering van het landelijk stelsel van basisregistraties. Voortschrijdend inzicht, de eerste ervaringen met het RSGB, ontwikkelingen in de (catalogi van de) landelijke basisregistraties en het ontwikkelen van de berichtenstandaard StUF-BG hebben ons aanleiding gegeven versie 2.0 van het RSGB uit te brengen.
+Het stelsel van basisregistraties is een van de pijlers van de gegevenshuishouding van de overheid. Onder het motto “De overheid vraagt niet naar de bekende weg” is wettelijk vastgelegd dat burgers en bedrijven hun basisgegevens maar één keer aan de overheid hoeven te verstrekken, en dat overheidsorganisaties verplicht zijn deze gegevens te gebruiken.
+
+Voor gemeenten zijn de basisregistraties extra belangrijk, omdat zij niet alleen gebruiker zijn, maar ook bronhouder van onder meer de Basisregistratie Personen en de Basisregistratie Adressen en Gebouwen. Tegelijk vormen de basisgegevens maar een klein deel van de gegevens die gemeenten nodig hebben om hun taken uit te voeren. Het RSGB brengt de samenhang tussen de basisregistraties vanuit gemeentelijk perspectief in beeld. Het vult deze aan met gemeentelijke gegevens die geschikt zijn voor meervoudig gebruik. Het voorwoord beschrijft hoe het RSGB zich sinds 2007 heeft ontwikkeld.
+
+Sinds de laatst vastgestelde versie, RSGB 2.02, zijn zowel de landelijke basisregistraties als de manier van informatiemodelleren sterk veranderd. Het Logisch Ontwerp BRP en de BAG 2.0 zijn bijvoorbeeld vernieuwd, en met MIM is een landelijke standaard voor informatiemodellen ontstaan. RSGB 3.1 brengt het model weer in lijn met de actuele basisregistraties en legt het vast als conceptueel informatiemodel conform MIM 1.2.
 
 ## 1.2 Opzet
-KING presenteert met dit stelsel een standaard om het gebruik van basisgegevens binnen gemeenten en daarmee samenwerkende organisaties te bevorderen. We spreken binnen gemeenten over één samenhangend stelsel van basisgegevens en niet over een basisregistratie. Deze laatste term is gereserveerd voor de landelijke basisregistraties. Dit landelijke stelsel vormt echter wel het uitgangspunt voor het gemeentelijke model. Versie 2.0 van het RSGB is gebaseerd op de volgende, al dan niet definitieve, versies van de catalogi en vergelijkbare beschrijvingen van basisregistraties:
-- Catalogus BasisRegistratie Adressen (BRA versie 4.0; Vrom, 2-2006),
-- Catalogus Basis Gebouwen Registratie (BGR versie 4.0; Vrom, 2-2006),
-- Logisch Ontwerp GBA versie 3.6 (11-2007) en concept-versie 3.7 v.w.b. de relatie GBA – BAG,
-- Programma van eisen Handelsregister (HR; EZ, 6-2008 versie. 1.6) en de Gegevenscatalogus Nieuw HandelsRegister (concept; VVKvK, 7-2008),
-- Catalogus BasisRegistratie Kadaster (BRK; Kadaster, 3-2009 versie. 1.0.4),
-- Catalogus Basisregistratie WOZ (BRWOZ; Waarderingskamer, 4-2008, versie 1.3)
-en in aanvulling hierop het
-- GFO Basisgegevens (VNG, 1998).
-De basisregistratie Topografie is niet in het referentiemodel opgenomen. We zijn uitgegaan van grootschalige geo-objecten, met andere woorden de toekomstige Basisregistratie Grootschalige Topografie. Daarvoor gebruikten we het document:
-- Informatiemodel Geografie (concept IMGeo; Geonovum v/h Ravi, 3-2007 vs. 2.0).
-Het model richt zich vooral op basisregistraties uit de eerste tranche van de inrichting van het stelsel. Pas wanneer er voldoende bekend is over een andere basisregistratie (tweede tranche en verder) wordt het model uitgebreid en aangepast.
-Het Referentiemodel Stelsel van Gemeentelijke Basisgegevens is onderdeel van de GEMmeentelijke Model Architectuur (GEMMA) van KING. De inhoud is in lijn met de Nederlandse OverheidsReferentieArchitectuur (NORA).
+VNG Realisatie biedt met het RSGB een standaard die het gebruik van basisgegevens binnen gemeenten en daarmee samenwerkende organisaties bevordert. Binnen gemeenten spreken we over één samenhangend stelsel van basisgegevens en niet over een basisregistratie; die laatste term is gereserveerd voor de landelijke basisregistraties. Het landelijke stelsel vormt wel het uitgangspunt voor het gemeentelijke model.
 
-## 1.3 Invoering
-Toepassing van het referentiemodel heeft consequenties voor de gemeentelijke organisatie, haar processen, informatievoorziening, gegevenshuishouding en automatisering. Elke gemeente is autonoom in haar keuzes daarin en KING faciliteert de toepassing waar mogelijk. Het tempo van de invoering is vooral afhankelijk van het verwerken van het referentiemodel in de software die gemeenten gebruiken bij de uitvoering van hun taken.
-De software die gemeenten op dit moment gebruiken is vaak (mede) gebaseerd op het eerder genoemde GFO-Basisgegevens. In de jaren 2009 – 2010 passen leveranciers naar verwachting hun software aan op de in te voeren basisregistraties. Dit betekent (ook) een overgang van het GFO-BG naar dit referentiemodel. Om die te ondersteunen, brengt KING tegelijkertijd met het RSGB 2.0 een nieuwe versie van de berichtenstandaard StUF-BG uit. Tijdens deze periode – en mogelijkerwijs langer – bestaat er een StUF-BG-versie op basis van het GFO-Basisgegevens (2.04) en een versie op basis van dit referentiemodel (3.10), waardoor een geleidelijke overgang mogelijk is. KING adviseert gemeenten om bij verdere ontwikkeling van hun informatievoorziening te anticiperen op deze overgang. Ze kunnen dan maatregelen treffen om er voor te zorgen dat in de overgangsperiode hun informatievoorziening overweg kan met beide versies van StUF.
+Vertrekpunt voor deze versie is RSGB 2.02 (vng-realisatie.github.io/RSGB). Deze versie is in lijn gebracht met de volgende informatiemodellen en catalogi van de landelijke basisregistraties:
 
+Basisregistratie Personen (BRP): Logisch Ontwerp BRP, versie 2026.Q3, Rijksdienst voor Identiteitsgegevens. Gepubliceerd op rvig.nl.
+Basisregistratie Adressen en Gebouwen (BAG): Catalogus BAG 2018 met het informatiemodel IMBAG 2.0, Ministerie van BZK en Kadaster. Gepubliceerd op imbag.github.io/catalogus.
+Handelsregister (HR): Gegevenscatalogus Handelsregister, versie 3.0.4, KVK. Gepubliceerd op kvk.nl.
+Basisregistratie Kadaster (BRK): Catalogus Basisregistratie Kadaster, versie 2.3 (30 januari2020), Kadaster. Gepubliceerd op kadaster.nl.
+Basisregistratie WOZ: Catalogus Basisregistratie WOZ, versie 1.8, Waarderingskamer. Gepubliceerd op waarderingskamer.nl.
+Basisregistratie Grootschalige Topografie (BGT) en IMGeo: Gegevenscatalogus BGT versie 1.2 en Gegevenscatalogus IMGeo, versie 2.2, Geonovum. Gepubliceerd op docs.geostandaarden.nl/imgeo/catalogus/bgt en docs.geostandaarden.nl/imgeo/catalogus/imgeo.
+
+Het model is opgesteld volgens het Metamodel Informatiemodellering (MIM), versie 1.2 (docs.geostandaarden.nl/mim/mim).
+
+Andere basisregistraties zijn niet in het RSGB opgenomen. Het model wordt alleen uitgebreid als er een aantoonbare gemeentelijke behoefte is aan meervoudig gebruik van gegevens uit die registraties.
+
+Het RSGB is onderdeel van de Gemeentelijke Model Architectuur (GEMMA), die wordt beheerd door VNG Realisatie (gemmaonline.nl). De inhoud is in lijn met de Nederlandse Overheid Referentie Architectuur (NORA, noraonline.nl).
 
 **Méér dan de landelijke basisregistraties**
-Het referentiemodel is een vertaling en een uitbreiding van het landelijk stelsel van basisregistraties met het oog op de gemeentelijke informatiebehoefte. Op onderdelen verschilt het dan ook van het landelijk stelsel. Wel zijn de landelijke basisregistraties bijna volledig opgenomen in het referentiemodel. KING raadt gemeenten dringend aan om bij de ontwikkeling van hun informatievoorziening uit te gaan van het referentiemodel en niet alleen van één, of meer, catalogi van landelijke basisregistraties. Op die manier sluiten zij aan bij het landelijk stelsel én kunnen zij hun eigen informatievoorziening optimaal faciliteren. Daarnaast gaat KING er van uit dat de leveranciers van gemeentelijke software niet alleen anticiperen op de landelijke basisregistraties maar ook het referentiemodel en de daarop gebaseerde versie van StUF-BG in de software verwerken.
+Het referentiemodel is een weergave en een uitbreiding van het landelijk stelsel van basisregistraties met het oog op de gemeentelijke informatiebehoefte. Op onderdelen zijn er uitbreidingen vanuit gemeentelijk pesrspectief gedaan. verschilt het dan ook van het landelijk stelsel. Wel zijn de landelijke basisregistraties bijna volledig opgenomen in het referentiemodel. KING raadt gemeenten dringend aan om bij de ontwikkeling van hun informatievoorziening uit te gaan van het referentiemodel en niet alleen van één, of meer, catalogi van landelijke basisregistraties. Op die manier sluiten zij aan bij het landelijk stelsel én kunnen zij hun eigen informatievoorziening optimaal faciliteren. Daarnaast gaat KING er van uit dat de leveranciers van gemeentelijke software niet alleen anticiperen op de landelijke basisregistraties maar ook het referentiemodel en de daarop gebaseerde versie van StUF-BG in de software verwerken.
 
----
+## 1.3 Relatie met het landelijk stelsel van basisregistraties
+
+Het RSGB vertaalt het landelijk stelsel van basisregistraties naar de gemeentelijke informatiebehoefte en breidt het daarvoor uit. Uitgangspunt is dat het RSGB de informatiemodellen van de basisregistraties volledig volgt. Het RSGB neemt geen objecttypen uit die informatiemodellen over, maar verwijst ernaar. De definities, attribuutsoorten en relatiesoorten van bijvoorbeeld een verblijfsobject of een kadastraal onroerende zaak blijven daardoor eenduidig belegd bij de basisregistratie die er de bron van is. Wijzigingen in een basisregistratie leiden zo niet langer tot afwijkingen tussen het RSGB en die basisregistratie.
+
+Voor de aansluiting tussen het RSGB en de basisregistraties maakt het RSGB gebruik van grensobjecten,. Deze wijze van modelleren is eerde onderzocht binnen VNGRealisatie en toegepast in het POC-informatiemodel "Klantinteracties". Een grensobject is een objecttype in het RSGB dat verwijst naar een objecttype in een basisregistratie. Het is de plek waar de gemeentelijke informatiebehoefte samenkomt met het landelijk stelsel. Soms hebben gemeenten behoefte aan attribuutsoorten bij zo’n objecttype die de basisregistratie niet registreert, maar die wel relevant zijn voor gemeenten en geschikt voor hergebruik. Die attribuutsoorten worden in het grensobject opgenomen, en niet in een kopie van het objecttype uit de basisregistratie. Zo blijft altijd zichtbaar welke gegevens uit de basisregistratie afkomstig zijn en welke gegevens gemeentelijk zijn.
+
+VNG Realisatie raadt gemeenten dringend aan om bij de ontwikkeling van hun informatievoorziening uit te gaan van het RSGB en niet alleen van één of meer informatiemodellen van landelijke basisregistraties. Zo sluiten zij aan bij het landelijk stelsel en kunnen zij tegelijk hun eigen informatievoorziening optimaal inrichten. Daarnaast gaat VNG Realisatie ervan uit dat leveranciers van gemeentelijke software niet alleen de landelijke basisregistraties ondersteunen, maar ook het RSGB en de daarop gebaseerde standaarden voor gegevensuitwisseling.
 
 # Objectenmodel
 
@@ -201,8 +224,23 @@ Metagegevens beschrijven betekenis, herkomst, historie en kwaliteit van gegevens
 > “De gebruiker weet nu dat het woonadres van Cornelis Steenmans wellicht niet juist is.”
 
 ## 2.4.2 Historie
-**Samenvatting:**  
-Het RSGB volgt materiële en formele historie. Beide zijn nodig voor juridische reconstructie.
+**CONCEPT !! **  
+Het aspect tijd speelt een belangrijke rol in het gebruik van de informatie uit (basis)registraties. Afnemers hebben eigen rechtsprocedures en moeten kunnen herleiden wanneer attribuutwaarden als bekend mochten worden verondersteld. Als bijvoorbeeld besluiten ter discussie worden gesteld, is het juridisch van belang te achterhalen op basis van welke attribuutwaarden zo’n besluit genomen is. Als onjuiste attribuutwaarden zijn gebruikt, is het relevant te weten of de juiste attribuutwaarden tijdens de besluitvorming al bekend waren.
+
+### Tijd lijnen
+Er spelen twee tijdslijnen een rol bij het herleiden van attribuutwaarden:
+
+-   Wanneer is iets gebeurd, in de werkelijkheid of volgens opgave (wanneer zijn de opgenomen gegevens geldig)? Dit valt binnen de tijdlijn van de aangehouden werkelijkheid (Tijdlijn Geldigheid)
+-   Vanaf wanneer wist de overheid (als collectief van organisaties) dat de gegevens bekend waren? Dit valt binnen de tijdlijn van het administratieproces of de administratieve werkelijkheid (Tijdlijn Registratie).
+
+In het MIM is bepaald dat middels indicaties wordt aangegeven of een tijdlijn al dat niet van toepassing is op een attribuutsoort of een realtiesoort. Het MIM definieert daarvoor de "indicatie tiujdlijn geldigheid" en "indicatie tijdlijn registratie". 
+Bij het bepalen of er historie van toepassing is op attribuutsoorten volgen we de MIM methodiek. 
+
+Het definieren van historie per attribuutsoort impliceert dat het gegevensmodel dat gebruikt moet worden voor de implementatie een 6NF model zou worden waarbij er per attribuutsoort waarvoor historie moet worden bijgehouden een aparte tabel wordt geïntroduceerd. Deze vorm van implementeren wordt weliswaar in innovatieve projecten beproefd, maar is niet de geadviseerde implementatievorm. 
+
+Advies is om bij implementatie de historie bij  te houden op object-niveau of gegevens-groep niveau, voor zover dat object of die gegevensgoep attributen bevat waarvanhistorie moet worden bijgehouden. Dit betekent weliswaar dat er gegevens redundant opgeslagen worden als er een gegeven wijzigt waarvan de historie moet worden bijgehouden, maar deze benadering reduceert wel het aantal tabellen dat moet worden bijgehouden.
+
+
 
 ## 2.4.3 Afleidbare gegevens
 **Samenvatting:**  

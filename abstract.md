@@ -1,4 +1,4 @@
-**_Disclaimer : Dit document bevat de documentatie van het RSGB zoals die voor versie 2.02 is opgesteld. Gaandeweg het traject van het actualiseren van het RSGB worden delen van de tekst aangepast._** 
+**_Disclaimer : Dit document is in bewerking. Delen van dit document zijn vernieuwd (in concept) en delen van dit document bevatten de documentatie van het RSGB zoals die voor versie 2.02 is opgesteld. Dit document kan op dagbasis wijzigen (en soms meermaals per dag)_** 
 
 
 Daarnaast wordt het gegevenswoordenboek weergegeven zoals dat is gegenereerd nadat versie 2.02 "ver-MIM-d" is. Er kunnen dus verschillen zijn tussen het gegevenswoordenboek en de documentatie als gevolg van het ver-MIM-men.  
