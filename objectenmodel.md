@@ -140,50 +140,92 @@ Overzicht metagegevens
 
 
 ### Historie (nieuw in concept)
-Het aspect tijd speelt een belangrijke rol in het gebruik van de informatie uit (basis)registraties. Afnemers hebben eigen rechtsprocedures en moeten kunnen herleiden wanneer attribuutwaarden als bekend mochten worden verondersteld. Als bijvoorbeeld besluiten ter discussie worden gesteld, is het juridisch van belang te achterhalen op basis van welke attribuutwaarden zo’n besluit genomen is. Als onjuiste attribuutwaarden zijn gebruikt, is het relevant te weten of de juiste attribuutwaarden tijdens de besluitvorming al bekend waren.
 
-De gangbare praktijk voor het maken van een conceptueel informatiemodel is om de samenhang van de objecttypen, gegevensgroepen en attribuutsoorten te beschrijven vanuit het perspectief van één moment in de tijd. 
-Dat betekent dat tijdsaspecten geen invloed hebben op de kardinaliteiten in relaties of de kardinaliteiten van attribuutsoorten danwel gegevensgroepen. 
-Als er bijvoorbeeld maximaal 1 actueel verblijfadres geldig kan zijn, maar er wel wordt bijgehouden welke verblijfadressen een persoon gehad heeft in het verleden, dan wordt deze relatie met een kardinaliteit van 0..1 weergegeven aan de kant van het verblijfadres.
+Het aspect tijd speelt een belangrijke rol in het gebruik van informatie uit (basis)registraties. Afnemers hebben eigen rechtsprocedures en moeten kunnen herleiden welke attribuutwaarden op een bepaald moment golden, en sinds wanneer die als bekend mochten worden verondersteld. Als bijvoorbeeld een besluit ter discussie wordt gesteld, is het juridisch van belang te achterhalen op basis van welke attribuutwaarden het genomen is. Als daarbij onjuiste attribuutwaarden zijn gebruikt, is het relevant te weten of de juiste waarden tijdens de besluitvorming al bekend waren.
+
+De gangbare praktijk voor het maken van een conceptueel informatiemodel is om de samenhang van objecttypen, gegevensgroepen en attribuutsoorten te beschrijven vanuit het perspectief van één moment in de tijd. Tijdsaspecten hebben daardoor geen invloed op de kardinaliteiten van relaties, attribuutsoorten of gegevensgroepen.
+Als een persoon bijvoorbeeld op elk moment maximaal één verblijfsadres heeft, maar wel wordt bijgehouden welke verblijfsadressen hij in het verleden had, dan krijgt die relatie de kardinaliteit 0..1 aan de kant van het verblijfsadres.
 
 **Tijdlijnen** (nieuw in concept)
 
-Binnen de meeste basisregistraties spelen er twee tijdlijnen een rol bij het herleiden van attribuutwaarden op enig moment:
-- Wanneer is iets gebeurd, in de werkelijkheid of volgens opgave (wanneer zijn de opgenomen gegevens geldig)? Dit valt binnen de tijdlijn van de aangehouden werkelijkheid.
-- Vanaf wanneer wist de overheidspartij die verantwoordelijk is voor de registratie dat de gegevens bekend waren? Dit valt binnen de tijdlijn van het registratieproces of de registratieve werkelijkheid.
-In de rapportage 'Architectuur van het stelsel' (Stroomlijning BasisGegevens, 2006) wordt geadviseerd om beide tijdslijnen te registreren, om de attribuutwaarden van een bepaald moment te kunnen reconstrueren. Dit advies hebben we overgenomen. In de diverse basisregistraties wordt hieraan op verschillende wijzen invulling gegeven. 
+In de meeste basisregistraties spelen twee tijdlijnen een rol bij het herleiden van attribuutwaarden op enig moment:
+- **Geldigheid**: wanneer gold een waarde in de werkelijkheid, of volgens opgave? Deze tijdlijn hoort bij de aangehouden werkelijkheid (in de literatuur: *valid time*). De momenten worden bepaald door wat er in de werkelijkheid gebeurd is, niet door het registratiesysteem.
+- **Registratie**: vanaf wanneer, en tot wanneer, was een waarde vastgelegd in de registratie? Deze tijdlijn hoort bij het registratieproces (in de literatuur: *transaction time* of *system time*).
 
-Binnen het RSGB is er voor gekozen om in deze tijdlijnen op eenduidige wijze conform MIM 1.2 vast te leggen. Samengevat betekent dat dat er per relatiesoort én per attribuutsoort (gerelateerd aan een objecttype, een gegevensgroep of een relatieklasse) wordt vastgelegd of er sprake is van historie. Op geen enkel ander modelelement binnen het RSGB worden er historische aspecten vastgelegd. 
-Dat betekent dat iedere relatiesoort en iedere attribuutsoort voorzien wordt van twee "tagged values" :
-- **heeft tijdlijn geldigheid** (in RSGB 2.02 was dit "indicatie materiële historie"): Met de tijdlijn geldigheid wordt bedoeld dat er op een tijdlijn wordt bijgehouden wanneer een verandering is opgetreden in de werkelijkheid die heeft geleid tot verandering van de waarde van een kenmerk van een object.  [Volledige definitie in het MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-heeft-tijdlijn-geldigheid)  
-- **heeft tijdlijn registratie** (in RSGB 2.02 wat dit "indicatie formele historie"): Met de tijdlijn registratie wordt bedoeld dat er op een tijdlijn wordt bijgehouden wanneer een bepaalde waarde voor een kenmerk van een object vastgelegd wordt, oftewel geregistreerd wordt. [Volledige definitie in het MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-heeft-tijdlijn-registratie)  
+Een registratie die beide tijdlijnen bijhoudt, heet bitemporeel. Alleen dan zijn beide vragen te beantwoorden: "waar woonde deze persoon op datum X?" en "wat stond er op datum Y in de registratie?". Ook de combinatie kan dan: "waar woonde deze persoon op datum X, volgens wat de registratie op datum Y vastgelegd had?". Een correctie met terugwerkende kracht overschrijft dan niets: wat eerder was vastgelegd, blijft herleidbaar.
+Met één tijdlijn lukt dat niet. Wie alleen de registratietijdlijn bijhoudt, kan een fout in een afgesloten periode in het verleden niet herstellen. Wie alleen de geldigheid bijhoudt, verliest bij elke correctie wat er eerder vastgelegd was.
 
-We hebben binnen het model geen attribuutsoorten opgenomen die de historie representeren. In vorige versies van het RSGB is op diverse plekken expliciet (maar niet consequent) een attribuutsoort "datum begin geldigheid" en "Datum einde geldigheid" opgenomen. Dat is in deze versie niet meer het geval. Wel worden er gegevens opgenomen die het karakter hebben van een historische attribuutsoort, maar vooral ook een business-betekenis hebben. De geboortedatum en de overlijdens datum van een persoon worden bijvoorbeel expliciet in het model opgenomen.
+In de rapportage 'Architectuur van het stelsel' (Stroomlijning BasisGegevens, 2006) wordt geadviseerd beide tijdlijnen te registreren, zodat de attribuutwaarden van elk moment te reconstrueren zijn. Dat advies nemen we over. De basisregistraties geven er verschillend invulling aan. Zo houden de BAG en de BRK op beide tijdlijnen perioden bij, terwijl de BRP met losse ingangsdatums werkt en de einddatums daaruit afleidt.
 
-Implementatie-advies t.a.v. historie
+Binnen het RSGB leggen we beide tijdlijnen eenduidig vast, conform MIM 1.2. Per relatiesoort en per attribuutsoort (van een objecttype, een gegevensgroep of een relatieklasse) wordt aangegeven of er historie wordt bijgehouden. Op andere modelelementen worden geen historische aspecten vastgelegd.
+Iedere relatiesoort en iedere attribuutsoort krijgt daarvoor twee tagged values:
+- **heeft tijdlijn geldigheid** (in RSGB 2.02 was dit "indicatie materiële historie"): er wordt op een tijdlijn bijgehouden wanneer een verandering in de werkelijkheid heeft geleid tot een andere waarde van een kenmerk van een object. [Volledige definitie in het MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-heeft-tijdlijn-geldigheid)
+- **heeft tijdlijn registratie** (in RSGB 2.02 was dit "indicatie formele historie"): er wordt op een tijdlijn bijgehouden wanneer een waarde voor een kenmerk van een object is vastgelegd, oftewel geregistreerd. Daarmee blijven ook correcties herleidbaar. [Volledige definitie in het MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-heeft-tijdlijn-registratie)
 
+**Welke tijdlijnen per attribuutsoort?** (herzien)
 
-**Periode van geldigheid** (oud)
-De materiële historie heeft betrekking op een individuele attribuutsoort of de groep van attribuutsoorten die tegelijkertijd, als gevolg van een gebeurtenis, wijzigen (bijvoorbeeld de woonadresgegevens van een natuurlijk persoon als gevolg van een verhuizing). Ofschoon het mogelijk lijkt om de periode tussen het ontstaan en het beëindigen van een object af te leiden uit de reeks aan perioden van de materiële historie van de attribuutsoorten van dat object, hebben we er in het referentiemodel voor gekozen om beide op te nemen. Zo wordt het ontstaan en het beëindigen van een object expliciet opvraagbaar. En in sommige gevallen worden attribuutwaarden van een object al geregistreerd voordat het object feitelijk bestaat. Bijvoorbeeld in de BAG de gegevens van de nieuwbouwvergunning bij het pand dat waarschijnlijk gebouwd gaat worden.
-De periode die gemarkeerd wordt door de ‘datum begin geldigheid object’ en de ‘datum einde geldigheid object’ geeft aldus de periode aan waarin het object in de werkelijkheid heeft bestaan met de kenmerken die noodzakelijk zijn om van het in de werkelijkheid bestaan te kunnen spreken. Een persoon bestaat bijvoorbeeld pas in de werkelijkheid als deze als baby het lichaam van de moeder heeft verlaten. De materiële historie markeert de periode waarin de waarde(n) van één of meer attribuutsoorten van het object geldig zijn of waren.
-Waar mogelijk en verantwoord hebben we de materiële (en ook de formele) historie opgenomen voor de groep van alle attribuutsoorten van een objectsoort. Bij veel objecttypen is dit niet mogelijk omdat we de (materiële) historie van de landelijke basisgegevens willen onderscheiden van de historie van de gemeentelijke basisgegevens. Zo gaat de afstemming niet verloren met de landelijke basisregistratie over deze basisgegevens. Ook komt het voor dat een basisregistratie zelf al groepen van attribuutsoorten met eigen historiekenmerken 21
-onderscheid. Dit is het geval in de BRP (GBA) voor bijvoorbeeld de groep (daar ‘categorie’ genaamd) ‘verblijfplaats’.
+Niet elke attribuutsoort of relatiesoort heeft beide tijdlijnen, en soms geen van beide. Voor landelijke basisgegevens volgen we de specificaties in de betreffende catalogi. Voor gemeentelijke basisgegevens hanteren we grofweg de volgende regels:
 
-**Oude gegevens corrigeren** (oud)
-Een bijzonder geval van historie is het aanbrengen van correcties op attribuutwaarden uit het verleden. Dit gaat zowel om de administratieve werkelijkheid (‘wanneer hadden we wat kunnen weten?’) als de feitelijke cq. aangenomen werkelijkheid (‘wat dachten we dat de feitelijke waarde was op een bepaald moment en wat weten we daar nu over?’). Besluiten en daarop gebaseerde acties worden genomen op basis van de op een bepaald moment bekende (vermeende) werkelijkheid. Het is dus van belang om later te kunnen achterhalen wat die (vermeende) werkelijkheid was, en wat op een later moment de werkelijkheid bleek te zijn. Met de eerder genoemde historie-kenmerken is het mogelijk om correcties op deze wijze te registreren (zie onderstaande figuur).
+| Situatie | Tijdlijn geldigheid | Tijdlijn registratie |
+|---|---|---|
+| Alleen de huidige waarde in de werkelijkheid is relevant, niet sinds wanneer die geldt. | nee | nee |
+| Het is relevant sinds wanneer een (huidige, historische of toekomstige) waarde geldt, en dat moment is redelijkerwijs vast te stellen. Het is niet relevant wanneer de waarde bekend was. | ja | nee |
+| Historische (en eventueel toekomstige) waarden moeten gecorrigeerd kunnen worden, met inzicht in vanaf wanneer de gecorrigeerde waarde geldt. | ja | ja |
+| Er is behoefte aan alle waarden (huidig, historisch, eventueel toekomstig) én aan eenduidigheid over wanneer een wijziging bekend was. Dit houdt in dat correcties mogelijk moeten zijn, en valt dus samen met de vorige situatie. | ja | ja |
 
-![](Images/Correctie.png)
+Met alleen de tijdlijn geldigheid is niet te zien of een waarde gecorrigeerd is: een correctie overschrijft wat er eerder was vastgelegd.
 
-**Materiële en/of formele historie-indicatie?** (oud)
-Niet bij elke attribuutsoort (of groep van attribuutsoorten) hebben we beide metagegevens opgenomen. Soms zelfs geen van beide. Voor landelijke basisgegevens hebben we de specificaties in de desbetreffende catalogi gevolgd. Voor gemeentelijke basisgegevens hebben we grofweg de volgende regels gehanteerd:
-- in de situatie zoals hiervoor beschreven, waarin historische (en eventueel toekomstige) gegevenswaarden gecorrigeerd moeten kunnen worden en er ook voor de gecorrigeerde waarde inzicht is vanaf wanneer deze geldig is, zijn beide indicaties van toepassing;
-- indien er behoefte is aan inzicht in alle waarden (naast de huidige waarde ook historische en eventueel toekomstige waarden) van een attribuutsoort en tevens aan eenduidigheid over de datum vanaf wanneer een wijziging van de attribuutwaarde bekend was, dan zijn eveneens beide indicaties van toepassing; deze situatie impliceert dat correcties aangebracht kunnen worden oftewel houdt de eerstgenoemde situatie in zich.
-- indien alleen de huidige waarde (in de werkelijkheid) relevant is en het niet relevant is vanaf wanneer deze waarde geldig is, dan zijn geen van beide indicaties van toepassing;
-- indien het relevant is en redelijkerwijs een aanname gedaan kan worden vanaf wanneer een (huidige, historische of eventueel toekomstige) waarde geldig is maar het niet relevant is te weten wanneer die waarde bekend was, dan is alleen de indicatie materiële historie van toepassing; er is in deze situatie dus geen inzicht of een waarde wellicht gecorrigeerd is;
-- indien redelijkerwijs zelden of nooit een aanname gedaan kan worden wanneer zich de wijziging in de werkelijkheid voordeed op basis waarvan de waarde gewijzigd is maar het wel relevant zou zijn vanaf wanneer de waarde-wijziging bekend was, dan zou alleen de indicatie formele historie van toepassing zijn. Evenwel, bij het eventueel doorvoeren van correcties in de historie ontstaat desinformatie (stel: vandaag is bekend geworden dat de waarde over een periode ergens in 2002/2003 anders was; formele historie-datum is dan vandaag terwijl de huidige waarde een andere is dan de waarde in genoemde periode). Aangezien het opnemen van historie veronderstelt dat die gecorrigeerd kan worden, hebben we deze combinatie van historie-indicaties niet opgenomen voor die situaties. Een andere situatie doet zich voor als de eenmaal vastgestelde waarde nooit wijzigt en tevens niet gecorrigeerd kan of mag worden, Indien het voor een dergelijk attribuutsoort niet relevant is wanneer de waarde in de werkelijkheid is ontstaan en de waarde niet gelijktijdig ontstaat bij het ontstaan van het object, dan hebben we geen materiële maar wel formele historie opgenomen, mits het laatste relevant is. Een voorbeeld hiervan is … Een derde situatie doet zich voor als de attribuutsoort een datum is, bijvoorbeeld de overlijdensdatum van een persoon. De waarde van de attribuutsoort is tevens de datum van de materiële historie. Als hierop correcties plaats kunnen vinden, dan hebben we eveneens geen materiële maar wel formele historie opgenomen.
-Deze regels geven inzicht in de wijze waarop de combinaties van beide historie-indicaties bij een attribuut- of relatiesoort geïnterpreteerd moeten worden.
+Alleen de tijdlijn registratie, zonder geldigheid, passen we in principe niet toe. Een correctie op de historie levert dan desinformatie op. Stel dat vandaag bekend wordt dat de waarde in een periode in 2002–2003 anders was. De correctie krijgt dan als registratiemoment vandaag, terwijl de huidige waarde een andere is dan die van de gecorrigeerde periode. Een correctie over een afgesloten periode in het verleden is met alleen de registratietijdlijn niet vast te leggen. Omdat het bijhouden van historie veronderstelt dat die gecorrigeerd kan worden, kiezen we in die gevallen voor beide tijdlijnen.
 
-### Afleidbare gegevens (Nieuw in condept)
+Er zijn twee uitzonderingen waarin we wel alleen de tijdlijn registratie opnemen:
+- **De waarde wijzigt nooit en mag niet gecorrigeerd worden.** Dit geldt als de waarde niet tegelijk met het object ontstaat, het niet relevant is wanneer de waarde in de werkelijkheid ontstond, en het wel relevant is wanneer de waarde is vastgelegd. Een voorbeeld hiervan is … *(nog aanvullen)*
+- **De attribuutsoort is zelf een datum**, bijvoorbeeld de overlijdensdatum van een persoon. De waarde is dan tegelijk het moment waarop de geldigheid begint. Een aparte tijdlijn geldigheid voegt niets toe. Kunnen er correcties op plaatsvinden, dan nemen we alleen de tijdlijn registratie op.
+
+Deze regels laten zien hoe de combinatie van beide tagged values bij een attribuutsoort of relatiesoort geïnterpreteerd moet worden.
+
+Het model bevat geen attribuutsoorten die de historie zelf representeren. In eerdere versies van het RSGB waren op diverse plekken (maar niet consequent) attribuutsoorten als "datum begin geldigheid" en "datum einde geldigheid" opgenomen. In deze versie is dat niet meer het geval.
+Gegevens die een tijdskarakter hebben, maar vooral een eigen betekenis in het domein, worden wel als attribuutsoort opgenomen. Voorbeelden zijn de geboortedatum en de overlijdensdatum van een persoon. Zulke datums leggen vast wanneer een gebeurtenis plaatsvond; ze zijn geen begin of einde van een geldigheidsperiode.
+
+**Referentielijsten en enumeraties** (nieuw in concept)
+
+Voor referentielijsten geldt één uitzondering. Waarden in een referentielijst, zoals een land, krijgen een begin- en einddatum als gewone attribuutsoorten, zoals ook in het Logisch Ontwerp BRP ("datum ingang tabelregel" en "datum einde tabelregel"). Op referentielijsten worden geen tagged values voor historie opgenomen.
+Een waarde die eenmaal beëindigd is, kan niet herleven. Is een beëindigde waarde later opnieuw nodig, dan wordt een nieuwe waarde toegevoegd. Beëindigde waarden blijven in de lijst staan, zodat gegevens die er in het verleden naar verwezen herleidbaar blijven.
+
+Enumeraties hebben geen historie. Een enumeratiewaarde wijzigen of verwijderen is een breaking change en vraagt om migratie van bestaande gegevens. Moet een lijst met waarden historie hebben, dan wordt die als referentielijst gemodelleerd.
+
+**Implementatie-advies t.a.v. historie** (nieuw in concept)
+
+In aansluiting op de paragraaf **Houvast** in het hoofdstuk Doelen geven we een implementatie-advies over historie.
+
+Als de historie uit het conceptuele model één op één naar de implementatie van een register wordt vertaald, moet dat register deels in de zesde normaalvorm (6NF) worden gebouwd: elke attribuutsoort met historie krijgt dan in feite een eigen tabel. Dat is op dit moment zeer hoog gegrepen. Deze implementatievorm komt hier en daar als experiment voor, maar is nog niet in grootschalige toepassingen gebruikt.
+
+De pragmatische ontwerpkeuze is om historische voorkomens vast te leggen per object en per gegevensgroep waarin minimaal één attribuutsoort met historie voorkomt. Een nieuw historisch voorkomen ontstaat alleen als een attribuutsoort met historie verandert. Alle historische informatie blijft zo beschikbaar, maar in de opslag treedt redundantie op: waarden die niet veranderd zijn, worden in het nieuwe voorkomen opnieuw opgeslagen.
+Dat een gegevensgroep historische voorkomens heeft, betekent niet dat alle attribuutsoorten in die groep historie hebben. Een wijziging van een attribuutsoort zonder historie leidt niet tot een nieuw historisch voorkomen.
+
+Voor relaties met historie geldt dezelfde keuze. Zo'n relatie heeft door de historie per definitie eigen gegevens (de tijdlijnen) en wordt daarom in een aparte tabel geïmplementeerd, al dan niet samen met andere eigenschappen van de relatie.
+
+Verder adviseren we:
+- Leg beide tijdlijnen vast als perioden, met een begin en een einde, en niet alleen als losse begindatums. Met alleen begindatums moet elk einde uit andere voorkomens worden afgeleid, en worden correcties en beëindigingen lastig.
+- Gebruik halfopen perioden: het begin valt binnen de periode, het einde niet. Zo sluiten opeenvolgende perioden op elkaar aan zonder gat of overlap.
+- Verwerk een correctie door een voorkomen te laten vervangen door een nieuw voorkomen en het oude te bewaren. Pas de historie nooit rechtstreeks aan: dan verliest de registratietijdlijn haar waarde als betrouwbaar verslag van wat er vastgelegd was.
+
+**Voorbeeld**
+
+Een persoon woont sinds 1 mei 2010 op adres V. Op 1 maart 2024 verhuist hij volgens opgave naar adres A; dat wordt op 4 maart 2024 geregistreerd. Op 10 oktober 2024 blijkt uit onderzoek dat hij nooit op adres A heeft gewoond, maar al sinds 15 februari 2024 op adres B.
+
+| Registratie vanaf | Registratie tot | Geldig vanaf | Geldig tot | Adres | Toelichting |
+|---|---|---|---|---|---|
+| 2010-05-03 | 2024-03-04 | 2010-05-01 | | V | Oorspronkelijke vastlegging, nog geen einde bekend |
+| 2024-03-04 | 2024-10-10 | 2010-05-01 | 2024-03-01 | V | Verhuizing geregistreerd: V krijgt een einde |
+| 2024-03-04 | 2024-10-10 | 2024-03-01 | | A | Verhuizing naar A |
+| 2024-10-10 | | 2010-05-01 | 2024-02-15 | V | Correctie: V eindigt eerder |
+| 2024-10-10 | | 2024-02-15 | | B | Correctie: B in plaats van A |
+
+Een lege "tot"-datum betekent: geen einde bekend. De vraag "waar woonde de persoon op 1 juni 2024?" heeft nu als antwoord adres B. De vraag "wat stond er op 1 juni 2024 in de registratie?" heeft als antwoord adres A. Een besluit van 1 juni 2024 op basis van adres A is dus genomen op basis van wat toen was vastgelegd.
+
+Voor een gedetailleerde uitwerking van historie-aspecten verwijzen we naar **[Bitemporal Stores (VNG Realisatie, project Uit Betrouwbare Bron; werkconcept)](../..)**.
+
+### Afleidbare gegevens (Nieuw in concept)
 Er is voor gekozen om in het RSGB ook afgeleide gegevens op te nemen. Deze gegevens zijn afleidbaar uit andere attribuut- en/of relatiesoorten. Enerzijds is dit redundantie (vanuit persistentie perspectief) , anderzijds brengt dit een afnemers behoefte in beeld, met name als de wijze van afleiding enige complexiteit bevat. Het aantal afgeleide gegevens is zo beperkt mogelijk gehouden.
 
 Een afleidbaar gegeven is te herkennen aan het feit dat in Enterpise Architect in de attribute-properties onder Advanced de "Derived" property op "True" is gezet. Dat leidt ertoe dat de "Indicatie afleidbaar" op "Ja" komt te staan in de Respec documentatie en dat de attribuutsoort in een UML-diagram wordt weergegeven met een voorloop- /
