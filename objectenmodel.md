@@ -139,16 +139,29 @@ Het is raadzaam eenduidig om te gaan met metagegevens. In deel II definiëren we
 Overzicht metagegevens
 
 
-### Historie (oud)
+### Historie (nieuw in concept)
 Het aspect tijd speelt een belangrijke rol in het gebruik van de informatie uit (basis)registraties. Afnemers hebben eigen rechtsprocedures en moeten kunnen herleiden wanneer attribuutwaarden als bekend mochten worden verondersteld. Als bijvoorbeeld besluiten ter discussie worden gesteld, is het juridisch van belang te achterhalen op basis van welke attribuutwaarden zo’n besluit genomen is. Als onjuiste attribuutwaarden zijn gebruikt, is het relevant te weten of de juiste attribuutwaarden tijdens de besluitvorming al bekend waren.
 
-**Tijdlijnen** (oud)
-Er spelen twee tijdslijnen een rol bij het herleiden van attribuutwaarden:
+De gangbare praktijk voor het maken van een conceptueel informatiemodel is om de samenhang van de objecttypen, gegevensgroepen en attribuutsoorten te beschrijven vanuit het perspectief van één moment in de tijd. 
+Dat betekent dat tijdsaspecten geen invloed hebben op de kardinaliteiten in relaties of de kardinaliteiten van attribuutsoorten danwel gegevensgroepen. 
+Als er bijvoorbeeld maximaal 1 actueel verblijfadres geldig kan zijn, maar er wel wordt bijgehouden welke verblijfadressen een persoon gehad heeft in het verleden, dan wordt deze relatie met een kardinaliteit van 0..1 weergegeven aan de kant van het verblijfadres.
+
+**Tijdlijnen** (nieuw in concept)
+
+Binnen de meeste basisregistraties spelen er twee tijdlijnen een rol bij het herleiden van attribuutwaarden op enig moment:
 - Wanneer is iets gebeurd, in de werkelijkheid of volgens opgave (wanneer zijn de opgenomen gegevens geldig)? Dit valt binnen de tijdlijn van de aangehouden werkelijkheid.
-- Vanaf wanneer wist de overheid (als collectief van organisaties) dat de gegevens bekend waren? Dit valt binnen de tijdlijn van het administratieproces of de administratieve werkelijkheid.
-In de rapportage 'Architectuur van het stelsel' (Stroomlijning BasisGegevens, 2006) wordt geadviseerd om beide tijdslijnen te registreren, om de attribuutwaarden van een bepaald moment te kunnen reconstrueren. Dit advies hebben we overgenomen. In de diverse basisregistraties wordt hieraan op verschillende wijzen invulling gegeven. Wij hebben er voor gekozen om in deze tijdslijnen op eenduidige wijze te voorzien met de attribuutsoorten ‘datum begin geldigheid object’ en ‘datum einde geldigheid object’ en het metagegeven ‘indicatie materiële historie’ respectievelijk het metagegeven ‘indicatie formele historie’. In sommige gevallen hebben we de beide attribuutsoorten onder specifieke namen opgenomen, zoals de geboortedatum en de overlijdensdatum van een natuurlijk persoon. De metagegevens specificeren we als volgt:
-- Indicatie materiële historie: indicatie of de materiële historie van de attribuutsoort te bevragen is. Materiële historie geeft aan wanneer een verandering is opgetreden in de werkelijkheid die heeft geleid tot verandering van de attribuutwaarde. Materiële historie impliceert dat actuele, historische en eventuele toekomstige attribuutwaarden te bevragen zijn
-- Indicatie formele historie: indicatie of de formele historie van de attribuutsoort te bevragen is. Formele historie geeft aan wanneer in de administratie een verandering is verwerkt van de attribuutwaarde (wanneer was de verandering bekend en is deze verwerkt).
+- Vanaf wanneer wist de overheidspartij die verantwoordelijk is voor de registratie dat de gegevens bekend waren? Dit valt binnen de tijdlijn van het registratieproces of de registratieve werkelijkheid.
+In de rapportage 'Architectuur van het stelsel' (Stroomlijning BasisGegevens, 2006) wordt geadviseerd om beide tijdslijnen te registreren, om de attribuutwaarden van een bepaald moment te kunnen reconstrueren. Dit advies hebben we overgenomen. In de diverse basisregistraties wordt hieraan op verschillende wijzen invulling gegeven. 
+
+Binnen het RSGB is er voor gekozen om in deze tijdlijnen op eenduidige wijze conform MIM 1.2 vast te leggen. Samengevat betekent dat dat er per relatiesoort én per attribuutsoort (gerelateerd aan een objecttype, een gegevensgroep of een relatieklasse) wordt vastgelegd of er sprake is van historie. Op geen enkel ander modelelement binnen het RSGB worden er historische aspecten vastgelegd. 
+Dat betekent dat iedere relatiesoort en iedere attribuutsoort voorzien wordt van twee "tagged values" :
+- **heeft tijdlijn geldigheid** (in RSGB 2.02 was dit "indicatie materiële historie"): Met de tijdlijn geldigheid wordt bedoeld dat er op een tijdlijn wordt bijgehouden wanneer een verandering is opgetreden in de werkelijkheid die heeft geleid tot verandering van de waarde van een kenmerk van een object.  [Volledige definitie in het MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-heeft-tijdlijn-geldigheid)  
+- **heeft tijdlijn registratie** (in RSGB 2.02 wat dit "indicatie formele historie"): Met de tijdlijn registratie wordt bedoeld dat er op een tijdlijn wordt bijgehouden wanneer een bepaalde waarde voor een kenmerk van een object vastgelegd wordt, oftewel geregistreerd wordt. [Volledige definitie in het MIM](https://docs.geostandaarden.nl/mim/mim/#metagegeven-heeft-tijdlijn-registratie)  
+
+We hebben binnen het model geen attribuutsoorten opgenomen die de historie representeren. In vorige versies van het RSGB is op diverse plekken expliciet (maar niet consequent) een attribuutsoort "datum begin geldigheid" en "Datum einde geldigheid" opgenomen. Dat is in deze versie niet meer het geval. Wel worden er gegevens opgenomen die het karakter hebben van een historische attribuutsoort, maar vooral ook een business-betekenis hebben. De geboortedatum en de overlijdens datum van een persoon worden bijvoorbeel expliciet in het model opgenomen.
+
+Implementatie-advies t.a.v. historie
+
 
 **Periode van geldigheid** (oud)
 De materiële historie heeft betrekking op een individuele attribuutsoort of de groep van attribuutsoorten die tegelijkertijd, als gevolg van een gebeurtenis, wijzigen (bijvoorbeeld de woonadresgegevens van een natuurlijk persoon als gevolg van een verhuizing). Ofschoon het mogelijk lijkt om de periode tussen het ontstaan en het beëindigen van een object af te leiden uit de reeks aan perioden van de materiële historie van de attribuutsoorten van dat object, hebben we er in het referentiemodel voor gekozen om beide op te nemen. Zo wordt het ontstaan en het beëindigen van een object expliciet opvraagbaar. En in sommige gevallen worden attribuutwaarden van een object al geregistreerd voordat het object feitelijk bestaat. Bijvoorbeeld in de BAG de gegevens van de nieuwbouwvergunning bij het pand dat waarschijnlijk gebouwd gaat worden.
