@@ -227,7 +227,7 @@ Metagegevens beschrijven betekenis, herkomst, historie en kwaliteit van gegevens
 **CONCEPT !! **  
 Het aspect tijd speelt een belangrijke rol in het gebruik van de informatie uit (basis)registraties. Afnemers hebben eigen rechtsprocedures en moeten kunnen herleiden wanneer attribuutwaarden als bekend mochten worden verondersteld. Als bijvoorbeeld besluiten ter discussie worden gesteld, is het juridisch van belang te achterhalen op basis van welke attribuutwaarden zo’n besluit genomen is. Als onjuiste attribuutwaarden zijn gebruikt, is het relevant te weten of de juiste attribuutwaarden tijdens de besluitvorming al bekend waren.
 
-### Tijd lijnen
+### Tijdlijnen
 Er spelen twee tijdslijnen een rol bij het herleiden van attribuutwaarden:
 
 -   Wanneer is iets gebeurd, in de werkelijkheid of volgens opgave (wanneer zijn de opgenomen gegevens geldig)? Dit valt binnen de tijdlijn van de aangehouden werkelijkheid (Tijdlijn Geldigheid)
