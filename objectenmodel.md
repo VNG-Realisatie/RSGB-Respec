@@ -242,5 +242,18 @@ Voor het opnemen van afleidbare gegevens in supertypen zijn enkele vuistregels g
 -   De brongegevens zijn bereikbaar vanaf het supertype, dus via attributen of relaties die het supertype zelf heeft. Anders moet de afleiding “naar beneden kijken” in het subtype, en klopt de abstractie niet meer.
 -   Het introduceert geen schijnauthenticiteit. Een afgeleid gegeven op basis van authentieke gegevens is zelf niet authentiek. Op een supertype dat BAG- en gemeentelijke klassen overspant, is dat onderscheid voor gebruikers moeilijk te zien.
 
-### Domeinwaarden of tabel  (oud)
+### Domeinwaarden of tabel (Nieuw in concept)
+Er zijn in het RSGB diverse referentielijsten opgenomen die gebaseerd zijn op de landelijke tabellen zoals die qua structuur in het LO-BRP zijn gespecificeerd en waarvan de inhoud wordt gepubliceerd door het RVIG op [deze locatie](https://publicaties.rvig.nl/landelijke-tabellen). 
+Voor de domeinwaarden die expliciet in het LO-BRP genoemd zijn is er voor gekozen om enmuraties op te nemen met een vastelijst aan enumeratiewaarden. 
+
+Een "special" is de lijst van registers en identificaties die bij de "Natuurlijk persoon" kunnen worden vastgelegd. De inhoud daarvan wordt hieronder gespecificeerd.  Een uitbreiding van de onderstaande lijst leidt niet tot een structuurwijziging in het RSGB. Uiteraard zal een extra waarde in deze lijst kunnen leiden tot wijzigingen in software en API-specificaties. 
+
+**Waarden voor Naam register en Naam identificatie in Andere identificatie".**
+
+| Naam register | Naam identificatie | Toelichting |
+| ------------- | ------------------ | ----------- |
+| Immigratie- en Naturalisatiedienst | Vreemdelingennummer | Uniek, identificerend nummer dat door de Nederlandse overheid wordt uitgereikt aan een vreemdeling na registratie in de vreemdelingenadministratie. |
+| EU-land | EU-persoonsnummer | Gegeven over het buitenlands persoonsnummer van vreemdelingen, voor zover het een nummer betreft uitgegeven door een EU-land aan een eigen onderdaan. |
+| 
+
 In bijvoorbeeld het GFO Basisgegevens werd veel gewerkt met codetabellen om de mogelijke waarden van een attribuutsoort te specificeren. In bepaalde catalogi van basisregistraties, zoals die van de BAG, is hiervan geheel afgezien. De mogelijke waarden van een attribuutsoort zijn daarin als domeinwaarden van de attribuutsoort gespecificeerd. In het RSGB hebben we bij het laatste zoveel mogelijk aangesloten. Alleen als sprake is van dynamiek in de domeinwaarden hebben we een 'tabel-objecttype' opgenomen. Dit betreft de situaties waarin domeinwaarden kunnen veranderen en/of het aantal domeinwaarden kan toe- of afnemen. Een voorbeeld is het objecttype LAND.
