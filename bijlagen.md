@@ -4,7 +4,17 @@
 
 | Datum     | Issue-nummer   |  Samenvatting beslissing    | 
 | --------- | -------------- | --------------------------- | 
-| 22-09-2026 | [#6](https://github.com/orgs/VNG-Realisatie/projects/24/views/1?pane=issue&itemId=192119102&issue=VNG-Realisatie%7CActualisering-RSGB%7C6) | Element  "69.10 Gemeente waar de PK zich bevindt" wordt niet opgenomen in het RSGB. |
+| 22-09-2026 | [#6](https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/6) | Element  "69.10 Gemeente waar de PK zich bevindt" wordt niet opgenomen in het RSGB. |
+| 01-10-2026 | [#75](https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/75) | Referentielijst NATIONALITEIT is nu gemodelleerd conform landelijke tabel 32 (LO-BRP) | 
+| 27-10-2026 | [#29](https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/29) | Element 88.20 "Omschrijving verdrag" wordt niet opgenomen in de het RSGB | 
+| 27-10-2026 | [#30](https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/30) | Indicatie Blokkering wordt uit het RSGB verwijderd en datum ingang blokkering PL wordt niet opgenomen in het RSGB.  |
+| 27-10-2026 | [#33](https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/33) | Buitenlandse nationaliteit als attribuutsoort vervallen. De gegevensgroep Nationaliteit kan een buitenlandse nationaliteit betreffen |
+| 27-10-2026 | [#70](https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/70) | Tagged value Brondocument verwijderd. | 
+| 27-10-2026 | [ #1](https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/1)  | Gegevens over Brondocumenten zijn nu opgenomen als gegevensgroep waar dat relevant is|
+| 10-11-2026 | [#54](https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/54) | Verwijzing is niet opgenomen in het RSGB |
+| 12-11-2026 | [#110](https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/110) | Objecttype HUISHOUDEN wordt uit het RSGB verwijderd. |
+
+Nog te completeren n.a.v. verwerkte issues. 
 
 
 # Bijlage 2: Relatie tot GFO Basisgegevens (Obsoleet. Zal verwijderd worden)
