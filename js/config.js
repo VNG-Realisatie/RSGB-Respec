@@ -43,6 +43,13 @@ let respecConfig = {
       }
     ],
 
+  participate:
+    [
+      {
+        name: "John Rooijakkers"
+      }
+     ],
+
 //  github: "https://github.com/VNG-Realisatie/RSGB-Respec",
   edDraftURI: "https://vng-realisatie.github.io/RSGB-Respec/",
   latestVersion: "https://vng-realisatie.github.io/RSGB-Respec/",
