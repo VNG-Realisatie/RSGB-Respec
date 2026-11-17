@@ -178,7 +178,7 @@ Met alleen de tijdlijn geldigheid is niet te zien of een waarde gecorrigeerd is:
 Alleen de tijdlijn registratie, zonder geldigheid, passen we in principe niet toe. Een correctie op de historie levert dan desinformatie op. Stel dat vandaag bekend wordt dat de waarde in een periode in 2002–2003 anders was. De correctie krijgt dan als registratiemoment vandaag, terwijl de huidige waarde een andere is dan die van de gecorrigeerde periode. Een correctie over een afgesloten periode in het verleden is met alleen de registratietijdlijn niet vast te leggen. Omdat het bijhouden van historie veronderstelt dat die gecorrigeerd kan worden, kiezen we in die gevallen voor beide tijdlijnen.
 
 Er zijn twee uitzonderingen waarin we wel alleen de tijdlijn registratie opnemen:
-- **De waarde wijzigt nooit en mag niet gecorrigeerd worden.** Dit geldt als de waarde niet tegelijk met het object ontstaat, het niet relevant is wanneer de waarde in de werkelijkheid ontstond, en het wel relevant is wanneer de waarde is vastgelegd. Een voorbeeld hiervan is … *(nog aanvullen)*
+- **De waarde wijzigt nooit en mag niet gecorrigeerd worden.** Dit geldt als de waarde niet tegelijk met het object ontstaat, het niet relevant is wanneer de waarde in de werkelijkheid ontstond, en het wel relevant is wanneer de waarde is vastgelegd. Een voorbeeld daarvan is het e-depot-identificatie van een zaakdossier. Die wordt toegekend als het dossier jaren na het ontstaan van de zaak wordt overgebracht naar het archief. Het tijdstip van overbrenging is het tijdstip van vastlegging, en de identificatie verandert daarna nooit meer.
 - **De attribuutsoort is zelf een datum**, bijvoorbeeld de overlijdensdatum van een persoon. De waarde is dan tegelijk het moment waarop de geldigheid begint. Een aparte tijdlijn geldigheid voegt niets toe. Kunnen er correcties op plaatsvinden, dan nemen we alleen de tijdlijn registratie op.
 
 Deze regels laten zien hoe de combinatie van beide tagged values bij een attribuutsoort of relatiesoort geïnterpreteerd moet worden.
@@ -193,9 +193,9 @@ Een waarde die eenmaal beëindigd is, kan niet herleven. Is een beëindigde waar
 
 Enumeraties hebben geen historie. Een enumeratiewaarde wijzigen of verwijderen is een breaking change en vraagt om migratie van bestaande gegevens. Moet een lijst met waarden historie hebben, dan wordt die als referentielijst gemodelleerd.
 
-**Implementatie-advies t.a.v. historie** (nieuw in concept)
+**Implementatie-advies t.a.v. historie in een register** (nieuw in concept)
 
-In aansluiting op de paragraaf **Houvast** in het hoofdstuk Doelen geven we een implementatie-advies over historie.
+In aansluiting op de subparagraaf **Houvast** in de paragraaf **Doelen** geven we een implementatie-advies over historie.
 
 Als de historie uit het conceptuele model één op één naar de implementatie van een register wordt vertaald, moet dat register deels in de zesde normaalvorm (6NF) worden gebouwd: elke attribuutsoort met historie krijgt dan in feite een eigen tabel. Dat is op dit moment zeer hoog gegrepen. Deze implementatievorm komt hier en daar als experiment voor, maar is nog niet in grootschalige toepassingen gebruikt.
 
@@ -206,20 +206,34 @@ Voor relaties met historie geldt dezelfde keuze. Zo'n relatie heeft door de hist
 
 Verder adviseren we:
 - Leg beide tijdlijnen vast als perioden, met een begin en een einde, en niet alleen als losse begindatums. Met alleen begindatums moet elk einde uit andere voorkomens worden afgeleid, en worden correcties en beëindigingen lastig.
-- Gebruik halfopen perioden: het begin valt binnen de periode, het einde niet. Zo sluiten opeenvolgende perioden op elkaar aan zonder gat of overlap.
+- Gebruik halfopen perioden: het begin tijdstip/datum valt binnen de periode, het eind tijdstip/datum niet, deze maakt in feite deel uit van de volgende periode. Zo sluiten opeenvolgende perioden op elkaar aan zonder gat of overlap.
 - Verwerk een correctie door een voorkomen te laten vervangen door een nieuw voorkomen en het oude te bewaren. Pas de historie nooit rechtstreeks aan: dan verliest de registratietijdlijn haar waarde als betrouwbaar verslag van wat er vastgelegd was.
 
 **Voorbeeld**
 
-Een persoon woont sinds 1 mei 2010 op adres V. Op 1 maart 2024 verhuist hij volgens opgave naar adres A; dat wordt op 4 maart 2024 geregistreerd. Op 10 oktober 2024 blijkt uit onderzoek dat hij nooit op adres A heeft gewoond, maar al sinds 15 februari 2024 op adres B.
+- Een persoon woont sinds 1 mei 2010 op adres V. 
 
 | Registratie vanaf | Registratie tot | Geldig vanaf | Geldig tot | Adres | Toelichting |
 |---|---|---|---|---|---|
-| 2010-05-03 | 2024-03-04 | 2010-05-01 | | V | Oorspronkelijke vastlegging, nog geen einde bekend |
-| 2024-03-04 | 2024-10-10 | 2010-05-01 | 2024-03-01 | V | Verhuizing geregistreerd: V krijgt een einde |
-| 2024-03-04 | 2024-10-10 | 2024-03-01 | | A | Verhuizing naar A |
-| 2024-10-10 | | 2010-05-01 | 2024-02-15 | V | Correctie: V eindigt eerder |
-| 2024-10-10 | | 2024-02-15 | | B | Correctie: B in plaats van A |
+| 2010-05-03 |  | 2010-05-01 | | V | Oorspronkelijke vastlegging, nog geen einde bekend |
+
+- Op 1 maart 2024 verhuist hij volgens opgave naar adres A; dat wordt op 4 maart 2024 geregistreerd. 
+
+| Registratie vanaf | Registratie tot | Geldig vanaf | Geldig tot | Adres | Toelichting |
+|---|---|---|---|---|---|
+| 2010-05-03 |  | 2010-05-01 | | V | Oorspronkelijke vastlegging, nog geen einde geldigheid bekend |
+| 2024-03-04 |  | 2010-05-01 | 2024-03-01 | V | Verhuizing geregistreerd: V krijgt een einde geldigheid |
+| 2024-03-04 |  | 2024-03-01 | | A | Verhuizing naar A |
+
+- Op 10 oktober 2024 blijkt uit onderzoek dat hij nooit op adres A heeft gewoond, maar al sinds 15 februari 2024 op adres B.
+
+| Registratie vanaf | Registratie tot | Geldig vanaf | Geldig tot | Adres | Toelichting |
+|---|---|---|---|---|---|
+| 2010-05-03 |  | 2010-05-01 | | V | Oorspronkelijke vastlegging, nog geen einde bekend |
+| 2024-03-04 | 2024-10-10  | 2010-05-01 | 2024-03-01 | V | N.a.v. correctie Verhuisd vanad 15-02-2025 |
+| 2024-10-10  |  | 2010-05-01 | 2024-02-15 | V | N.a.v. correctie Verhuisd vanaf 15-02-2025 |
+| 2024-03-04 | 2024-10-10 | 2024-03-01 | | A | Correctie: B in plaats van A Dus registratie van A krijgt een einde |
+| 2024-10-10 |  | 2024-02-15 | | B | Correctie: B in plaats van A |
 
 Een lege "tot"-datum betekent: geen einde bekend. De vraag "waar woonde de persoon op 1 juni 2024?" heeft nu als antwoord adres B. De vraag "wat stond er op 1 juni 2024 in de registratie?" heeft als antwoord adres A. Een besluit van 1 juni 2024 op basis van adres A is dus genomen op basis van wat toen was vastgelegd.
 
