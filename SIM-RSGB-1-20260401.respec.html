@@ -1,6 +1,6 @@
 
     <h2>Gegevensdefinitie</h2>
-    <p><b>Deze tekst is normatief.</b><!--SIM-RSGB-2.03-2-20260401-20261126-153843 imvertor Nightly-build.0--></p>
+    <p><b>Deze tekst is normatief.</b><!--SIM-RSGB-2.03-2-20260401-20261126-161923 imvertor Nightly-build.0--></p>
     <section>
         <h3>Objecttypen </h3>
         <section id="global_class_Model_ADRESSEERBAAROBJECTAANDUIDING">
@@ -3326,7 +3326,7 @@
                                 href="#detail_attribute_Model_Verblijfplaats_Functieadres">Functieadres</a></td>
                         <td>
                             <p>De aanduiding die aangeeft of het adres de functie heeft van
-                                woonadres of briefadres.</p>
+                                woonadres of briefadres of, in het geval van een ingezetene, een tijdelijk adres.</p>
                         </td>
                         <td><a class="link" href="#detail_class_Model_soortAdres">soort­Adres</a></td>
                         <td>1</td>
@@ -4391,7 +4391,7 @@
                                 href="#detail_attribute_Model_Verblijfplaats_Functieadres">Functieadres</a></td>
                         <td>
                             <p>De aanduiding die aangeeft of het adres de functie heeft van
-                                woonadres of briefadres.</p>
+                                woonadres of briefadres of, in het geval van een ingezetene, een tijdelijk adres.</p>
                         </td>
                         <td><a class="link" href="#detail_class_Model_soortAdres">soort­Adres</a></td>
                         <td>1</td>
@@ -7601,7 +7601,7 @@
                                 href="#detail_attribute_Model_Verblijfplaats_Functieadres">Functieadres</a></td>
                         <td>
                             <p>De aanduiding die aangeeft of het adres de functie heeft van
-                                woonadres of briefadres.</p>
+                                woonadres of briefadres of, in het geval van een ingezetene, een tijdelijk adres.</p>
                         </td>
                         <td><a class="link" href="#detail_class_Model_soortAdres">soort­Adres</a></td>
                         <td>1</td>
@@ -18644,7 +18644,7 @@
                         </td>
                         <td>
                             <p>De aanduiding die aangeeft of het adres de functie heeft van
-                                woonadres of briefadres.</p>
+                                woonadres of briefadres of, in het geval van een ingezetene, een tijdelijk adres.</p>
                         </td>
                         <td><a class="link" href="#detail_class_Model_soortAdres">soort­Adres</a></td>
                         <td>1</td>
@@ -19081,6 +19081,12 @@
                     </td>
                 </tr>
                 <tr>
+                    <th scope="row"><a class="link"
+                            href="#detail_class_Model_soortAdellijkeTitelPredicaat">soort­Adellijke­Titel­Predicaat</a>
+                    </th>
+                    <td></td>
+                </tr>
+                <tr>
                     <th scope="row"><a class="link" href="#detail_class_Model_soortAdres">soort­Adres</a></th>
                     <td>
                         <p>Aanduiding van het soort adres.</p>
@@ -19243,12 +19249,6 @@
                     <td>
                         <p>De verschillende waarden die de typering van het water kan aannemen.</p>
                     </td>
-                </tr>
-                <tr>
-                    <th scope="row"><a class="link"
-                            href="#detail_class_Model_soortAdellijkeTitelPredicaat">soort­Adellijke­Titel­Predicaat</a>
-                    </th>
-                    <td></td>
                 </tr>
             </tbody>
         </table>
@@ -51285,7 +51285,8 @@
                                 <th scope="row">Definitie</th>
                                 <td>
                                     <p>De aanduiding die aangeeft of het adres de functie heeft van
-                                        woonadres of briefadres.</p>
+                                        woonadres of briefadres of, in het geval van een ingezetene, een tijdelijk
+                                        adres.</p>
                                 </td>
                             </tr>
                             <tr>
@@ -51326,8 +51327,13 @@
                             </tr>
                             <tr>
                                 <th scope="row">Regels</th>
-                                <td>B (=brief- cq. correspondentie-adres is ontleend aan de GBA), W (=woonadres cq.
-                                    woonadreslocatie is ontleend aan de GBA)</td>
+                                <td>
+                                    <p>Een ingeschreven die ingezetene is kan alleen een woonadres of een briefadres
+                                        hebben.</p>
+                                    <p></p>
+                                    <p>Een ingeschrevcen die niet-ingezetene is kan een Tijdelijk verblijfadres hebben,
+                                        maar het is niet verplicht. </p>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">Lengte</th>
@@ -51355,15 +51361,28 @@
                             </tr>
                         </tbody>
                     </table>
-                    <div class="notoc"><strong>Toelichting </strong>De attribuutsoort is ontleend aan het GBA-attribuut
-                        ‘Functie adres’. Daarmee wordt aangegeven of het verblijfsadres in de GBA de functie heeft van
-                        woonadres of van briefadres. Een briefadres wordt in het RSGB overgenomen als
-                        correspondentieadres bij Subject, een woonadres als Woonadres of Woonadreslocatie bij
-                        ingeschreven persoon. Indien het uit de GBA overgenomen adres een briefadres betreft, dan kan
-                        uit een andere bron het Woonadres of de Woonadreslocatie overgenomen zijn. Evenzo, indien het
-                        uit de GBA overgenomen adres een woonadres betreft, dan kan uit een andere bron het
-                        Correspondentie-adres overgenomen zijn. Het attribuutsoort maakt deel uit van het
-                        groepattribuutsoort Verblijfsadres.</div>
+                    <div class="notoc"><strong>Toelichting </strong>
+                        <p>De attribuutsoort is ontleend aan het GBA-attribuut ‘Functie adres’. Daarmee wordt aangegeven
+                            of het verblijfsadres in de GBA de functie heeft van woonadres of van briefadres. </p>
+                        <p></p>
+                        <p>De verblijfplaats van een ingeschreven persoon heeft het karakter van een "briefadres" als de
+                            ingeschreven geen vast woonadres heeft of in een instelling verblijft danwel in een situatie
+                            is waarbij het opnemen van een woonadres naar oordeee van de burgermeester niet gewenst is.
+                            Dit adres kan dan gebruikt worden om voor betrokkene bestemde geschriften in ontvangst te
+                            nemen (Wet BRP atr 1.1 onder r).</p>
+                        <p></p>
+                        <p>Indien het de functie van het adres een "woonadres" is danis dat het adres waar betrokkene
+                            woont. Wie op meer adressen woont, staat op het adres waar hij naar redelijke verwachting
+                            gedurende een half jaar de meeste malen zal overnachten. Als zo'n adres ontbreekt, geldt het
+                            adres waar, bij het ontbreken van een adres als bedoeld onder 1, betrokkene naar redelijke
+                            verwachting gedurende drie maanden ten minste twee derde van de tijd zal overnachten.(Wet
+                            BRP art 1.1 onder o)</p>
+                        <p></p>
+                        <p>Als het een niet ingezetene betreft kan er sprake zijn van een tijdelijk verblijfsadres. Dat
+                            is het adres in Nederland, niet zijnde het woonadres of het briefadres, waar betrokkene naar
+                            redelijke verwachting gedurende een maand meestentijds en gedurende een half jaar minder dan
+                            twee derde van de tijd zal overnachten (Wet BRP art 1.1 onder z)</p>
+                    </div>
                 </section>
                 <section id="detail_attribute_Model_Verblijfplaats_Locatiebeschrijving">
                     <h6>Attribuutsoort details <a href="#global_class_Model_Verblijfplaats">Verblijfplaats</a> Locatie
@@ -59839,6 +59858,35 @@
                     </tbody>
                 </table>
             </section>
+            <section id="detail_class_Model_soortAdellijkeTitelPredicaat">
+                <h5>Enumeratie details soort­Adellijke­Titel­Predicaat</h5>
+                <table style="width: 100%;" class="list">
+                    <colgroup></colgroup>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table style="width: 100%;" class="list">
+                    <colgroup style="width: 20%;"></colgroup>
+                    <colgroup></colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="col">Waarde</th>
+                            <th scope="col">Omschrijving</th>
+                        </tr>
+                        <tr>
+                            <td>titel</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>predicaat</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
             <section id="detail_class_Model_soortAdres">
                 <h5>Enumeratie details soort­Adres</h5>
                 <table style="width: 100%;" class="list">
@@ -59868,6 +59916,11 @@
                         <tr>
                             <td>B</td>
                             <td>Briefadres</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>T</td>
+                            <td>Tijdelijk adres</td>
                             <td></td>
                         </tr>
                     </tbody>
@@ -61001,35 +61054,6 @@
                         </tr>
                         <tr>
                             <td>greppel, droge sloot</td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <section id="detail_class_Model_soortAdellijkeTitelPredicaat">
-                <h5>Enumeratie details soort­Adellijke­Titel­Predicaat</h5>
-                <table style="width: 100%;" class="list">
-                    <colgroup></colgroup>
-                    <tbody>
-                        <tr>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table style="width: 100%;" class="list">
-                    <colgroup style="width: 20%;"></colgroup>
-                    <colgroup></colgroup>
-                    <tbody>
-                        <tr>
-                            <th scope="col">Waarde</th>
-                            <th scope="col">Omschrijving</th>
-                        </tr>
-                        <tr>
-                            <td>titel</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>predicaat</td>
                             <td></td>
                         </tr>
                     </tbody>

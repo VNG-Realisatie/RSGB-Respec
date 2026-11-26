@@ -16,6 +16,7 @@
 | 12-11-2026 | [#53](https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/53) | Attribuutsoorten m.b.t. kiesrecht zijn verwijderd uit het RSGB. |
 | 26-11-2026 | [#143](https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/143) | Kardinaliteit geslachtsaanduiding aangepast + TV Regel toegeveoegd | 
 | 26-11-2026 | [#144](https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/144) | Kardinaliteit (Statutaire) naam gewijzigd _ TV Regel toegeveoegd |
+| 26-11-2026 | [#55](https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/55) | Tijdelijk verblijfsadres in Nederlandopgenomen voor de niet-ingezetene | 
 
 Nog te completeren n.a.v. verwerkte issues. 
 
