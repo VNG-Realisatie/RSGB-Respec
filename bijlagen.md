@@ -17,6 +17,7 @@
 | 26-11-2026 | [#143](https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/143) | Kardinaliteit geslachtsaanduiding aangepast + TV Regel toegeveoegd | 
 | 26-11-2026 | [#144](https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/144) | Kardinaliteit (Statutaire) naam gewijzigd _ TV Regel toegeveoegd |
 | 26-11-2026 | [#55](https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/55) | Tijdelijk verblijfsadres in Nederlandopgenomen voor de niet-ingezetene | 
+| 26-11-2026 | [#128](https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/128 | Relatie tussen Subject en Woonplaats verplaatst naar gegevensgroeptype Postadres en hernoemd |
 
 Nog te completeren n.a.v. verwerkte issues. 
 
