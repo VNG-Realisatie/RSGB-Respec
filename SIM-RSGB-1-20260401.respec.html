@@ -1,5 +1,5 @@
 <h2>Gegevensdefinitie</h2>
-<p><b>Deze tekst is normatief.</b><!--SIM-RSGB-2.03-2-20260401-20261126-165516 imvertor Nightly-build.0--></p>
+<p><b>Deze tekst is normatief.</b><!--SIM-RSGB-2.03-2-20260401-20261126-172438 imvertor Nightly-build.0--></p>
 <section>
     <h3>Objecttypen </h3>
     <section id="global_class_Model_ADRESSEERBAAROBJECTAANDUIDING">
@@ -13809,30 +13809,6 @@
                 </tr>
                 <tr>
                     <td><a class="link"
-                            href="#detail_attribute_Model_HUWELIJKGEREGISTREERDPARTNERSCHAP_Huwelijkssluitingaangaangeregistreerdpartnerschap">Huwelijkssluiting/aangaan
-                            geregistreerd partnerschap</a></td>
-                    <td>
-                        <p>Verwijzing naar een gelijknamig groepattribuutsoort.</p>
-                    </td>
-                    <td><a class="link"
-                            href="#global_class_Model_Huwelijkssluitingaangaangeregistreerdpartnerschap">Huwelijkssluiting/aangaan
-                            geregistreerd partnerschap</a></td>
-                    <td>0 .. 1</td>
-                </tr>
-                <tr>
-                    <td><a class="link"
-                            href="#detail_attribute_Model_HUWELIJKGEREGISTREERDPARTNERSCHAP_Ontbindinghuwelijkgeregistreerdpartnerschap">Ontbinding
-                            huwelijk/geregistreerd partnerschap</a></td>
-                    <td>
-                        <p>Verwijzing naar een gelijknamig groepattribuutsoort.</p>
-                    </td>
-                    <td><a class="link"
-                            href="#global_class_Model_Ontbindinghuwelijkgeregistreerdpartnerschap">Ontbinding
-                            huwelijk/geregistreerd partnerschap</a></td>
-                    <td>0 .. 1</td>
-                </tr>
-                <tr>
-                    <td><a class="link"
                             href="#detail_attribute_Model_HUWELIJKGEREGISTREERDPARTNERSCHAP_Soortverbintenis">Soort
                             verbintenis</a></td>
                     <td>
@@ -13840,6 +13816,118 @@
                     </td>
                     <td><a class="link" href="#detail_class_Model_soortVerbintenis">soort­Verbintenis</a></td>
                     <td>0 .. 1</td>
+                </tr>
+                <tr>
+                    <td>Huwelijkssluiting/aangaan geregistreerd partnerschap:</td>
+                    <td>
+                        <p>Verwijzing naar een gelijknamig groepattribuutsoort.</p>
+                    </td>
+                    <td><a class="link"
+                            href="#detail_class_Model_Huwelijkssluitingaangaangeregistreerdpartnerschap">Huwelijkssluiting/aangaan
+                            geregistreerd partnerschap</a></td>
+                    <td>0 .. 1</td>
+                </tr>
+                <tr>
+                    <td>- Brondocument</td>
+                    <td></td>
+                    <td>Brondocument</td>
+                    <td>1 .. 2</td>
+                </tr>
+                <tr>
+                    <td>- <a class="link"
+                            href="#detail_attribute_Model_Huwelijkssluitingaangaangeregistreerdpartnerschap_Datumhuwelijkssluitingaangaangeregistreerdpartnerschap">Datum
+                            huwelijkssluiting/aangaan geregistreerd partnerschap</a></td>
+                    <td>
+                        <p>De datum waarop het huwelijk is voltrokken of het partnerschap is aangegaan.</p>
+                    </td>
+                    <td>Datum­Onvolledig</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>- <a class="link"
+                            href="#detail_attribute_Model_Huwelijkssluitingaangaangeregistreerdpartnerschap_Landhuwelijkssluitingaangaangeregistreerdpartnerschap">Land
+                            huwelijkssluiting/aangaan geregistreerd partnerschap</a></td>
+                    <td>
+                        <p>Het LAND waar het huwelijk is voltrokken of het partnerschap is aangegaan.</p>
+                    </td>
+                    <td><a class="link" href="#detail_class_Model_LAND">LAND</a></td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>- <a class="link"
+                            href="#detail_attribute_Model_Huwelijkssluitingaangaangeregistreerdpartnerschap_Plaatshuwelijkssluitingaangaangeregistreerdpartnerschap">Plaats
+                            huwelijkssluiting/aangaan geregistreerd partnerschap</a></td>
+                    <td>
+                        <p>De code uit de GBA/Gemeententabel of een buitenlandse plaats of een plaatsbepaling, die
+                            aangeeft waar het huwelijk is voltrokken of het partnerschap is aangegaan.</p>
+                    </td>
+                    <td><a class="external-link"
+                            href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                    </td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Ontbinding huwelijk/geregistreerd partnerschap:</td>
+                    <td>
+                        <p>Verwijzing naar een gelijknamig groepattribuutsoort.</p>
+                    </td>
+                    <td><a class="link"
+                            href="#detail_class_Model_Ontbindinghuwelijkgeregistreerdpartnerschap">Ontbinding
+                            huwelijk/geregistreerd partnerschap</a></td>
+                    <td>0 .. 1</td>
+                </tr>
+                <tr>
+                    <td>- Brondocument</td>
+                    <td></td>
+                    <td>Brondocument</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>- <a class="link"
+                            href="#detail_attribute_Model_Ontbindinghuwelijkgeregistreerdpartnerschap_Datumontbindinghuwelijkgeregistreerdpartnerschap">Datum
+                            ontbinding huwelijk/geregistreerd partnerschap</a></td>
+                    <td>
+                        <p>De datum waarop het huwelijk/geregistreerd partnerschap is ontbonden of nietig verklaard.</p>
+                    </td>
+                    <td>Datum­Onvolledig</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>- <a class="link"
+                            href="#detail_attribute_Model_Ontbindinghuwelijkgeregistreerdpartnerschap_Landontbindinghuwelijkgeregistreerdpartnerschap">Land
+                            ontbinding huwelijk/geregistreerd partnerschap</a></td>
+                    <td>
+                        <p>Het LAND waar het huwelijk/geregistreerd partnerschap is ontbonden of nietig verklaard.</p>
+                    </td>
+                    <td><a class="link" href="#detail_class_Model_LAND">LAND</a></td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>- <a class="link"
+                            href="#detail_attribute_Model_Ontbindinghuwelijkgeregistreerdpartnerschap_Plaatsontbindinghuwelijkgeregistreerdpartnerschap">Plaats
+                            ontbinding huwelijk/geregistreerd partnerschap</a></td>
+                    <td>
+                        <p>De code uit de GBA-Gemeententabel of een buitenlandse plaats of een plaatsbepaling die
+                            aangeeft waar het huwelijk/ geregistreerd partnerschap is ontbonden of nietig verklaard.</p>
+                    </td>
+                    <td><a class="external-link"
+                            href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                    </td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>- <a class="link"
+                            href="#detail_attribute_Model_Ontbindinghuwelijkgeregistreerdpartnerschap_Redenontbindinghuwelijkgeregistreerdpartnerschap">Reden
+                            ontbinding huwelijk/geregistreerd partnerschap</a></td>
+                    <td>
+                        <p>De code uit de Tabel Reden ontbinding/ nietigverklaring huwelijk/geregistreerd partnerschap,
+                            die aangeeft om welke reden het huwelijk/geregistreerd partnerschap is ontbonden of nietig
+                            verklaard.</p>
+                    </td>
+                    <td><a class="external-link"
+                            href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                    </td>
+                    <td>1</td>
                 </tr>
             </tbody>
         </table>
@@ -52816,891 +52904,6 @@
         </section>
         <section id="detail_class_Model_HUWELIJKGEREGISTREERDPARTNERSCHAP">
             <h5>Relatieklasse HUWELIJK/GEREGISTREERD PARTNERSCHAP</h5>
-            <section class="notoc"
-                id="detail_attribute_Model_HUWELIJKGEREGISTREERDPARTNERSCHAP_Huwelijkssluitingaangaangeregistreerdpartnerschap">
-                <h6>Gegevensgroep <a href="#global_class_Model_HUWELIJKGEREGISTREERDPARTNERSCHAP">HUWELIJK/GEREGISTREERD
-                        PARTNERSCHAP</a> Huwelijkssluiting/aangaan geregistreerd partnerschap</h6>
-                <table style="width: 100%;">
-                    <colgroup style="width: 30%;"></colgroup>
-                    <colgroup style="width: 70%;"></colgroup>
-                    <tbody>
-                        <tr></tr>
-                        <tr>
-                            <th scope="row">Naam</th>
-                            <td>Huwelijkssluiting/aangaan geregistreerd partnerschap</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Herkomst</th>
-                            <td>GBA</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Definitie</th>
-                            <td>
-                                <p>Verwijzing naar een gelijknamig groepattribuutsoort.</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Herkomst definitie</th>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Datum opname</th>
-                            <td>9 april 2007</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Mogelijk geen waarde</th>
-                            <td>Nee</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Indicatie materiële historie</th>
-                            <td>Ja</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Indicatie formele historie</th>
-                            <td>Ja</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Indicatie in onderzoek</th>
-                            <td>Ja</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Aanduiding strijdigheid/nietigheid</th>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Indicatie kardinaliteit</th>
-                            <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Indicatie authentiek</th>
-                            <td>Authentiek</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Regels</th>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Lengte</th>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Formaat</th>
-                            <td><a class="link"
-                                    href="#detail_class_Model_Huwelijkssluitingaangaangeregistreerdpartnerschap">Huwelijkssluiting/aangaan
-                                    geregistreerd partnerschap</a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Patroon</th>
-                            <td> </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="notoc"><strong>Toelichting </strong>
-                    <p>Het betreft een groepattribuutsoort dat bestaat uit de volgende attribuutsoorten:</p>
-                    <p>Datum huwelijkssluiting/aangaan geregistreerd partnerschap</p>
-                    <p>Plaats huwelijkssluiting/aangaan geregistreerd partnerschap</p>
-                    <p>en de referentie naar</p>
-                    <p>HUWELIJK/GEREGISTREERD PARTNERSCHAP is gesloten/aangegaan in LAND.</p>
-                    <p></p>
-                    <p>Zie verder de toelichting in de GBA.</p>
-                    <p></p>
-                    <p>Uit documentatie versie 2.02 (vervallen tagged values):</p>
-                    <p>Code attribuutsoort: 05.06</p>
-                    <p>Aanduiding documentidentificatie: Akte­Gemeente, Documentdatum, Documentgemeente,
-                        Documentidentificatie, Documentomschrijving</p>
-                </div>
-            </section>
-            <section id="detail_class_Model_Huwelijkssluitingaangaangeregistreerdpartnerschap">
-                <h6>Gegevensgroeptype Huwelijkssluiting/aangaan geregistreerd partnerschap</h6>
-                <div class="deepheader"
-                    id="detail_attribute_Model_Huwelijkssluitingaangaangeregistreerdpartnerschap_Datumhuwelijkssluitingaangaangeregistreerdpartnerschap">
-                    <strong>Attribuutsoort details <a
-                            href="#global_class_Model_Huwelijkssluitingaangaangeregistreerdpartnerschap">Huwelijkssluiting/aangaan
-                            geregistreerd partnerschap</a> Datum huwelijkssluiting/aangaan geregistreerd
-                        partnerschap</strong>
-                    <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Naam</th>
-                                <td>Datum huwelijkssluiting/aangaan geregistreerd partnerschap</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Alias</th>
-                                <td>datum­Sluiting</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst</th>
-                                <td>GBA</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Definitie</th>
-                                <td>
-                                    <p>De datum waarop het huwelijk is voltrokken of het partnerschap is aangegaan.</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst definitie</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Datum opname</th>
-                                <td>9 april 2007</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Mogelijk geen waarde</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie materiële historie</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie formele historie</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie in onderzoek</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Aanduiding strijdigheid/nietigheid</th>
-                                <td>zie groep</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit</th>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie authentiek</th>
-                                <td>Authentiek</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Lengte</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formaat</th>
-                                <td>Datum­Onvolledig</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Patroon</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie classificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie identificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie afleidbaar</th>
-                                <td> </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <section class="notoc">
-                        <h8>Toelichting </h8>
-                        <p>Het attribuutsoort maakt deel uit van het groepattribuutsoort Huwelijkssluiting/aangaan
-                            geregistreerd partnerschap. Zie verder de toelichting in de GBA.</p>
-                        <p></p>
-                        <p>Uit documentatie versie 2.02 (vervallen tagged values):</p>
-                        <p>Code attribuutsoort: 06.06.10</p>
-                    </section>
-                </div>
-                <div class="deepheader"
-                    id="detail_attribute_Model_Huwelijkssluitingaangaangeregistreerdpartnerschap_Landhuwelijkssluitingaangaangeregistreerdpartnerschap">
-                    <strong>Attribuutsoort details <a
-                            href="#global_class_Model_Huwelijkssluitingaangaangeregistreerdpartnerschap">Huwelijkssluiting/aangaan
-                            geregistreerd partnerschap</a> Land huwelijkssluiting/aangaan geregistreerd
-                        partnerschap</strong>
-                    <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Naam</th>
-                                <td>Land huwelijkssluiting/aangaan geregistreerd partnerschap</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst</th>
-                                <td>GBA</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Definitie</th>
-                                <td>
-                                    <p>Het LAND waar het huwelijk is voltrokken of het partnerschap is aangegaan.</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst definitie</th>
-                                <td>KING op basis van GBA</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Datum opname</th>
-                                <td>1 november 2008</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Mogelijk geen waarde</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie materiële historie</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie formele historie</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie in onderzoek</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Aanduiding strijdigheid/nietigheid</th>
-                                <td>zie groep</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit</th>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie authentiek</th>
-                                <td>Authentiek</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Lengte</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formaat</th>
-                                <td><a class="link" href="#detail_class_Model_LAND">LAND</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Patroon</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie classificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie identificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie afleidbaar</th>
-                                <td> </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <section class="notoc">
-                        <h8>Toelichting </h8>
-                        <p>Het attribuutsoort maakt deel uit van het groepattribuutsoort Huwelijkssluiting/aangaan
-                            geregistreerd partnerschap. Zie verder de toelichting in de GBA.</p>
-                        <p></p>
-                        <p>Uit documentatie versie 2.02 (vervallen tagged values):</p>
-                        <p>Code attribuutsoort: 06.05.30</p>
-                    </section>
-                </div>
-                <div class="deepheader"
-                    id="detail_attribute_Model_Huwelijkssluitingaangaangeregistreerdpartnerschap_Plaatshuwelijkssluitingaangaangeregistreerdpartnerschap">
-                    <strong>Attribuutsoort details <a
-                            href="#global_class_Model_Huwelijkssluitingaangaangeregistreerdpartnerschap">Huwelijkssluiting/aangaan
-                            geregistreerd partnerschap</a> Plaats huwelijkssluiting/aangaan geregistreerd
-                        partnerschap</strong>
-                    <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Naam</th>
-                                <td>Plaats huwelijkssluiting/aangaan geregistreerd partnerschap</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Alias</th>
-                                <td>plaats­Sluiting</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst</th>
-                                <td>GBA</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Definitie</th>
-                                <td>
-                                    <p>De code uit de GBA/Gemeententabel of een buitenlandse plaats of een
-                                        plaatsbepaling, die aangeeft waar het huwelijk is voltrokken of het partnerschap
-                                        is aangegaan.</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst definitie</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Datum opname</th>
-                                <td>9 april 2007</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Mogelijk geen waarde</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie materiële historie</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie formele historie</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie in onderzoek</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Aanduiding strijdigheid/nietigheid</th>
-                                <td>zie groep</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit</th>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie authentiek</th>
-                                <td>Authentiek</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Lengte</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formaat</th>
-                                <td><a class="external-link"
-                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Patroon</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie classificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie identificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie afleidbaar</th>
-                                <td> </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <section class="notoc">
-                        <h8>Toelichting </h8>
-                        <p>Het attribuutsoort maakt deel uit van het groepattribuutsoort Huwelijkssluiting/aangaan
-                            geregistreerd partnerschap. Zie verder de toelichting in de GBA.</p>
-                        <p></p>
-                        <p>Uit documentatie versie 2.02 (vervallen tagged values):</p>
-                        <p>Code attribuutsoort: 05.06.20</p>
-                    </section>
-                </div>
-            </section>
-            <section class="notoc"
-                id="detail_attribute_Model_HUWELIJKGEREGISTREERDPARTNERSCHAP_Ontbindinghuwelijkgeregistreerdpartnerschap">
-                <h6>Gegevensgroep <a href="#global_class_Model_HUWELIJKGEREGISTREERDPARTNERSCHAP">HUWELIJK/GEREGISTREERD
-                        PARTNERSCHAP</a> Ontbinding huwelijk/geregistreerd partnerschap</h6>
-                <table style="width: 100%;">
-                    <colgroup style="width: 30%;"></colgroup>
-                    <colgroup style="width: 70%;"></colgroup>
-                    <tbody>
-                        <tr></tr>
-                        <tr>
-                            <th scope="row">Naam</th>
-                            <td>Ontbinding huwelijk/geregistreerd partnerschap</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Herkomst</th>
-                            <td>GBA</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Definitie</th>
-                            <td>
-                                <p>Verwijzing naar een gelijknamig groepattribuutsoort.</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Herkomst definitie</th>
-                            <td>GBA</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Datum opname</th>
-                            <td>1 mei 2008</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Mogelijk geen waarde</th>
-                            <td>Nee</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Indicatie materiële historie</th>
-                            <td>Ja</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Indicatie formele historie</th>
-                            <td>Ja</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Indicatie in onderzoek</th>
-                            <td>Ja</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Aanduiding strijdigheid/nietigheid</th>
-                            <td>Ja</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Indicatie kardinaliteit</th>
-                            <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Indicatie authentiek</th>
-                            <td>Overig</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Regels</th>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Lengte</th>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Formaat</th>
-                            <td><a class="link"
-                                    href="#detail_class_Model_Ontbindinghuwelijkgeregistreerdpartnerschap">Ontbinding
-                                    huwelijk/geregistreerd partnerschap</a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Patroon</th>
-                            <td> </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="notoc"><strong>Toelichting </strong>
-                    <p>Uit documentatie versie 2.02 (vervallen tagged values):</p>
-                    <p>Code attribuutsoort: 05.07</p>
-                    <p>Aanduiding documentidentificatie: Akte­Gemeente, Documentdatum, Documentgemeente,
-                        Documentidentificatie, Documentomschrijving</p>
-                </div>
-            </section>
-            <section id="detail_class_Model_Ontbindinghuwelijkgeregistreerdpartnerschap">
-                <h6>Gegevensgroeptype Ontbinding huwelijk/geregistreerd partnerschap</h6>
-                <div class="deepheader"
-                    id="detail_attribute_Model_Ontbindinghuwelijkgeregistreerdpartnerschap_Datumontbindinghuwelijkgeregistreerdpartnerschap">
-                    <strong>Attribuutsoort details <a
-                            href="#global_class_Model_Ontbindinghuwelijkgeregistreerdpartnerschap">Ontbinding
-                            huwelijk/geregistreerd partnerschap</a> Datum ontbinding huwelijk/geregistreerd
-                        partnerschap</strong>
-                    <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Naam</th>
-                                <td>Datum ontbinding huwelijk/geregistreerd partnerschap</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Alias</th>
-                                <td>datum­Ontbinding</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst</th>
-                                <td>GBA</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Definitie</th>
-                                <td>
-                                    <p>De datum waarop het huwelijk/geregistreerd partnerschap is ontbonden of nietig
-                                        verklaard.</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst definitie</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Datum opname</th>
-                                <td>9 april 2007</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Mogelijk geen waarde</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie materiële historie</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie formele historie</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie in onderzoek</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Aanduiding strijdigheid/nietigheid</th>
-                                <td>zie groep</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit</th>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie authentiek</th>
-                                <td>Authentiek</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Lengte</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formaat</th>
-                                <td>Datum­Onvolledig</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Patroon</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie classificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie identificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie afleidbaar</th>
-                                <td> </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <section class="notoc">
-                        <h8>Toelichting </h8>
-                        <p>Het attribuutsoort maakt deel uit van het groepattribuutsoort Ontbinding
-                            huwelijk/geregistreerd partnerschap. Zie verder de toelichting in de GBA.</p>
-                        <p></p>
-                        <p>Uit documentatie versie 2.02 (vervallen tagged values):</p>
-                        <p>Code attribuutsoort: 05.07.10</p>
-                    </section>
-                </div>
-                <div class="deepheader"
-                    id="detail_attribute_Model_Ontbindinghuwelijkgeregistreerdpartnerschap_Landontbindinghuwelijkgeregistreerdpartnerschap">
-                    <strong>Attribuutsoort details <a
-                            href="#global_class_Model_Ontbindinghuwelijkgeregistreerdpartnerschap">Ontbinding
-                            huwelijk/geregistreerd partnerschap</a> Land ontbinding huwelijk/geregistreerd
-                        partnerschap</strong>
-                    <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Naam</th>
-                                <td>Land ontbinding huwelijk/geregistreerd partnerschap</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst</th>
-                                <td>GBA</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Definitie</th>
-                                <td>
-                                    <p>Het LAND waar het huwelijk/geregistreerd partnerschap is ontbonden of nietig
-                                        verklaard.</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst definitie</th>
-                                <td>KING op basis van GBA</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Datum opname</th>
-                                <td>1 november 2008</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Mogelijk geen waarde</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie materiële historie</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie formele historie</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie in onderzoek</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Aanduiding strijdigheid/nietigheid</th>
-                                <td>zie groep</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit</th>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie authentiek</th>
-                                <td>Authentiek</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Lengte</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formaat</th>
-                                <td><a class="link" href="#detail_class_Model_LAND">LAND</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Patroon</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie classificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie identificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie afleidbaar</th>
-                                <td> </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <section class="notoc">
-                        <h8>Toelichting </h8>
-                        <p>Het attribuutsoort maakt deel uit van het groepattribuutsoort Ontbinding
-                            huwelijk/geregistreerd partnerschap. Zie verder de toelichting in de GBA.</p>
-                        <p></p>
-                        <p>Uit documentatie versie 2.02 (vervallen tagged values):</p>
-                        <p>Code attribuutsoort: 05.07.30</p>
-                    </section>
-                </div>
-                <div class="deepheader"
-                    id="detail_attribute_Model_Ontbindinghuwelijkgeregistreerdpartnerschap_Plaatsontbindinghuwelijkgeregistreerdpartnerschap">
-                    <strong>Attribuutsoort details <a
-                            href="#global_class_Model_Ontbindinghuwelijkgeregistreerdpartnerschap">Ontbinding
-                            huwelijk/geregistreerd partnerschap</a> Plaats ontbinding huwelijk/geregistreerd
-                        partnerschap</strong>
-                    <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Naam</th>
-                                <td>Plaats ontbinding huwelijk/geregistreerd partnerschap</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Alias</th>
-                                <td>plaats­Ontbinding</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst</th>
-                                <td>GBA</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Definitie</th>
-                                <td>
-                                    <p>De code uit de GBA-Gemeententabel of een buitenlandse plaats of een
-                                        plaatsbepaling die aangeeft waar het huwelijk/ geregistreerd partnerschap is
-                                        ontbonden of nietig verklaard.</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst definitie</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Datum opname</th>
-                                <td>9 april 2007</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Mogelijk geen waarde</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie materiële historie</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie formele historie</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie in onderzoek</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Aanduiding strijdigheid/nietigheid</th>
-                                <td>zie groep</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit</th>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie authentiek</th>
-                                <td>Authentiek</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Lengte</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formaat</th>
-                                <td><a class="external-link"
-                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Patroon</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie classificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie identificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie afleidbaar</th>
-                                <td> </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <section class="notoc">
-                        <h8>Toelichting </h8>
-                        <p>Het attribuutsoort maakt deel uit van het groepattribuutsoort Ontbinding
-                            huwelijk/geregistreerd partnerschap. Zie verder de toelichting in de GBA.</p>
-                        <p></p>
-                        <p>Uit documentatie versie 2.02 (vervallen tagged values):</p>
-                        <p>Code attribuutsoort: 05.07.20</p>
-                    </section>
-                </div>
-                <div class="deepheader"
-                    id="detail_attribute_Model_Ontbindinghuwelijkgeregistreerdpartnerschap_Redenontbindinghuwelijkgeregistreerdpartnerschap">
-                    <strong>Attribuutsoort details <a
-                            href="#global_class_Model_Ontbindinghuwelijkgeregistreerdpartnerschap">Ontbinding
-                            huwelijk/geregistreerd partnerschap</a> Reden ontbinding huwelijk/geregistreerd
-                        partnerschap</strong>
-                    <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Naam</th>
-                                <td>Reden ontbinding huwelijk/geregistreerd partnerschap</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Alias</th>
-                                <td>reden­Ontbinding</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst</th>
-                                <td>GBA</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Definitie</th>
-                                <td>
-                                    <p>De code uit de Tabel Reden ontbinding/ nietigverklaring huwelijk/geregistreerd
-                                        partnerschap, die aangeeft om welke reden het huwelijk/geregistreerd
-                                        partnerschap is ontbonden of nietig verklaard.</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Herkomst definitie</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Datum opname</th>
-                                <td>9 april 2007</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Mogelijk geen waarde</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie materiële historie</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie formele historie</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie in onderzoek</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Aanduiding strijdigheid/nietigheid</th>
-                                <td>zie groep</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie kardinaliteit</th>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie authentiek</th>
-                                <td>Authentiek</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Lengte</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Formaat</th>
-                                <td><a class="external-link"
-                                        href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Patroon</th>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie classificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie identificerend</th>
-                                <td>Nee</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Indicatie afleidbaar</th>
-                                <td> </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <section class="notoc">
-                        <h8>Toelichting </h8>
-                        <p>Het attribuutsoort maakt deel uit van het groepattribuutsoort Ontbinding
-                            huwelijk/geregistreerd partnerschap. Zie verder de toelichting in de GBA.</p>
-                        <p></p>
-                        <p>Uit documentatie versie 2.02 (vervallen tagged values):</p>
-                        <p>Code attribuutsoort: 05.07.40</p>
-                    </section>
-                </div>
-            </section>
             <section id="detail_attribute_Model_HUWELIJKGEREGISTREERDPARTNERSCHAP_Soortverbintenis">
                 <h6>Attribuutsoort details <a
                         href="#global_class_Model_HUWELIJKGEREGISTREERDPARTNERSCHAP">HUWELIJK/GEREGISTREERD
