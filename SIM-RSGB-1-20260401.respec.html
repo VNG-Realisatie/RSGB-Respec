@@ -1,6 +1,6 @@
 
     <h2>Gegevensdefinitie</h2>
-    <p><b>Deze tekst is normatief.</b><!--SIM-RSGB-2.03-1-20260401-20261125-144244 imvertor Nightly-build.0--></p>
+    <p><b>Deze tekst is normatief.</b><!--SIM-RSGB-2.03-2-20260401-20261126-152212 imvertor Nightly-build.0--></p>
     <section>
         <h3>Objecttypen </h3>
         <section id="global_class_Model_ADRESSEERBAAROBJECTAANDUIDING">
@@ -341,7 +341,7 @@
                                 geslacht (nog) onbekend is.</p>
                         </td>
                         <td><a class="link" href="#detail_class_Model_geslacht">geslacht</a></td>
-                        <td>1</td>
+                        <td>0 .. 1</td>
                     </tr>
                     <tr>
                         <td>Naam:</td>
@@ -744,7 +744,7 @@
                     <tr>
                         <th scope="row">Definitie</th>
                         <td>
-                            <p>Een NIET-NATUURLIJK PERSOON, niet ingeschreven in het Nieuw Handelsregister, gevestigd in
+                            <p>Een NIET-NATUURLIJK PERSOON, niet ingeschreven in het Handelsregister, gevestigd in
                                 Nederland dan wel in het buitenland, en van belang voor de gemeentelijke taakuitoefening
                             </p>
                         </td>
@@ -3469,7 +3469,7 @@
                                 geslacht (nog) onbekend is.</p>
                         </td>
                         <td><a class="link" href="#detail_class_Model_geslacht">geslacht</a></td>
-                        <td>1</td>
+                        <td>0 .. 1</td>
                     </tr>
                     <tr>
                         <td>Naam:</td>
@@ -4534,7 +4534,7 @@
                                 geslacht (nog) onbekend is.</p>
                         </td>
                         <td><a class="link" href="#detail_class_Model_geslacht">geslacht</a></td>
-                        <td>1</td>
+                        <td>0 .. 1</td>
                     </tr>
                     <tr>
                         <td>Naam:</td>
@@ -6812,7 +6812,7 @@
                                 geslacht (nog) onbekend is.</p>
                         </td>
                         <td><a class="link" href="#detail_class_Model_geslacht">geslacht</a></td>
-                        <td>1</td>
+                        <td>0 .. 1</td>
                     </tr>
                     <tr>
                         <td>Naam:</td>
@@ -7744,7 +7744,7 @@
                                 geslacht (nog) onbekend is.</p>
                         </td>
                         <td><a class="link" href="#detail_class_Model_geslacht">geslacht</a></td>
-                        <td>1</td>
+                        <td>0 .. 1</td>
                     </tr>
                     <tr>
                         <td>Naam:</td>
@@ -29264,7 +29264,7 @@
                             </tr>
                             <tr>
                                 <th scope="row">Herkomst</th>
-                                <td>GBA</td>
+                                <td>LO-BRP</td>
                             </tr>
                             <tr>
                                 <th scope="row">Definitie</th>
@@ -29275,7 +29275,7 @@
                             </tr>
                             <tr>
                                 <th scope="row">Herkomst definitie</th>
-                                <td> </td>
+                                <td>LO-BRP</td>
                             </tr>
                             <tr>
                                 <th scope="row">Datum opname</th>
@@ -29303,11 +29303,15 @@
                             </tr>
                             <tr>
                                 <th scope="row">Indicatie kardinaliteit</th>
-                                <td>1</td>
+                                <td>0 .. 1</td>
                             </tr>
                             <tr>
                                 <th scope="row">Indicatie authentiek</th>
                                 <td>Authentiek</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Regels</th>
+                                <td>Verplicht indien het een INGESCHREVEN NATUURLIJK PERSOON betreft.</td>
                             </tr>
                             <tr>
                                 <th scope="row">Lengte</th>
@@ -29336,8 +29340,6 @@
                         </tbody>
                     </table>
                     <div class="notoc"><strong>Toelichting </strong>
-                        <p>.Zie de toelichting in de GBA.</p>
-                        <p></p>
                         <p>Uit documentatie versie 2.02 (vervallen tagged values):</p>
                         <p>Code attribuutsoort: 01.04.10</p>
                         <p>Aanduiding brondocument: Ja: Akte­Gemeente, Documentidentificatie, Documentgemeente,

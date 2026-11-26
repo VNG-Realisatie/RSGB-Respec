@@ -13,6 +13,7 @@
 | 27-10-2026 | [ #1](https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/1)  | Gegevens over Brondocumenten zijn nu opgenomen als gegevensgroep waar dat relevant is|
 | 10-11-2026 | [#54](https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/54) | Verwijzing is niet opgenomen in het RSGB |
 | 12-11-2026 | [#110](https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/110) | Objecttype HUISHOUDEN wordt uit het RSGB verwijderd. |
+| 12-11-2026 | [#53](https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/53) | Attribuutsoorten m.b.t. kiesrecht zijn verwijderd uit het RSGB. |
 
 Nog te completeren n.a.v. verwerkte issues. 
 
