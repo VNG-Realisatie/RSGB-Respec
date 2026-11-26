@@ -1,6 +1,6 @@
 
     <h2>Gegevensdefinitie</h2>
-    <p><b>Deze tekst is normatief.</b><!--SIM-RSGB-2.03-2-20260401-20261126-152212 imvertor Nightly-build.0--></p>
+    <p><b>Deze tekst is normatief.</b><!--SIM-RSGB-2.03-2-20260401-20261126-153843 imvertor Nightly-build.0--></p>
     <section>
         <h3>Objecttypen </h3>
         <section id="global_class_Model_ADRESSEERBAAROBJECTAANDUIDING">
@@ -811,7 +811,7 @@
                         <td><a class="external-link"
                                 href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
                         </td>
-                        <td>1</td>
+                        <td>0 .. 1</td>
                     </tr>
                     <tr>
                         <td><a class="link" href="#detail_attribute_Model_NIETNATUURLIJKPERSOON_Datumaanvang">Datum
@@ -2619,7 +2619,7 @@
                         <td><a class="external-link"
                                 href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
                         </td>
-                        <td>1</td>
+                        <td>0 .. 1</td>
                     </tr>
                     <tr>
                         <td><a class="link" href="#detail_attribute_Model_NIETNATUURLIJKPERSOON_Datumaanvang">Datum
@@ -8248,7 +8248,7 @@
                         <td><a class="external-link"
                                 href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
                         </td>
-                        <td>1</td>
+                        <td>0 .. 1</td>
                     </tr>
                     <tr>
                         <td><a class="link" href="#detail_attribute_Model_NIETNATUURLIJKPERSOON_Datumaanvang">Datum
@@ -29378,7 +29378,7 @@
                             </tr>
                             <tr>
                                 <th scope="row">Herkomst definitie</th>
-                                <td>GFO BG</td>
+                                <td>NHR</td>
                             </tr>
                             <tr>
                                 <th scope="row">Datum opname</th>
@@ -29406,11 +29406,18 @@
                             </tr>
                             <tr>
                                 <th scope="row">Indicatie kardinaliteit</th>
-                                <td>1</td>
+                                <td>0 .. 1</td>
                             </tr>
                             <tr>
                                 <th scope="row">Indicatie authentiek</th>
                                 <td>Authentiek</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Regels</th>
+                                <td>
+                                    <p> Optionaliteitsregels of waardebeperkende regels.</p>
+                                    <p></p>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">Lengte</th>
@@ -29440,6 +29447,10 @@
                             </tr>
                         </tbody>
                     </table>
+                    <div class="notoc"><strong>Toelichting </strong>Indien de Niet-Natuurlijk persoon een Rechtspersoon
+                        in oprichting of een eenmanszaak met meerdere eigenaren betreft is dit geen verplicht attribuut.
+                        In alle andere gevallen is de (Statutaire) naam verplicht. hebben geen naam. Daarom geen
+                        verplicht attribuut.</div>
                 </section>
                 <section id="detail_attribute_Model_NIETNATUURLIJKPERSOON_Datumaanvang">
                     <h6>Attribuutsoort details <a href="#global_class_Model_NIETNATUURLIJKPERSOON">NIET-NATUURLIJK
